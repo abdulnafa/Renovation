@@ -13,4 +13,12 @@ class FrontController extends Controller
     public function HowItWorks(){
         return view('front.howitworks');
     }
+public function Kitchen(){
+        return view('front.kitchen');
+    }
+public function Washroom(){
+    
+        return view('front.washroom');
+    }
+
 }

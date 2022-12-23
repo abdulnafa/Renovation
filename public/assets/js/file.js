@@ -138,4 +138,48 @@
 
 
 
+    //   -----------------------------------------How It Works -------------------------------------------------
+
+    window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.querySelector(".howitworksnavbar");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("howitworkssticky");
+  } else {
+    header.classList.remove("howitworkssticky");
+  }
+}
+
+
+
+
+// ------------------------------------Kitchen Section --------------------------------------------
+
+
+var typetextindex = 0;
+var txt = 'Best Kitchen Styles!'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (typetextindex < txt.length) {
+    document.querySelector("#typingtext").innerHTML += txt.charAt(typetextindex);
+    ii++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+
+
+
+
+
+
+
 })(jQuery);

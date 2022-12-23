@@ -5,6 +5,8 @@
     --three: #CCA43B;
     --four: #E5E5E5;
     --five: #FFFFFF;
+    --step1:#736F4E;
+    --step2:#B4C292;
     --paragraph:#636e72;
   }
   @font-face {
@@ -22,7 +24,9 @@ h1,h2,h3,h4,h5,h6{
 p,span{
     font-family: optima;
 }
-
+body{
+    overflow-x: hidden;
+}
 
 
 /* Company logos  */
@@ -221,3 +225,106 @@ border-bottom: 1px solid #999; */
         margin-bottom: 20px;
     }
 }
+
+
+
+
+
+/* ------------------------------------------How It Works ------------------------------------- */
+
+
+.howitworksstickynavbar li:hover{
+    background-color: var(--four);
+   
+    
+}
+
+.howitworksstickynavbar li:hover  a{
+    
+    color: black!important;
+    
+}
+
+.howitworksnavbar{
+    background-color: var(--one);
+    
+}
+
+.howitworksnavbar a{
+    color: white!important;
+}
+
+.howitworksnavbar.howitworkssticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:99999;
+  }
+
+  .steplistinggroup li::marker {
+    content: url(/heart.svg);
+    content: url(#heart);
+    content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='24' width='24'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' fill='none' stroke='hotpink' stroke-width='3'/></svg>");
+    
+  }
+
+
+  .steplistinggroup li div{
+    margin-left: 20px;
+  }
+
+  .howitworksstep1{
+    background-color: var(--one);
+    color: white;
+  }
+  .howitworksstep2{
+    background-color: var(--two);
+    color: white;
+  }
+
+
+
+  /* -------------------------------Kitchen Css -------------------------------------------- */
+
+ .kithcenhead li::marker {
+    content: url(/heart.svg);
+    content: url(#heart);
+    content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='24' width='24'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' fill='none' stroke='hotpink' stroke-width='3'/></svg>");
+    
+  }
+
+  .kithcenhead li{
+    padding-left: 20px;
+  }
+  .herobackgorund{
+    background:url(../images/kitchen/hero.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:400px;
+    
+    border-radius: 200px 0px 67px 0px;
+    border: 1px solid var(--two);
+  }
+  .kithcenhead .rightside{
+    background-color: var(--two);
+    color: white;
+  }
+  .kitchengallery img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+  #typingtext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .renovationscary{
+    background-color: var(--two);
+    
+  }
+  .section2{
+    background-color: var(--two);
+    color: white;
+  }

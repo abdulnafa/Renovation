@@ -2,52 +2,7 @@
 
 @section('my-content')
 
-<!-- Main Slider  -->
-<div class="home-slider owl-carousel js-fullheight">
-    <div class="slider-item js-fullheight"
-        style="background-image:url('assets/images/index/bathroom1.jpg'); background-size:cover">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                <div class="col-md-12 ftco-animate">
-                    <div class="text w-100 text-center">
-                        <h2>Best Place to Travel</h2>
-                        <h1 class="mb-3">Norway</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="slider-item js-fullheight"
-        style="background-image:url('assets/images/index/bathroom2.jpg'); background-size:cover">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                <div class="col-md-12 ftco-animate">
-                    <div class="text w-100 text-center">
-                        <h2>Best Place to Travel</h2>
-                        <h1 class="mb-3">Japan</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="slider-item js-fullheight" style="background-image:url('assets/images/index/slider1.webp')">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                <div class="col-md-12 ftco-animate">
-                    <div class="text w-100 text-center">
-                        <h2>Best Place to Travel</h2>
-                        <h1 class="mb-3">Singapore</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <!-- Logos Section  -->
@@ -204,7 +159,7 @@
 
 <div class="container-fluid indextestimonial py-5 testimonialmain">
 
-<div class="row  py-3 text-center text-white">
+    <div class="row  py-3 text-center text-white">
         <h1>FEATURED REVIEWS</h1>
         <p>Learn why homeowners chose Block for their renovation.</p>
     </div>
