@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+:root {
+    --one: #363636;
+    --two: #242F40;
+    --three: #CCA43B;
+    --four: #E5E5E5;
+    --five: #FFFFFF;
+    --paragraph:#636e72;
+  }
+  @font-face {
+  font-family: folio;
+  src: url(assets/css/folio/FOLION.ttf);
+}
+ @font-face {
+  font-family: optima;
+  src: url(assets/css/optima/OPTIMA.ttf);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: folio;
+}
+p,span{
+    font-family: optima;
+}
+
+
+
+/* Company logos  */
+.logosection img{
+    filter: grayscale(100%);
+    width: 130px!important;
+    
+}
+.logosection img:hover{
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+/* Index cards  */
+.indexcards{
+    background-color: var(--four);
+}
+.indexcards p{
+    color: var(--paragraph);
+}
+.indexcards img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* Renovation  */
+
+.renovationcards h1{
+    font-size: 24px;
+    color: var(--paragraph);
+}
+.renovationcards .card{
+    height: auto;
+}
+.renovationcards .card a{
+    background-color: var(--two);
+    color: white;
+    font-size: 12px;
+}
+.renovationcards .card a:hover{
+    background-color: var(--one);
+    cursor: pointer;
+}
+
+
+/* Gallery  */
+
+
+.gallerymainsection img{
+    height: 250px;
+    object-fit: cover;
+}
+
+#gallery1{
+   
+    overflow-x: hidden;
+
+}
+
+#gallery1 img{
+    margin: .2rem;
+  }
+
+
+  #gallery2{
+   
+    overflow-x: hidden;
+
+}
+
+#gallery2 img{
+    margin: .2rem;
+  }
+
+
+
+  /* ----------------Testimonial Section-------------------- */
+
+
+  /* Reseting */
+
+
+
+
+@keyframes background-color {
+    0% {
+        background: linear-gradient(to bottom, #000428, #004683);
+    }
+
+    25% {
+        background: linear-gradient(135deg, #1a4223, #5ee95e);
+    }
+
+    50% {
+        background: linear-gradient(to bottom, #421a31, #e95ed2);
+    }
+
+    100% {
+        background: linear-gradient(-135deg, #fae37d, #881da8, #20668f);
+    }
+
+}
+.indextestimonial{
+    background-color: var(--one);
+}
+
+.testimonialmain .card {
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    border: none;
+    background-color: inherit;
+}
+
+.testimonialmain .card .face {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.06);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    backface-visibility: hidden;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    /* border-right: 1px solid #999;
+border-bottom: 1px solid #999; */
+}
+
+.testimonialmain .card .face.front-face,
+.testimonialmain .card .face.back-face {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonialmain .card .face.front-face .profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonialmain .card .face.front-face .name {
+    letter-spacing: 2px;
+}
+
+.testimonialmain .card .face.front-face .designation {
+    font-size: 0.8rem;
+    color: #ddd;
+    letter-spacing: 0.8px;
+}
+
+.testimonialmain .card:hover .face.front-face {
+    transform: rotateY(180deg);
+}
+
+.testimonialmain .card .face.back-face {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.06);
+    transform: rotateY(180deg);
+    padding: 20px 30px;
+    text-align: center;
+    user-select: none;
+}
+
+.testimonialmain .card .face.back-face .fa-quote-left {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 1.2rem;
+}
+
+.testimonialmain .card .face.back-face .fa-quote-right {
+    position: absolute;
+    bottom: 35px;
+    right: 25px;
+    font-size: 1.2rem;
+}
+
+.testimonialmain .card:hover .face.back-face {
+    transform: rotateY(360deg);
+}
+
+@media(max-width: 991.5px) {
+    .col-lg-4 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
