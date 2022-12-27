@@ -300,7 +300,7 @@ border-bottom: 1px solid #999; */
     background:url(../images/kitchen/hero.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    height:400px;
+    height:500px;
     
     border-radius: 200px 0px 67px 0px;
     border: 1px solid var(--two);
@@ -314,7 +314,7 @@ border-bottom: 1px solid #999; */
     width: 100%;
     object-fit: cover;
   }
-  #typingtext{
+  .animatedtext{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -327,4 +327,44 @@ border-bottom: 1px solid #999; */
   .section2{
     background-color: var(--two);
     color: white;
+  }
+
+
+
+
+  /* ---------------------------------------WashRoom---------------------------------------- */
+
+
+  .washroomhead  .herobackgorund{
+    background:url(../images/washroom/washroomheader.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:500px;
+    border-radius: 200px 0px 67px 0px;
+    border: 1px solid var(--two);
+  }
+  .animatedtext{
+    margin-top: 50px;
+    cursor: none;
+  }
+  .typed-cursor{
+    display: none;
+  }
+
+
+
+  /* ---------------------------------------Gallery ---------------------------------------- */
+
+
+  .selectservice select{
+    width: 200px!important;
+  }
+  .filterhead{
+    background-color: var(--two);
+    color: white;
+  }
+
+  .fullgallerydiv{
+    background-color: var(--two);
+    
   }

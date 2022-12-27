@@ -44,10 +44,10 @@
                 </button>
                 <div class="collapse navbar-collapse ms-auto" id="ftco-nav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item active"><a href="{{Route('front.index')}}" class="nav-link">Home</a></li>
-                        <li class="nav-item active"><a href="{{Route('front.how-it-works')}}" class="nav-link">How it
+                        <li class="nav-item  {{ Route::is('front.index') ? 'active' : '' }}"><a href="{{Route('front.index')}}" class="nav-link">Home</a></li>
+                        <li class="nav-item {{ Route::is('front.how-it-works') ? 'active' : '' }}"><a href="{{Route('front.how-it-works')}}" class="nav-link">How it
                                 Works</a></li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown   {{ Route::is('front.kitchen') ? 'active' : '' }} {{ Route::is('front.washroom') ? 'active' : '' }}">
                             <a class="nav-link dropdown-toggle"  id="dropdown04" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">Services</a>
                             <div class="dropdown-menu" aria-labelledby="dropdown04">
@@ -56,9 +56,9 @@
                               
                             </div>
                         </li>
-                        <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Design</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                        <li class="nav-item  {{ Route::is('front.gallery') ? 'active' : '' }}"><a href="{{Route('front.gallery')}}" class="nav-link">Gallery</a></li>
+                        <li class="nav-item  {{ Route::is('front.design') ? 'active' : '' }}"><a href="{{Route('front.design')}}" class="nav-link">Design</a></li>
+                        <li class="nav-item  {{ Route::is('') ? 'active' : '' }}"><a href="#" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -68,12 +68,10 @@
     </section>
 
 
-
-    <!-- Main Slider  -->
-
     @if(Request::url() == 'http://127.0.0.1:8000/services/washroom' || Request::url() == 'http://127.0.0.1:8000/services/kitchen' )
 
-     @else
+    <!-- Main Slider  -->
+    @else
     
     <div class="home-slider owl-carousel js-fullheight">
         <div class="slider-item js-fullheight"
@@ -121,4 +119,7 @@
         </div>
     </div>
 
-    @endif
+
+    
+
+@endif

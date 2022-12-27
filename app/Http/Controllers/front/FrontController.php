@@ -21,4 +21,14 @@ public function Washroom(){
         return view('front.washroom');
     }
 
+    public function Gallery(){
+    
+        return view('front.gallery');
+    }
+
+    public function Design(){
+    
+        return view('front.design');
+    }
+
 }
