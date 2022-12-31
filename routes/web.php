@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\front\FrontController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -24,6 +25,18 @@ Route::get('/services/kitchen',[FrontController::class,'Kitchen'])->name('front.
 Route::get('/services/washroom',[FrontController::class,'Washroom'])->name('front.washroom');
 Route::get('/gallery',[FrontController::class,'Gallery'])->name('front.gallery');
 Route::get('/design',[FrontController::class,'Design'])->name('front.design');
+
+// Dashhboard Routes start 
+Route::middleware('admin')->group(function(){
+Route::get('/admindashboard',[AdminController::class,'Show'])->name('admindashboard');
+Route::post('/sliderpics',[AdminController::class,"Sliderpicssave"])->name('sliderpics');
+Route::get('/showcompanylog/{id?}',[AdminController::class,"ShowCompanyLog"])->name('showcompanylog');
+Route::post('/savecompanylogoimage/{id?}',[AdminController::class,"Savecompanylogoimage"])->name('savecompanylogoimage');
+Route::get('/deletecompanylogo/{id?}',[AdminController::class,"Deletecompanylogo"])->name('deletecompanylogo');
+
+
+// Dashhboard Routes End
+});
 
 
 

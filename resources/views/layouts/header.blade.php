@@ -58,7 +58,12 @@
                         </li>
                         <li class="nav-item  {{ Route::is('front.gallery') ? 'active' : '' }}"><a href="{{Route('front.gallery')}}" class="nav-link">Gallery</a></li>
                         <li class="nav-item  {{ Route::is('front.design') ? 'active' : '' }}"><a href="{{Route('front.design')}}" class="nav-link">Design</a></li>
-                        <li class="nav-item  {{ Route::is('') ? 'active' : '' }}"><a href="#" class="nav-link">Contact</a></li>
+                        <li class="nav-item  {{ Route::is('login') ? 'active' : '' }}"><a href="{{Route('login')}}" class="nav-link">Login</a></li>
+                        <li class="nav-item  {{ Route::is('register') ? 'active' : '' }}"><a href="{{Route('register')}}" class="nav-link">Register</a></li>
+                        <li class="nav-item  {{ Route::is('logout') ? 'active' : '' }}"><a href="{{Route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="nav-link">Logout</a></li>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+    @csrf
+</form>
                     </ul>
                 </div>
             </div>
@@ -68,7 +73,7 @@
     </section>
 
 
-    @if(Request::url() == 'http://127.0.0.1:8000/services/washroom' || Request::url() == 'http://127.0.0.1:8000/services/kitchen' )
+    @if(Request::url() == 'http://127.0.0.1:8000/services/washroom' || Request::url() == 'http://127.0.0.1:8000/services/kitchen'  || Request::url() == 'http://127.0.0.1:8000/login' )
 
     <!-- Main Slider  -->
     @else
