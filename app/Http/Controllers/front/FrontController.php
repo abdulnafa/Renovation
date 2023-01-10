@@ -3,32 +3,59 @@
 namespace App\Http\Controllers\front;
 
 use App\Http\Controllers\Controller;
+use App\Models\AdminHome;
+use App\Models\CompanyLogo;
+use App\Models\FooterDetail;
+use App\Models\Gallery;
+use App\Models\HomePlaneCard;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
 {
     public function index(){
-        return view('front.index');
+        $data=AdminHome::first(); 
+       $logos=CompanyLogo::all();
+       $indexcards=HomePlaneCard::first();
+       $kitchengallery=Gallery::where('service','=','kitchen')->get();
+       $bathroomgallery=Gallery::where('service','=','bathroom')->get();
+       $footerdetail=FooterDetail::first();
+       
+        return view('front.index',compact('data','logos','indexcards','kitchengallery','bathroomgallery','footerdetail'));
     }
     public function HowItWorks(){
-        return view('front.howitworks');
+        $data=AdminHome::first(); 
+        $footerdetail=FooterDetail::first();
+        return view('front.howitworks',compact('data','footerdetail'));
     }
 public function Kitchen(){
-        return view('front.kitchen');
+    $footerdetail=FooterDetail::first();
+        return view('front.kitchen',compact('footerdetail'));
     }
 public function Washroom(){
-    
-        return view('front.washroom');
+    $footerdetail=FooterDetail::first();
+        return view('front.washroom',compact('footerdetail'));
     }
 
     public function Gallery(){
-    
-        return view('front.gallery');
+        $data=AdminHome::first(); 
+        $footerdetail=FooterDetail::first();
+        return view('front.gallery',compact('data','footerdetail'));
     }
 
     public function Design(){
-    
-        return view('front.design');
+        $data=AdminHome::first(); 
+        $footerdetail=FooterDetail::first();
+        return view('front.design',compact('data','footerdetail'));
     }
+
+
+        public function Allservices(){
+               
+                $footerdetail=FooterDetail::first();
+                return view('front.allservices',compact('footerdetail'));
+            }
+
+
+    
 
 }

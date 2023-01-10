@@ -47,4 +47,161 @@ $("#thirdsliderfile").change(function(){
     }  
 });
 
+// Plane Card Sections 
+
+// card 1 
+
+$("#cardoneimageicon").on("click",function(){
+$("#cardonefile").trigger("click");
+});
+$("#cardonefile").change(function(){
+       
+    readURL(this);
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+    
+            reader.onload = function (e) {
+                $('#cardoneimg').attr('src', e.target.result);
+            }
+    
+            reader.readAsDataURL(input.files[0]);
+        }
+    }  
+});
+
+
+// card 2 
+
+$("#cardtwoimageicon").on("click",function(){
+    $("#cardtwofile").trigger("click");
+    });
+    $("#cardtwofile").change(function(){
+           
+        readURL(this);
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+        
+                reader.onload = function (e) {
+                    $('#cardtwoimg').attr('src', e.target.result);
+                }
+        
+                reader.readAsDataURL(input.files[0]);
+            }
+        }  
+    });
+
+
+
+
+    // card 3 
+
+$("#cardthreeimageicon").on("click",function(){
+    $("#cardthreefile").trigger("click");
+    });
+    $("#cardthreefile").change(function(){
+           
+        readURL(this);
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+        
+                reader.onload = function (e) {
+                    $('#cardthreeimg').attr('src', e.target.result);
+                }
+        
+                reader.readAsDataURL(input.files[0]);
+            }
+        }  
+    });
+
+
+
+
+    // Gallery Code Here 
+
+    $("#addnewbutton").on("click",function(){
+$(".hiddendiv").show();
+    });
+var gallaryimages=[];
+var servicename;
+var filename;
+    $(".servicecheck").click(function(){
+
+$(".hiddendiv").hide();
+
+$("#galleryimagefile").trigger("click");
+ servicename=$(this).val();
+
+    });
+
+
+
+    $("#galleryimagefile").change(function(){
+           
+           
+      filename = $("#galleryimagefile").val().replace(/^.*[\\\/]/, '');
+         
+        readURL(this);
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+        
+                reader.onload = function (e) {
+                    // $('#cardthreeimg').attr('src', e.target.result);
+                
+        //             $('.allgalleryphotos').prepend(`<div class="col-md-3 my-2">
+        //             <div class="galleryimgbox">
+                  
+        // <img src='${e.target.result}' width='100%' height='100%'/>
+        //             </div>
+        //         </div>`);
+
+                gallaryimages.push({service:servicename,image:filename});
+                console.log(gallaryimages);
+                $("#savegalleryimage").trigger("click");
+
+                }
+        
+                reader.readAsDataURL(input.files[0]);
+            }
+        }  
+    });
+
+    $("#galleryform").submit(function(e){
+e.preventDefault();
+$.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
+var formData = new FormData($(this)[0]);
+$.ajax({
+    data: formData,
+    processData: false,
+    contentType: false,
+    cache: false,
+    url: "/savegalleryrecord",
+    type: "POST",
+    dataType: 'json',
+    success: function (data) {
+        $('.allgalleryphotos').prepend(`<div class="col-md-3 my-2">
+        <div class="galleryimgbox position-relative">
+        <a class="crosgalleryimage" href="/deletegallaryimage/${data['id']}">
+        <span>X</span>
+</a>
+<img src="../../storage/dashboardpics/gallery/${data['galleryimage']}" width='100%' height='100%'/>
+        </div>
+    </div>`);
+        
+     
+    },error: function(data) {
+       console.log(data);
+      }
+});
+
+
+    });
+
 });

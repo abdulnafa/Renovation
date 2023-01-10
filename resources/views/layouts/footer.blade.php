@@ -6,12 +6,12 @@
   <!-- Footer -->
   <footer
           class="text-center text-lg-start text-white"
-          style="background-color: #1c2331"
+          style="background-color: #424242"
           >
     <!-- Section: Social media -->
     <section
              class="d-flex justify-content-between p-4"
-             style="background-color: #6351ce"
+             style="background-color: #363636"
              >
       <!-- Left -->
       <div class="me-5">
@@ -21,24 +21,38 @@
 
       <!-- Right -->
       <div>
-        <a href="" class="text-white me-4">
+        @isset($footerdetail)
+        @if($footerdetail->facebook!=null)
+        <a href="{{$footerdetail->facebook}}" class="text-white me-4">
           <i class="fa fa-facebook-f"></i>
         </a>
-        <a href="" class="text-white me-4">
+        @endif()
+        @if($footerdetail->twitter!=null)
+        <a href="{{$footerdetail->twitter}}" class="text-white me-4">
           <i class="fa fa-twitter"></i>
         </a>
-        <a href="" class="text-white me-4">
+        @endif()
+        @if($footerdetail->google!=null)
+        <a href="{{$footerdetail->google}}" class="text-white me-4">
           <i class="fa fa-google"></i>
         </a>
-        <a href="" class="text-white me-4">
+        @endif()
+        @if($footerdetail->instagram!=null)
+        <a href="{{$footerdetail->instagram}}" class="text-white me-4">
           <i class="fa fa-instagram"></i>
         </a>
-        <a href="" class="text-white me-4">
+        @endif()
+        @if($footerdetail->linkedin!=null)
+        <a href="{{$footerdetail->linkedin}}" class="text-white me-4">
           <i class="fa fa-linkedin"></i>
         </a>
-        <a href="" class="text-white me-4">
+        @endif()
+        @if($footerdetail->github!=null)
+        <a href="{{$footerdetail->github}}" class="text-white me-4">
           <i class="fa fa-github"></i>
         </a>
+        @endif()
+        @endisset()
       </div>
       <!-- Right -->
     </section>
@@ -55,7 +69,7 @@
             <h6 class="text-uppercase fw-bold"><img src="{{asset('assets/images/logo.png')}}" class="img-fluid"/></h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
+                style="width: 60px; background-color: white; height: 2px"
                 />
             <p>
               Here you can use rows and columns to organize your footer
@@ -71,7 +85,7 @@
             <h6 class="text-uppercase fw-bold">Products</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
+                style="width: 60px; background-color: white; height: 2px"
                 />
             <p>
               <a href="#!" class="text-white">Kitchen</a>
@@ -94,7 +108,7 @@
             <h6 class="text-uppercase fw-bold">Useful links</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
+                style="width: 60px; background-color: white; height: 2px"
                 />
             <p>
               <a href="#!" class="text-white">Your Account</a>
@@ -117,12 +131,14 @@
             <h6 class="text-uppercase fw-bold">Contact</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
+                style="width: 60px; background-color: white; height: 2px"
                 />
-            <p><i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
-            <p><i class="fa fa-envelope mr-3"></i> info@example.com</p>
-            <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
-            <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+                @isset($footerdetail)
+            <p><i class="fa fa-home mr-3"></i>  @if($footerdetail->address!=null) {{$footerdetail->address}}  @endif()</p>
+            <p><i class="fa fa-envelope mr-3"></i> @if($footerdetail->mail!=null) {{$footerdetail->mail}}  @endif()</p>
+            <p><i class="fa fa-phone mr-3"></i> @if($footerdetail->number!=null) {{$footerdetail->number}}  @endif()</p>
+            <p><i class="fa fa-print mr-3"></i> @if($footerdetail->ptcl!=null) {{$footerdetail->ptcl}}  @endif()</p>
+            @endisset()
           </div>
           <!-- Grid column -->
         </div>
@@ -136,7 +152,7 @@
          class="text-center p-3"
          style="background-color: rgba(0, 0, 0, 0.2)"
          >
-      © 2020 Copyright:
+      © 2023 Copyright:
       <a class="text-white" href="{{Route('front.index')}}"
          >Renovation</a
         >
@@ -159,6 +175,7 @@
 <script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
 <!-- Animated text  -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script src="{{asset('build/assets/app-a86d8438.js')}}"></script>
 <script src="{{asset('assets/js/file.js')}}"></script>
 <!-- JavaScript Bundle with Popper -->
 

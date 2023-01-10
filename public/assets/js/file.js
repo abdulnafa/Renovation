@@ -1,4 +1,19 @@
+
+
+
 $(document).ready(function(){
+  window.onscroll = function() {Navtop()};
+
+  function Navtop() {
+    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250 ) {
+    
+      $('.mynavbarperosonal').addClass("bg-dark");
+    } else {
+      $('.mynavbarperosonal').removeClass("bg-dark");
+    }
+  }
+  
+
  
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
@@ -33,6 +48,7 @@ $(document).ready(function(){
 	    margin:0,
 	    animateOut: 'fadeOut',
 	    animateIn: 'fadeIn',
+     
 	    nav:true,
 	    dots: true,
 	    autoplayHoverPause: false,
@@ -67,7 +83,7 @@ $(document).ready(function(){
         Number:500,
         responsive:{
             0:{
-                items:1
+                items:2
             },
             600:{
                 items:3
@@ -115,7 +131,16 @@ $(document).ready(function(){
         cssEase: 'linear',
         dots: false,
         prevArrow: false,
-        nextArrow: false
+        nextArrow: false,
+        
+        responsive: [{
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            centerMode: false,
+          }
+        }]
       });
 
 
@@ -131,6 +156,14 @@ $(document).ready(function(){
         dots: false,
         prevArrow: false,
         nextArrow: false,
+        responsive: [{
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            centerMode: false,
+          }
+        }]
         
       });
 

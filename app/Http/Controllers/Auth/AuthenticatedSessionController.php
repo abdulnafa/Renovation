@@ -32,8 +32,9 @@ class AuthenticatedSessionController extends Controller
        
 
         $request->session()->regenerate();
-        if($request->email=="admin@gmail.com"){
-            return redirect('/admindashboard');
+      
+        if(Auth::user()->roll_as=="admin"){
+            return redirect('/admin');
         }else{
             return redirect('/');
         }

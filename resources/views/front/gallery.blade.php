@@ -1,106 +1,56 @@
 @extends('layouts.main')
 
 @section('my-content')
-<!-- Gallery -->
-<div class="container-fluid">
 
-    <div class="row text-center py-3 px-5 filterhead">
-        <div class="col-4">
-            <h1>Block Project Gallery</h1>
+
+<!-- Main Slider  -->
+    
+<div class="home-slider owl-carousel js-fullheight">
+        <div class="slider-item js-fullheight"
+            style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider1}}@endif()'); background-size:cover">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+                    <div class="col-md-12 ftco-animate">
+                        <div class="text w-100 text-center">
+                            <h2>@if($data!=null){{$data->slider1title1}} @endif()</h2>
+                            <h1 class="mb-3"> @if($data!=null){{$data->slider1title2}} @endif()</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-8 selectservice d-flex justify-content-end align-items-center">
-            <select class="form-select" aria-label="Default select example">
-                <option value="">Select Serve</option>
-                <option value="bathrom">Bathroom</option>
-                <option value="kitchen">Kitchen</option>
-            </select>
+
+        <div class="slider-item js-fullheight"
+            style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider2}} @endif()'); background-size:cover">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+                    <div class="col-md-12 ftco-animate">
+                        <div class="text w-100 text-center">
+                            <h2> @if($data!=null){{$data->slider2title1}} @endif() </h2>
+                            <h1 class="mb-3"> @if($data!=null){{$data->slider2title2}} @endif()</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-item js-fullheight" style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider3}}@endif()')">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+                    <div class="col-md-12 ftco-animate">
+                        <div class="text w-100 text-center">
+                            <h2> @if($data!=null) {{$data->slider3title1}} @endif()</h2>
+                            <h1 class="mb-3">@if($data!=null) {{$data->slider3title2}} @endif()</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="row py-5 fullgallerydiv">
 
-
-        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-            <img src="{{asset('assets/images/gallery/gallery1.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Boat on Calm Water" />
-
-            <img src="{{asset('assets/images/gallery/gallery2.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Wintry Mountain Landscape" />
-
-
-            <img src="{{asset('assets/images/gallery/gallery3.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Wintry Mountain Landscape" />
-
-
-
-            <img src="{{asset('assets/images/gallery/gallery4.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Wintry Mountain Landscape" />
-
-
-
-
-            <img src="{{asset('assets/images/gallery/gallery5.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Wintry Mountain Landscape" />
-
-
-
-            <img src="{{asset('assets/images/gallery/gallery6.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Wintry Mountain Landscape" />
-        </div>
-
-        <div class="col-lg-4 mb-4 mb-lg-0">
-            <img src="{{asset('assets/images/gallery/gallery7.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Mountains in the Clouds" />
-
-            <img src="{{asset('assets/images/gallery/gallery8.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Boat on Calm Water" />
-
-            <img src="{{asset('assets/images/gallery/gallery9.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Mountains in the Clouds" />
-
-            <img src="{{asset('assets/images/gallery/gallery10.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Boat on Calm Water" />
-
-
-
-            <img src="{{asset('assets/images/gallery/gallery11.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Mountains in the Clouds" />
-
-            <img src="{{asset('assets/images/gallery/gallery12.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Boat on Calm Water" />
-
-            <img src="{{asset('assets/images/gallery/gallery13.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Boat on Calm Water" />
-           
-        </div>
-
-        <div class="col-lg-4 mb-4 mb-lg-0">
-            <img src="{{asset('assets/images/gallery/gallery15.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Waves at Sea" />
-
-            <img src="{{asset('assets/images/gallery/gallery16.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Yosemite National Park" />
-
-            <img src="{{asset('assets/images/gallery/gallery17.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Waves at Sea" />
-
-            <img src="{{asset('assets/images/gallery/gallery18.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Yosemite National Park" />
-
-
-
-
-            <img src="{{asset('assets/images/gallery/gallery19.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Waves at Sea" />
-
-            <img src="{{asset('assets/images/gallery/gallery20.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Yosemite National Park" />
-            <img src="{{asset('assets/images/gallery/gallery21.jpg')}}" class="w-100 shadow-1-strong rounded mb-4"
-                alt="Yosemite National Park" />
-        </div>
-
-
-    </div>
-</div>
-<!-- Gallery -->
+@livewire('gallery-live-wire')
 @endsection

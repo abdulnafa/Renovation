@@ -19,11 +19,18 @@ class Admin
      */
     public function handle(Request $request, Closure $next)
     {
-        if(Auth::user()->email == "admin@gmail.com"){
-              return $next($request);
+        if(Auth::check()){
+            if(Auth::user()->roll_as == "admin"){
+                return $next($request);
+            }else{
+                return redirect("/login");
+            }
         }else{
-            return redirect("/");
+            return redirect("/login");
         }
+        
+             
+        
        
        
     }

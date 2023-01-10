@@ -11,6 +11,7 @@
     <meta name="description"
         content="Matrix Admin Lite Free Version is powerful and clean admin dashboard template, inpired from Bootstrap Framework" />
     <meta name="robots" content="noindex,nofollow" />
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <title>Matrix Admin Lite Free Versions Template by WrapPixel</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/images/logofavicon.png')}}" />
@@ -18,12 +19,14 @@
     <link href="{{asset('dashboard/assets/libs/flot/css/float-chart.css')}}" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="{{asset('dashboard/dist/css/style.min.css')}}" rel="stylesheet" />
+    <link href="{{asset('dashboard/dist/css/abdulnafa.css')}}" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
 <body>
@@ -264,11 +267,11 @@
                                         class="mdi mdi-settings me-1 ms-1"></i> Account
                                     Setting</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="{{ Route('logout') }}"><i
+                                <a class="dropdown-item" href="{{ Route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
                                         class="fa fa-power-off me-1 ms-1"></i> Logout</a>
 
                                 <form id="logout-form" action="{{ route('logout') }}"
-                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                                    
                                     method="POST" style="display: none;">
                                     @csrf
                                 </form>

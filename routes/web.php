@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\DesignController;
 use App\Http\Controllers\front\FrontController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,16 +27,32 @@ Route::get('/services/kitchen',[FrontController::class,'Kitchen'])->name('front.
 Route::get('/services/washroom',[FrontController::class,'Washroom'])->name('front.washroom');
 Route::get('/gallery',[FrontController::class,'Gallery'])->name('front.gallery');
 Route::get('/design',[FrontController::class,'Design'])->name('front.design');
+Route::get('/allservices',[FrontController::class,'Allservices'])->name('allservices');
 
 // Dashhboard Routes start 
 Route::middleware('admin')->group(function(){
-Route::get('/admindashboard',[AdminController::class,'Show'])->name('admindashboard');
+Route::get('/admin',[AdminController::class,'Show'])->name('admindashboard');
 Route::post('/sliderpics',[AdminController::class,"Sliderpicssave"])->name('sliderpics');
 Route::get('/showcompanylog/{id?}',[AdminController::class,"ShowCompanyLog"])->name('showcompanylog');
 Route::post('/savecompanylogoimage/{id?}',[AdminController::class,"Savecompanylogoimage"])->name('savecompanylogoimage');
 Route::get('/deletecompanylogo/{id?}',[AdminController::class,"Deletecompanylogo"])->name('deletecompanylogo');
+Route::post('/saveplanecard',[AdminController::class,"Saveplanecard"])->name("saveplanecard");
+Route::get('/showadmingallerypage',[AdminController::class,'Showadmingallerypage'])->name('showadmingallerypage');
+Route::post('/savegalleryrecord',[AdminController::class,'Savegalleryrecord'])->name('savegalleryrecord');
+Route::get('/deletegallaryimage/{id?}',[AdminController::class,'Deletegallaryimage'])->name('deletegallaryimage');
 
 
+
+// Design Routes 
+Route::resource('designs',DesignController::class);
+// Design Routes End 
+
+// Service Routes 
+Route::resource('services',ServiceController::class);
+// Service Routes End 
+
+Route::get('adminfooterdetail',[AdminController::class,'Adminfooterdetail'])->name('adminfooterdetail');
+Route::post('footerdetail',[AdminController::class,'Footerdetail'])->name('footerdetail');
 // Dashhboard Routes End
 });
 
@@ -42,7 +60,7 @@ Route::get('/deletecompanylogo/{id?}',[AdminController::class,"Deletecompanylogo
 
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return redirect()->route('admindashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

@@ -3,6 +3,53 @@
 @section('my-content')
 
 
+<!-- Main Slider  -->
+    
+<div class="home-slider owl-carousel js-fullheight mainslider">
+        <div class="slider-item js-fullheight"
+            style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider1}}@endif()'); background-size:cover">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+                    <div class="col-md-12 ftco-animate">
+                        <div class="text w-100 text-center">
+                            <h2>@if($data!=null){{$data->slider1title1}} @endif()</h2>
+                            <h1 class="mb-3"> @if($data!=null){{$data->slider1title2}} @endif()</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-item js-fullheight"
+            style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider2}} @endif()'); background-size:cover">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+                    <div class="col-md-12 ftco-animate">
+                        <div class="text w-100 text-center">
+                            <h2> @if($data!=null){{$data->slider2title1}} @endif() </h2>
+                            <h1 class="mb-3"> @if($data!=null){{$data->slider2title2}} @endif()</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-item js-fullheight" style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider3}}@endif()')">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+                    <div class="col-md-12 ftco-animate">
+                        <div class="text w-100 text-center">
+                            <h2> @if($data!=null) {{$data->slider3title1}} @endif()</h2>
+                            <h1 class="mb-3">@if($data!=null) {{$data->slider3title2}} @endif()</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 <!-- Logos Section  -->
@@ -11,19 +58,14 @@
     <div class="container">
         <div class="row">
             <div class="logosection owl-carousel owl-theme">
+                @isset($logos)
+                @foreach($logos as $logo)
                 <div class="item">
-                    <h4><img src="{{asset('assets/images/index/logo1.png')}}" class="img-fluid" /></h4>
+                    <h4><img src="{{asset('storage/dashboardpics/logos/')}}/{{$logo->logoimg}}" class="img-fluid" /></h4>
                 </div>
-                <div class="item">
-                    <h4><img src="{{asset('assets/images/index/logo2.jfif')}}" class="img-fluid" /></h4>
-                </div>
-                <div class="item">
-                    <h4><img src="{{asset('assets/images/index/logo3.png')}}" class="img-fluid" /></h4>
-                </div>
-                <div class="item">
-                    <h4><img src="{{asset('assets/images/index/logo4.jpg')}}" class="img-fluid" /></h4>
-                </div>
-
+                
+                @endforeach()
+@endisset()
 
             </div>
         </div>
@@ -37,13 +79,12 @@
     <div class="container">
         <div class="row">
             <!-- box 1  -->
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{asset('assets/images/index/card1.webp')}}" class="card-img-top" alt="...">
+            <div class="col-md-4 mb-md-0 mb-3">
+                <div class="card" style="width: 100%;">
+                    <img src="{{asset('storage/dashboardpics/cards/')}}/@if($indexcards!=null){{$indexcards->cardoneimg}}@endif()"  style="object-fit:cover"  class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">PLAN WITH PRECISION</h5>
-                        <p class="card-text">Work with a Block Project Planner to receive a custom proposal tailored to
-                            your renovation goals with a detailed scope of work..</p>
+                        <h5 class="card-title">@if($indexcards!=null){{$indexcards->cardonetitle}}@endif()</h5>
+                        <p class="card-text">@if($indexcards!=null){{$indexcards->cardonecontent}}@endif()</p>
 
                     </div>
                 </div>
@@ -51,13 +92,12 @@
 
 
             <!-- box 2  -->
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{asset('assets/images/index/card2.webp')}}" class="card-img-top" alt="...">
+            <div class="col-md-4 mb-md-0 mb-3">
+                <div class="card" style="width: 100%;">
+                    <img src="{{asset('storage/dashboardpics/cards/')}}/@if($indexcards!=null){{$indexcards->cardtwoimg}}@endif()" style="object-fit:cover" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">PLAN WITH PRECISION</h5>
-                        <p class="card-text">Work with a Block Project Planner to receive a custom proposal tailored to
-                            your renovation goals with a detailed scope of work..</p>
+                        <h5 class="card-title">@if($indexcards!=null){{$indexcards->cardtwotitle}}@endif()</h5>
+                        <p class="card-text">@if($indexcards!=null){{$indexcards->cardtwocontent}}@endif()</p>
 
                     </div>
                 </div>
@@ -66,13 +106,12 @@
 
             <!-- Box 3  -->
 
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{asset('assets/images/index/card3.webp')}}" class="card-img-top" alt="...">
+            <div class="col-md-4 mb-md-0 mb-3">
+                <div class="card" style="width: 100%;">
+                    <img src="{{asset('storage/dashboardpics/cards/')}}/@if($indexcards!=null){{$indexcards->cardthreeimg}}@endif()"  style="object-fit:cover"  class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">PLAN WITH PRECISION</h5>
-                        <p class="card-text">Work with a Block Project Planner to receive a custom proposal tailored to
-                            your renovation goals with a detailed scope of work..</p>
+                        <h5 class="card-title">@if($indexcards!=null){{$indexcards->cardthreetitle}}@endif()</h5>
+                        <p class="card-text">@if($indexcards!=null){{$indexcards->cardthreecontent}}@endif()</p>
 
                     </div>
                 </div>
@@ -90,7 +129,7 @@
             <h1 class="text-center">OUR RENOVATIONS</h1>
         </div>
         <div class="row renovationcards">
-            <div class="col-md-6">
+            <div class="col-md-6 mb-md-0 mb-3">
                 <div class="card">
                     <img src="{{asset('assets/images/index/renovation1.webp')}}" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -103,7 +142,7 @@
             </div>
 
 
-            <div class="col-md-6">
+            <div class="col-md-6  mb-md-0 mb-3">
                 <div class="card">
                     <img src="{{asset('assets/images/index/renovation2.webp')}}" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -130,25 +169,20 @@
         <p>Discover what homeowners were able to achieve with Block.</p>
     </div>
     <div id="gallery1">
-        <img src="{{asset('assets/images/index/g1.webp')}}" class="img-fluid" />
-        <img src="{{asset('assets/images/index/g2.webp')}}" class="img-fluid" />
-        <img src="{{asset('assets/images/index/g3.webp')}}" class="img-fluid" />
-        <img src="{{asset('assets/images/index/g4.webp')}}" class="img-fluid" />
-        <img src="{{asset('assets/images/index/g5.webp')}}" class="img-fluid" />
-        <img src="{{asset('assets/images/index/g6.webp')}}" class="img-fluid" />
-        <img src="{{asset('assets/images/index/g7.webp')}}" class="img-fluid" />
-        <img src="{{asset('assets/images/index/g8.webp')}}" class="img-fluid" />
+        @isset($kitchengallery)
+        @foreach($kitchengallery as $g)
+        <img src="{{asset('storage/dashboardpics/gallery')}}/{{$g->galleryimage}}" class="img-fluid" />
+        @endforeach()
+     @endisset()
     </div>
 
     <div id="gallery2">
-        <img src="{{asset('assets/images/index/g8.webp')}}" class="img-fluid" />
-        <img src="{{asset('assets/images/index/g7.webp')}}" class="img-fluid" />
-        <img src="{{asset('assets/images/index/g6.webp')}}" class="img-fluid" />
-        <img src="{{asset('assets/images/index/g5.webp')}}" class="img-fluid" />
-        <img src="{{asset('assets/images/index/g4.webp')}}" class="img-fluid" />
-        <img src="{{asset('assets/images/index/g3.webp')}}" class="img-fluid" />
-        <img src="{{asset('assets/images/index/g2.webp')}}" class="img-fluid" />
-        <img src="{{asset('assets/images/index/g1.webp')}}" class="img-fluid" />
+    @isset($bathroomgallery)
+        @foreach($bathroomgallery as $b)
+        <img src="{{asset('storage/dashboardpics/gallery')}}/{{$b->galleryimage}}" class="img-fluid" />
+        @endforeach()
+     @endisset()
+       
     </div>
 
 </div>
@@ -169,7 +203,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="card">
+                    <div class="card w-100">
                         <div class="face front-face">
                             <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
                                 alt="" class="profile">
@@ -190,7 +224,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card">
+                    <div class="card w-100">
                         <div class="face front-face">
                             <img src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                                 alt="" class="profile">
@@ -211,7 +245,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card">
+                    <div class="card w-100">
                         <div class="face front-face">
                             <img src="https://images.unsplash.com/photo-1614574762522-6ac2fbba2208?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjY2fHxtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                                 alt="" class="profile">

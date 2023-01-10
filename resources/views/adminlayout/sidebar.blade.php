@@ -5,43 +5,24 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav" class="pt-4">
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{Route('admindashboard')}}"
                                 aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span
                                     class="hide-menu">Home</span></a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="charts.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
                                 aria-expanded="false"><i class="mdi mdi-chart-bar"></i><span class="hide-menu">How It
                                     Works</span></a>
                         </li>
-                        <!-- <li class="sidebar-item">
-                <a
-                  class="sidebar-link waves-effect waves-dark sidebar-link"
-                  href="widgets.html"
-                  aria-expanded="false"
-                  ><i class="mdi mdi-chart-bubble"></i
-                  ><span class="hide-menu">Widgets</span></a
-                >
-              </li> -->
-                        <!-- <li class="sidebar-item">
-                <a
-                  class="sidebar-link waves-effect waves-dark sidebar-link"
-                  href="tables.html"
-                  aria-expanded="false"
-                  ><i class="mdi mdi-border-inside"></i
-                  ><span class="hide-menu">Tables</span></a
-                >
-              </li>
-              <li class="sidebar-item">
-                <a
-                  class="sidebar-link waves-effect waves-dark sidebar-link"
-                  href="grid.html"
-                  aria-expanded="false"
-                  ><i class="mdi mdi-blur-linear"></i
-                  ><span class="hide-menu">Full Width</span></a
-                >
-              </li> -->
+<!-- Add Service  -->
+
                         <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{Route('services.index')}}"
+                                aria-expanded="false"><i class="mdi mdi-chart-bar"></i><span class="hide-menu">Add Service</span></a>
+                        </li>
+
+
+                        <!-- <li class="sidebar-item">
                             <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)"
                                 aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Services
                                 </span></a>
@@ -55,17 +36,22 @@
                                             class="mdi mdi-note-plus"></i><span class="hide-menu"> Bathroom</span></a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
 
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="charts.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{Route('showadmingallerypage')}}"
                                 aria-expanded="false"><i class="mdi mdi-chart-bar"></i><span class="hide-menu">Gallery</span></a>
                         </li>
 
 
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="charts.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{Route('designs.index')}}"
                                 aria-expanded="false"><i class="mdi mdi-chart-bar"></i><span class="hide-menu">Design</span></a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{Route('adminfooterdetail')}}"
+                                aria-expanded="false"><i class="mdi mdi-chart-bar"></i><span class="hide-menu">Footer Detail</span></a>
                         </li>
                         <!-- <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="pages-buttons.html"

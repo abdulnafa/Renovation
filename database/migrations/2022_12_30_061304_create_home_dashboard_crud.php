@@ -16,8 +16,14 @@ return new class extends Migration
         Schema::create('home', function (Blueprint $table) {
             $table->id();
             $table->string("slider1")->nullable();
+            $table->string("slider1title1")->nullable();
+            $table->string("slider1title2")->nullable();
             $table->string("slider2")->nullable();
+            $table->string("slider2title1")->nullable();
+            $table->string("slider2title2")->nullable();
             $table->string("slider3")->nullable();
+            $table->string("slider3title1")->nullable();
+            $table->string("slider3title2")->nullable();
             $table->timestamps();
         });
     }
