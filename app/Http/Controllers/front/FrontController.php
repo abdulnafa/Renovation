@@ -4,9 +4,11 @@ namespace App\Http\Controllers\front;
 
 use App\Http\Controllers\Controller;
 use App\Models\AdminHome;
+use App\Models\Ambasder;
 use App\Models\CompanyLogo;
 use App\Models\FooterDetail;
 use App\Models\Gallery;
+use App\Models\GoogleReview;
 use App\Models\HomePlaneCard;
 use Illuminate\Http\Request;
 
@@ -19,8 +21,10 @@ class FrontController extends Controller
        $kitchengallery=Gallery::where('service','=','kitchen')->get();
        $bathroomgallery=Gallery::where('service','=','bathroom')->get();
        $footerdetail=FooterDetail::first();
+       $reviews=GoogleReview::all();
+       $ambester=Ambasder::all();
        
-        return view('front.index',compact('data','logos','indexcards','kitchengallery','bathroomgallery','footerdetail'));
+        return view('front.index',compact('data','logos','indexcards','kitchengallery','bathroomgallery','footerdetail','reviews','ambester'));
     }
     public function HowItWorks(){
         $data=AdminHome::first(); 
@@ -29,11 +33,13 @@ class FrontController extends Controller
     }
 public function Kitchen(){
     $footerdetail=FooterDetail::first();
-        return view('front.kitchen',compact('footerdetail'));
+    $data=AdminHome::first(); 
+        return view('front.kitchen',compact('footerdetail','data'));
     }
 public function Washroom(){
     $footerdetail=FooterDetail::first();
-        return view('front.washroom',compact('footerdetail'));
+    $data=AdminHome::first(); 
+        return view('front.washroom',compact('footerdetail','data'));
     }
 
     public function Gallery(){
@@ -50,9 +56,9 @@ public function Washroom(){
 
 
         public function Allservices(){
-               
+            $data=AdminHome::first(); 
                 $footerdetail=FooterDetail::first();
-                return view('front.allservices',compact('footerdetail'));
+                return view('front.allservices',compact('footerdetail','data'));
             }
 
 

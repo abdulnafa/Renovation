@@ -2,53 +2,8 @@
 @section('my-content')
 
 
-<!-- Main Slider  -->
-    
-<div class="home-slider owl-carousel js-fullheight">
-        <div class="slider-item js-fullheight"
-            style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider1}}@endif()'); background-size:cover">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                    <div class="col-md-12 ftco-animate">
-                        <div class="text w-100 text-center">
-                            <h2>@if($data!=null){{$data->slider1title1}} @endif()</h2>
-                            <h1 class="mb-3"> @if($data!=null){{$data->slider1title2}} @endif()</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="slider-item js-fullheight"
-            style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider2}} @endif()'); background-size:cover">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                    <div class="col-md-12 ftco-animate">
-                        <div class="text w-100 text-center">
-                            <h2> @if($data!=null){{$data->slider2title1}} @endif() </h2>
-                            <h1 class="mb-3"> @if($data!=null){{$data->slider2title2}} @endif()</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="slider-item js-fullheight" style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider3}}@endif()')">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                    <div class="col-md-12 ftco-animate">
-                        <div class="text w-100 text-center">
-                            <h2> @if($data!=null) {{$data->slider3title1}} @endif()</h2>
-                            <h1 class="mb-3">@if($data!=null) {{$data->slider3title2}} @endif()</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 <!-- Sticky Header like for steps  -->
 
 
@@ -56,16 +11,16 @@
     <div class="container">
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav mx-auto howitworksstickynavbar">
-                <li class="nav-item active mx-5 border ">
+                <li class="nav-item active mx-5 border border-dark">
                     <a class="nav-link px-5" href="#howitworksplane">PLANE</a>
                 </li>
-                <li class="nav-item mx-5 border">
+                <li class="nav-item mx-5  border border-dark">
                     <a class="nav-link px-5" href="#howitworksdesign">DESIGN</a>
                 </li>
-                <li class="nav-item mx-5 border">
+                <li class="nav-item mx-5  border border-dark">
                     <a class="nav-link px-5" href="#howitworksbuild">BUILD</a>
                 </li>
-                <li class="nav-item mx-5 border ">
+                <li class="nav-item mx-5  border border-dark ">
                     <a class="nav-link px-5" href="#howitworksmanage">MANAGE</a>
                 </li>
             </ul>
@@ -88,7 +43,7 @@
         </div>
         <div class="row">
             <div class="col-md-6 d-flex align-items-center">
-                <img src="{{asset('assets/images/howitworks/plane.jpg')}}" class="img-fluid" />
+                <img src="{{asset('assets/images/howitworks/plane.webp')}}" class="img-fluid" />
             </div>
             <div class="col-md-6">
                 <ul>
@@ -174,7 +129,7 @@
             </div>
 
             <div class="col-md-6 d-flex align-items-center">
-                <img src="{{asset('assets/images/howitworks/design.svg')}}" height="600px" width="700px" />
+                <img src="{{asset('assets/images/howitworks/design.webp')}}" class="img-fluid" />
             </div>
         </div>
     </div>
@@ -196,7 +151,7 @@
         </div>
         <div class="row">
             <div class="col-md-6 d-flex align-items-center">
-                <img src="{{asset('assets/images/howitworks/built.jpg')}}" class="img-fluid" />
+                <img src="{{asset('assets/images/howitworks/build.webp')}}" class="img-fluid" />
             </div>
             <div class="col-md-6">
                 <ul>
@@ -274,11 +229,13 @@
             </div>
 
             <div class="col-md-6 d-flex align-items-center">
-                <img src="{{asset('assets/images/howitworks/manage.jpg')}}" class="img-fluid" />
+                <img src="{{asset('assets/images/howitworks/manage.webp')}}" class="img-fluid" />
             </div>
         </div>
     </div>
 </div>
+
+
 
 
 

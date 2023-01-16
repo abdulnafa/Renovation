@@ -3,53 +3,114 @@
 @section('my-content')
 
 
-<!-- Main Slider  -->
-    
-<div class="home-slider owl-carousel js-fullheight">
-        <div class="slider-item js-fullheight"
-            style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider1}}@endif()'); background-size:cover">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                    <div class="col-md-12 ftco-animate">
-                        <div class="text w-100 text-center">
-                            <h2>@if($data!=null){{$data->slider1title1}} @endif()</h2>
-                            <h1 class="mb-3"> @if($data!=null){{$data->slider1title2}} @endif()</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="slider-item js-fullheight"
-            style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider2}} @endif()'); background-size:cover">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                    <div class="col-md-12 ftco-animate">
-                        <div class="text w-100 text-center">
-                            <h2> @if($data!=null){{$data->slider2title1}} @endif() </h2>
-                            <h1 class="mb-3"> @if($data!=null){{$data->slider2title2}} @endif()</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- Main Slider End  -->
 
-        <div class="slider-item js-fullheight" style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider3}}@endif()')">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                    <div class="col-md-12 ftco-animate">
-                        <div class="text w-100 text-center">
-                            <h2> @if($data!=null) {{$data->slider3title1}} @endif()</h2>
-                            <h1 class="mb-3">@if($data!=null) {{$data->slider3title2}} @endif()</h1>
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row py-3">
+            <h1 class="text-center">Renovation Gallery</h1>
+        </div>
+        <div>
+
+            <div class="gallerytopslickslider owl-carousel owl-theme">
+                <div class="item position-relative">
+                    <div  class="mainitemimage"><img src="{{asset('assets/images/gallery/gallery1.jpg')}}" class="img-fluid" /></div>
+
+                    <div class="imagesbox">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="{{asset('assets/images/gallery/gallery6.jpg')}}" class="img-fluid"
+                                    width="100%" height="50%" />
+                            </div>
+                            <div class="col-6">
+                                <img src="{{asset('assets/images/gallery/gallery8.jpg')}}" class="img-fluid"
+                                    width="100%" height="50%" />
+                            </div>
+
+                            <div class="col-6">
+                                <img src="{{asset('assets/images/gallery/gallery17.jpg')}}" class="img-fluid"
+                                    width="100%" height="50%" />
+                            </div>
+
+                            <div class="col-6">
+                                <img src="{{asset('assets/images/gallery/gallery23.jpg')}}" class="img-fluid"
+                                    width="100%" height="50%" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item position-relative">
+
+                   <div  class="mainitemimage"> <img src="{{asset('assets/images/gallery/gallery2.jpg')}}" class="img-fluid" /></div>
+                   <div class="imagesbox">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="{{asset('assets/images/gallery/gallery1.jpg')}}" class="img-fluid"
+                                    width="100%" height="50%" />
+                            </div>
+                            <div class="col-6">
+                                <img src="{{asset('assets/images/gallery/gallery2.jpg')}}" class="img-fluid"
+                                    width="100%" height="50%" />
+                            </div>
+
+                            <div class="col-6">
+                                <img src="{{asset('assets/images/gallery/gallery3.jpg')}}" class="img-fluid"
+                                    width="100%" height="50%" />
+                            </div>
+
+                            <div class="col-6">
+                                <img src="{{asset('assets/images/gallery/gallery4.jpg')}}" class="img-fluid"
+                                    width="100%" height="50%" />
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="item">
+                   <div class="mainitemimage"> <img src="{{asset('assets/images/gallery/gallery3.jpg')}}" class="img-fluid" /></div>
+
+                   <div class="imagesbox">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="{{asset('assets/images/gallery/gallery7.jpg')}}" class="img-fluid"
+                                    width="100%" height="50%" />
+                            </div>
+                            <div class="col-6">
+                                <img src="{{asset('assets/images/gallery/gallery8.jpg')}}" class="img-fluid"
+                                    width="100%" height="50%" />
+                            </div>
+
+                            <div class="col-6">
+                                <img src="{{asset('assets/images/gallery/gallery9.jpg')}}" class="img-fluid"
+                                    width="100%" height="50%" />
+                            </div>
+
+                            <div class="col-6">
+                                <img src="{{asset('assets/images/gallery/gallery1.jpg')}}" class="img-fluid"
+                                    width="100%" height="50%" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
+
+
+
+
+
+
+
+
+
+
         </div>
     </div>
+</div>
+
 
 
 @livewire('gallery-live-wire')

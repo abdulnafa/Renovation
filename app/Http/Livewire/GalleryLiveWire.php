@@ -9,9 +9,12 @@ class GalleryLiveWire extends Component
   
 public $alldata;
 public $mydata;
+
     public function ChangeGallery($val){
         
         $this->alldata=Gallery::where('service','=',$val)->get();
+        return $this->alldata;
+        
         
     
     }

@@ -3,69 +3,26 @@
 @section('my-content')
 
 
-<!-- Main Slider  -->
-    
-<div class="home-slider owl-carousel js-fullheight mainslider">
-        <div class="slider-item js-fullheight"
-            style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider1}}@endif()'); background-size:cover">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                    <div class="col-md-12 ftco-animate">
-                        <div class="text w-100 text-center">
-                            <h2>@if($data!=null){{$data->slider1title1}} @endif()</h2>
-                            <h1 class="mb-3"> @if($data!=null){{$data->slider1title2}} @endif()</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="slider-item js-fullheight"
-            style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider2}} @endif()'); background-size:cover">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                    <div class="col-md-12 ftco-animate">
-                        <div class="text w-100 text-center">
-                            <h2> @if($data!=null){{$data->slider2title1}} @endif() </h2>
-                            <h1 class="mb-3"> @if($data!=null){{$data->slider2title2}} @endif()</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="slider-item js-fullheight" style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider3}}@endif()')">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                    <div class="col-md-12 ftco-animate">
-                        <div class="text w-100 text-center">
-                            <h2> @if($data!=null) {{$data->slider3title1}} @endif()</h2>
-                            <h1 class="mb-3">@if($data!=null) {{$data->slider3title2}} @endif()</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 <!-- Logos Section  -->
 
-<div class="container py-3">
-    <div class="container">
+<div class="container-fluid py-3 logossection">
+    <div class="">
         <div class="row">
             <div class="logosection owl-carousel owl-theme">
                 @isset($logos)
                 @foreach($logos as $logo)
                 <div class="item">
-                    <h4><img src="{{asset('storage/dashboardpics/logos/')}}/{{$logo->logoimg}}" class="img-fluid" /></h4>
+                    <h4 class="d-flex justify-content-center" style="height: 100px;"><img
+                            src="{{asset('storage/dashboardpics/logos/')}}/{{$logo->logoimg}}" class="img-fluid" />
+                    </h4>
+                    <!-- <h6 class="text-center">Block Renovation is here to simplify the process.</h6> -->
                 </div>
-                
+
                 @endforeach()
-@endisset()
+                @endisset()
 
             </div>
         </div>
@@ -81,7 +38,8 @@
             <!-- box 1  -->
             <div class="col-md-4 mb-md-0 mb-3">
                 <div class="card" style="width: 100%;">
-                    <img src="{{asset('storage/dashboardpics/cards/')}}/@if($indexcards!=null){{$indexcards->cardoneimg}}@endif()"  style="object-fit:cover"  class="card-img-top" alt="...">
+                    <img src="{{asset('storage/dashboardpics/cards/')}}/@if($indexcards!=null){{$indexcards->cardoneimg}}@endif()"
+                        style="object-fit:cover" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">@if($indexcards!=null){{$indexcards->cardonetitle}}@endif()</h5>
                         <p class="card-text">@if($indexcards!=null){{$indexcards->cardonecontent}}@endif()</p>
@@ -94,7 +52,8 @@
             <!-- box 2  -->
             <div class="col-md-4 mb-md-0 mb-3">
                 <div class="card" style="width: 100%;">
-                    <img src="{{asset('storage/dashboardpics/cards/')}}/@if($indexcards!=null){{$indexcards->cardtwoimg}}@endif()" style="object-fit:cover" class="card-img-top" alt="...">
+                    <img src="{{asset('storage/dashboardpics/cards/')}}/@if($indexcards!=null){{$indexcards->cardtwoimg}}@endif()"
+                        style="object-fit:cover" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">@if($indexcards!=null){{$indexcards->cardtwotitle}}@endif()</h5>
                         <p class="card-text">@if($indexcards!=null){{$indexcards->cardtwocontent}}@endif()</p>
@@ -108,7 +67,8 @@
 
             <div class="col-md-4 mb-md-0 mb-3">
                 <div class="card" style="width: 100%;">
-                    <img src="{{asset('storage/dashboardpics/cards/')}}/@if($indexcards!=null){{$indexcards->cardthreeimg}}@endif()"  style="object-fit:cover"  class="card-img-top" alt="...">
+                    <img src="{{asset('storage/dashboardpics/cards/')}}/@if($indexcards!=null){{$indexcards->cardthreeimg}}@endif()"
+                        style="object-fit:cover" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">@if($indexcards!=null){{$indexcards->cardthreetitle}}@endif()</h5>
                         <p class="card-text">@if($indexcards!=null){{$indexcards->cardthreecontent}}@endif()</p>
@@ -123,7 +83,7 @@
 
 <!-- Our Renovation  -->
 
-<div class="container-fluid py-5">
+<div class="container-fluid py-5 indexrenovation">
     <div class="container">
         <div class="row py-5">
             <h1 class="text-center">OUR RENOVATIONS</h1>
@@ -159,6 +119,55 @@
 </div>
 
 
+<!-- Brand Abesder  -->
+<!-- Swiper -->
+
+
+<div class="container-fluid brandabesder">
+
+
+
+<div class="container ">
+    <div class="swiper mySwiper brandssection">
+    <div class="swiper-wrapper">
+        @isset($ambester)
+        @foreach($ambester as $ambester)
+        <div class="swiper-slide">
+            <div>
+                <img src="{{asset('storage/dashboardpics/ambasders/')}}/{{$ambester->image}}" class="img-fluid" />
+            </div>
+        </div>
+        @endforeach()
+@endisset()
+        
+
+
+      
+
+
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Brand Abesder End -->
+
+
+
+
+
 <!-- Gallery section  -->
 
 
@@ -173,24 +182,105 @@
         @foreach($kitchengallery as $g)
         <img src="{{asset('storage/dashboardpics/gallery')}}/{{$g->galleryimage}}" class="img-fluid" />
         @endforeach()
-     @endisset()
+        @endisset()
     </div>
 
     <div id="gallery2">
-    @isset($bathroomgallery)
+        @isset($bathroomgallery)
         @foreach($bathroomgallery as $b)
         <img src="{{asset('storage/dashboardpics/gallery')}}/{{$b->galleryimage}}" class="img-fluid" />
         @endforeach()
-     @endisset()
-       
+        @endisset()
+
     </div>
 
 </div>
 
 
+<!-- Google Reviews  -->
+
+
+<div class="container-fluid px-2 googlereviewsection py-5">
+    <div class="container">
+        <div class="row coloredrow my-5">
+            <div class="col-md-9 col-12 text-sm-start text-center">
+                <h1 class="text-left">Google Recensioner</h1>
+            </div>
+            <div class="col-md-3 col-12 text-sm-end text-center">
+                <img src="{{asset('assets/images/index/googlereviews.png')}}" alt="google Reviews"
+                    class="googlereviewimg img-fluid">
+            </div>
+        </div>
+
+
+
+        <div class="row">
+
+
+            <div class="owl-carousel owl-theme px-3">
+
+                @isset($reviews)
+                @if($reviews!=null)
+                @foreach($reviews as $reviews)
+                <div class=" item p-3">
+                    <div class="reviewbox">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="{{asset('storage/dashboardpics/reviews')}}/{{$reviews->reviewimage}}" />
+                            </div>
+                            <div class="col">
+                                <h5>{{$reviews->name}}</h5>
+                                <h6>{{$reviews->created_at->format('d-m-Y')}}</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex py-3">
+                            @php
+                            $count=$reviews->stars;
+                            for($i=0; $i<$count; $i++){ @endphp <i class="fa-solid fa-star"></i>
+
+                                @php
+                                }
+                                @endphp
+
+                                <!-- <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i> -->
+                        </div>
+                        <div>
+                            <p>{{$reviews->description}}</p>
+                        </div>
+                    </div>
+
+                </div>
+                @endforeach()
+                @endif()
+                @endisset()
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Google Reviews End  -->
+
+<!-- Brand Section  Start -->
+
+<div class="container-fluid">
+    <div class="row">
+
+    </div>
+</div>
+
+<!-- Brand Section End -->
+
+
+
 <!-- Testimonail  -->
 
-
+<!-- 
 <div class="container-fluid indextestimonial py-5 testimonialmain">
 
     <div class="row  py-3 text-center text-white">
@@ -267,6 +357,6 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 @endsection

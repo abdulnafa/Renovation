@@ -3,64 +3,21 @@
 
 <div class="container-fluid  px-0">
 
+
+
+
   <!-- Footer -->
   <footer
-          class="text-center text-lg-start text-white"
+          class="text-center text-lg-start text-white py-2"
           style="background-color: #424242"
           >
-    <!-- Section: Social media -->
-    <section
-             class="d-flex justify-content-between p-4"
-             style="background-color: #363636"
-             >
-      <!-- Left -->
-      <div class="me-5">
-        <span>Get connected with us on social networks:</span>
-      </div>
-      <!-- Left -->
 
-      <!-- Right -->
-      <div>
-        @isset($footerdetail)
-        @if($footerdetail->facebook!=null)
-        <a href="{{$footerdetail->facebook}}" class="text-white me-4">
-          <i class="fa fa-facebook-f"></i>
-        </a>
-        @endif()
-        @if($footerdetail->twitter!=null)
-        <a href="{{$footerdetail->twitter}}" class="text-white me-4">
-          <i class="fa fa-twitter"></i>
-        </a>
-        @endif()
-        @if($footerdetail->google!=null)
-        <a href="{{$footerdetail->google}}" class="text-white me-4">
-          <i class="fa fa-google"></i>
-        </a>
-        @endif()
-        @if($footerdetail->instagram!=null)
-        <a href="{{$footerdetail->instagram}}" class="text-white me-4">
-          <i class="fa fa-instagram"></i>
-        </a>
-        @endif()
-        @if($footerdetail->linkedin!=null)
-        <a href="{{$footerdetail->linkedin}}" class="text-white me-4">
-          <i class="fa fa-linkedin"></i>
-        </a>
-        @endif()
-        @if($footerdetail->github!=null)
-        <a href="{{$footerdetail->github}}" class="text-white me-4">
-          <i class="fa fa-github"></i>
-        </a>
-        @endif()
-        @endisset()
-      </div>
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
+          <div class="px-md-5">
+   
 
     <!-- Section: Links  -->
     <section class="">
-      <div class="container text-center text-md-start mt-5">
+      <div class="  text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
@@ -134,10 +91,20 @@
                 style="width: 60px; background-color: white; height: 2px"
                 />
                 @isset($footerdetail)
-            <p><i class="fa fa-home mr-3"></i>  @if($footerdetail->address!=null) {{$footerdetail->address}}  @endif()</p>
-            <p><i class="fa fa-envelope mr-3"></i> @if($footerdetail->mail!=null) {{$footerdetail->mail}}  @endif()</p>
-            <p><i class="fa fa-phone mr-3"></i> @if($footerdetail->number!=null) {{$footerdetail->number}}  @endif()</p>
-            <p><i class="fa fa-print mr-3"></i> @if($footerdetail->ptcl!=null) {{$footerdetail->ptcl}}  @endif()</p>
+           <div class="row py-1"> <div class="col-2"><i class="fa fa-home mr-3"></i></div>  @if($footerdetail->address!=null) <div class="col">{{$footerdetail->address}} </div>   @endif()</div>
+
+           <div class="row py-1"> <div class="col-2"><i class="fa fa-envelope mr-3"></i></div>  @if($footerdetail->mail!=null) <div class="col-10">{{$footerdetail->mail}} </div>   @endif()</div>
+
+
+           <div class="row py-1"> <div class="col-2"><i class="fa fa-phone mr-3"></i></div>  @if($footerdetail->number!=null) <div class="col">{{$footerdetail->number}} </div>   @endif()</div>
+
+
+           <div class="row py-1"> <div class="col-2"><i class="fa fa-print mr-3"></i></div>  @if($footerdetail->ptcl!=null) <div class="col">{{$footerdetail->ptcl}} </div>   @endif()</div>
+
+
+
+
+            
             @endisset()
           </div>
           <!-- Grid column -->
@@ -146,17 +113,59 @@
       </div>
     </section>
     <!-- Section: Links  -->
+     
+     <!-- Section: Social media -->
+     <section
+             class="d-flex justify-content-between p-4"
+             style="background-color: #424242"
+             >
 
-    <!-- Copyright -->
-    <div
-         class="text-center p-3"
-         style="background-color: rgba(0, 0, 0, 0.2)"
-         >
-      © 2023 Copyright:
-      <a class="text-white" href="{{Route('front.index')}}"
-         >Renovation</a
-        >
-    </div>
+
+
+      <!-- Left -->
+      <div class="me-5">
+        <span>© 2023 Copyright: Renovation</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div class="footerrightsocial pe-5">
+        @isset($footerdetail)
+        @if($footerdetail->facebook!=null)
+        <a href="{{$footerdetail->facebook}}" class="text-white me-4">
+        <img src="{{asset('assets/images/index/facebook.svg')}}" class="img-fluid me-2" />
+        </a>
+        @endif()
+        @if($footerdetail->twitter!=null)
+        <a href="{{$footerdetail->twitter}}" class="text-white me-4">
+          <img src="{{asset('assets/images/index/twitter.svg')}}" class="img-fluid me-2" />
+        </a>
+        @endif()
+       
+        @if($footerdetail->instagram!=null)
+        <a href="{{$footerdetail->instagram}}" class="text-white me-4">
+        <img src="{{asset('assets/images/index/instagram.svg')}}" class="img-fluid me-2" />
+        </a>
+        @endif()
+        @if($footerdetail->linkedin!=null)
+        <a href="{{$footerdetail->linkedin}}" class="text-white me-4">
+        <img src="{{asset('assets/images/index/linkedin.svg')}}" class="img-fluid me-2" />
+        </a>
+        @endif()
+        
+        @endisset()
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+
+
+
+
+
+   
+          </div>
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
@@ -175,6 +184,10 @@
 <script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
 <!-- Animated text  -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<!-- Swiper js  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- -------------------------  -->
 <script src="{{asset('build/assets/app-a86d8438.js')}}"></script>
 <script src="{{asset('assets/js/file.js')}}"></script>
 <!-- JavaScript Bundle with Popper -->

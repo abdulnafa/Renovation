@@ -2,28 +2,49 @@
 
 @section('my-content')
 
+
+
+
+
+
+<!-- Sticky Header like for steps  -->
+
+
+
+
 <div class="container-fluid px-0 kithcenhead">
     <div class="row">
         <div class="col-md-6 px-0">
-            <div class="herobackgorund position-relative">
-           
+            <div class="">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="{{asset('assets/images/kitchen/kitchen1.webp')}}" class="img-fluid" />
+                    </div>
+                    <div class="item">
+                        <img src="{{asset('assets/images/kitchen/kitchen2.webp')}}" class="img-fluid" />
+                    </div>
+
+                </div>
             </div>
 
         </div>
-        <div class="col-md-6  ps-5 pt-5 rightside">
-            <h1 class="animatedtext"></h1>
+        <div class="col-md-6   rightside">
+            <h1>Kitchen</h1>
             <p>Thoughtfully designed for lasting quality, optimize your kitchen with Block from design to build.</p>
             <ul>
                 <li>ALL FIXTURES, MATERIALS, AND LABOR INCLUDED</li>
                 <li>BUILT BY A LOCAL, VETTED CONTRACTOR</li>
                 <li>MANAGE YOUR RENOVATION DIGITALLY</li>
             </ul>
+            <div class="row">
+                <button>Contact Us</button>
+            </div>
         </div>
     </div>
 </div>
 
 
-<div class="container-fluid py-5">
+<div class="container-fluid py-5 everydaylife">
     <div class="container">
         <div class="row">
             <div class="col-md-4 d-flex align-items-center">
@@ -43,18 +64,18 @@
     <div class="row">
         <div class="col-md-6 px-0">
             <div class="gallerytop">
-                <img src="{{asset('assets/images/kitchen/galleryleft.jpg')}}" class="img-fluid" />
+                <img src="{{asset('assets/images/kitchen/Gallery_2_d__3x.webp')}}" class="img-fluid" />
             </div>
             <div class="gallerybottom">
-                <img src="{{asset('assets/images/kitchen/galleryleftbottom.jpg')}}" class="img-fluid" />
+                <img src="{{asset('assets/images/kitchen/Gallery_3_d__3x.webp')}}" class="img-fluid" />
             </div>
         </div>
         <div class="col-md-6 px-0">
             <div class="gallerytop">
-                <img src="{{asset('assets/images/kitchen/gallerytop.jpg')}}" class="img-fluid" />
+                <img src="{{asset('assets/images/kitchen/Gallery_4_d__3x.webp')}}" class="img-fluid" />
             </div>
             <div class="gallerybottom">
-                <img src="{{asset('assets/images/kitchen/gallerybottom.jpg')}}" class="img-fluid" />
+                <img src="{{asset('assets/images/kitchen/projects_messer_d__3x.webp')}}" class="img-fluid" />
             </div>
         </div>
     </div>
@@ -64,20 +85,20 @@
 
 <div class="container-fluid renovationscary py-5">
     <div class="container">
-        <div class="row text-center py-5 text-white">
+        <div class="row text-center py-5">
             <h2>We know renovations are scary, so we've got your back:</h2>
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6">
-                <div class="card border-light p-1 p-md-4 mb-4 mb-lg-0">
+                <div class="card border-dark p-1 p-md-4 mb-4 mb-lg-0 bg-transparent ">
                     <div class="card-body">
                         <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <img src="{{asset('assets/images/kitchen/icon1.svg')}}" width="200px"  />
+                            <img src="{{asset('assets/images/kitchen/Icon_Insurance.svg')}}" width="200px" />
                         </div>
                         <h5 class="mb-3">Ideas and Concepts</h5>
                         <p>Designed with the latest design trends in mind. Our product feels modern, creative, and
                             beautiful.</p>
-                        <a href="#" class="btn btn-sm btn-primary animate-up-1">Read more</a>
+                        <a href="#" class="btn btn-sm btn-dark animate-up-1">Read more</a>
                     </div>
                 </div>
 
@@ -85,15 +106,15 @@
             <!-- two  -->
 
             <div class="col-lg-4 col-md-6">
-                <div class="card border-light p-1 p-md-4 mb-4 mb-lg-0">
+                <div class="card border-dark p-1 p-md-4 mb-4 mb-lg-0  bg-transparent">
                     <div class="card-body">
                         <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <img src="{{asset('assets/images/kitchen/icon2.svg')}}" width="200px"  />
+                            <img src="{{asset('assets/images/kitchen/Icon_ChangeOrder__1_.svg')}}" width="200px" />
                         </div>
                         <h5 class="mb-3">DESIGN SATISFACTION </h5>
                         <p>Designed with the latest design trends in mind. Our product feels modern, creative, and
                             beautiful.</p>
-                        <a href="#" class="btn btn-sm btn-primary animate-up-1">Read more</a>
+                        <a href="#" class="btn btn-sm btn-dark animate-up-1">Read more</a>
                     </div>
                 </div>
 
@@ -102,15 +123,15 @@
             <!-- three  -->
 
             <div class="col-lg-4 col-md-6">
-                <div class="card border-light p-1 p-md-4 mb-4 mb-lg-0">
+                <div class="card border-dark p-1 p-md-4 mb-4 mb-lg-0  bg-transparent">
                     <div class="card-body">
                         <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <img src="{{asset('assets/images/kitchen/icon3.svg')}}" width="200px"  />
+                            <img src="{{asset('assets/images/kitchen/Icon_Design__1_.svg')}}" width="200px" />
                         </div>
                         <h5 class="mb-3">Ideas and Concepts</h5>
                         <p>Designed with the latest design trends in mind. Our product feels modern, creative, and
                             beautiful.</p>
-                        <a href="#" class="btn btn-sm btn-primary animate-up-1">Read more</a>
+                        <a href="#" class="btn btn-sm btn-dark animate-up-1">Read more</a>
                     </div>
                 </div>
 
@@ -123,7 +144,7 @@
 
 <!-- section one  -->
 
-<div class="container-fluid py-5 section1">
+<div class="container-fluid py-5 kitchen section1">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -162,7 +183,7 @@
 
 <!-- Common Questions  -->
 
-<div class="container-fluid py-5">
+<div class="container-fluid py-5 commonquestiondiv">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -236,7 +257,7 @@
                 </div>
             </div>
             <div class="col-md-6 d-flex align-items-center">
-                <img src="{{asset('assets/images/kitchen/questionsection.jpg')}}" class="img-fluid rounded" />
+                <img src="{{asset('assets/images/kitchen/projects_messer_d__3x.webp')}}" class="img-fluid rounded" />
             </div>
         </div>
     </div>

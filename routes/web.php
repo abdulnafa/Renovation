@@ -1,10 +1,13 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AmbasderController;
 use App\Http\Controllers\DesignController;
 use App\Http\Controllers\front\FrontController;
+use App\Http\Controllers\GoogleReviewController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
+use App\Models\Ambasder;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -50,6 +53,16 @@ Route::resource('designs',DesignController::class);
 // Service Routes 
 Route::resource('services',ServiceController::class);
 // Service Routes End 
+
+// GoogleReview Routes 
+Route::resource('googlereviews',GoogleReviewController::class);
+// GoogleReview Routes End 
+
+
+// GoogleReview Routes 
+Route::resource('ambesders',AmbasderController::class);
+// GoogleReview Routes End 
+
 
 Route::get('adminfooterdetail',[AdminController::class,'Adminfooterdetail'])->name('adminfooterdetail');
 Route::post('footerdetail',[AdminController::class,'Footerdetail'])->name('footerdetail');

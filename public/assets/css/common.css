@@ -1,13 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 :root {
-    --one: #363636;
-    --two: #242F40;
+    --one: #EDE8E2;
+    --two: #E1D9CD;
     --three: #CCA43B;
     --four: #E5E5E5;
     --five: #FFFFFF;
     --step1:#736F4E;
     --step2:#B4C292;
     --paragraph:#636e72;
+    --lightpink:#F4EADE;
+    --graypink:#DCD5CE;
+    --buttoncolor:#FF7C55;
+    --graylight:#E7E7E7;
+    --graydark:#DDDCDC;
+    --lightwhite:#FBFBFB;
+    --mediumpink:#F4EADE;
+    --howitworksnavbar:#F7F6F5;
+    --howitworksplane:#EDE8E2;
+    --howitworksdesign:#E1D9CD;
+    --howitworksbuild:#F1EADE;
+    --howitworksmanage:#DBD0C4;
+    --servichead:#F0F0F0;
+    --servicebody:#F7F6F5;
+    --commonquestion:#CEDCD5;
   }
   @font-face {
   font-family: folio;
@@ -30,9 +45,12 @@ body{
 
 
 /* Company logos  */
+.logossection{
+  background-color: var(--lightpink);
+}
 .logosection img{
     filter: grayscale(100%);
-    width: 130px!important;
+    width: 160px!important;
     
 }
 .logosection img:hover{
@@ -42,7 +60,7 @@ body{
 
 /* Index cards  */
 .indexcards{
-    background-color: var(--four);
+    background-color: var(--graypink);
 }
 .indexcards p{
     color: var(--paragraph);
@@ -55,7 +73,9 @@ body{
 
 
 /* Renovation  */
-
+.indexrenovation{
+  background-color: var(--graylight);
+}
 .renovationcards h1{
     font-size: 24px;
     color: var(--paragraph);
@@ -72,11 +92,22 @@ body{
     background-color: var(--one);
     cursor: pointer;
 }
+ /* Ambasder  */
 
+ .brandabesder{
+  background-color: var(--lightpink);
+  padding-top: 40px;
+  padding-bottom: 40px;
+ }
+ .brandssection{
+  background-color: white;
+ }
 
 /* Gallery  */
 
-
+.gallerymainsection{
+  background-color: var(--lightwhite);
+}
 .gallerymainsection img{
     height: 250px;
     object-fit: cover;
@@ -103,6 +134,8 @@ body{
     margin: .2rem;
   }
 
+
+  
 
 
   /* ----------------Testimonial Section-------------------- */
@@ -241,17 +274,19 @@ border-bottom: 1px solid #999; */
 
 .howitworksstickynavbar li:hover  a{
     
-    color: black!important;
+    /* color: black!important; */
+    color: black;
     
 }
 
 .howitworksnavbar{
-    background-color: var(--one);
+    background-color: var(--howitworksnavbar);
     
 }
 
 .howitworksnavbar a{
-    color: white!important;
+    /* color: white!important; */
+    color: black;
 }
 
 .howitworksnavbar.howitworkssticky {
@@ -264,7 +299,7 @@ border-bottom: 1px solid #999; */
   .steplistinggroup li::marker {
     content: url(/heart.svg);
     content: url(#heart);
-    content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='24' width='24'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' fill='none' stroke='hotpink' stroke-width='3'/></svg>");
+    content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='24' width='24'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' fill='none' stroke='black' stroke-width='3'/></svg>");
     
   }
 
@@ -274,12 +309,14 @@ border-bottom: 1px solid #999; */
   }
 
   .howitworksstep1{
-    background-color: var(--one);
-    color: white;
+    background-color: var(--howitworksplane);
+    /* color: white; */
+    color: black;
   }
   .howitworksstep2{
-    background-color: var(--two);
-    color: white;
+    background-color: var(--howitworksdesign);
+    /* color: white; */
+    color: black;
   }
 
 
@@ -289,48 +326,58 @@ border-bottom: 1px solid #999; */
  .kithcenhead li::marker {
     content: url(/heart.svg);
     content: url(#heart);
-    content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='24' width='24'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' fill='none' stroke='hotpink' stroke-width='3'/></svg>");
+    content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='24' width='24'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' fill='none' stroke='gray' stroke-width='3'/></svg>");
     
   }
 
   .kithcenhead li{
     padding-left: 20px;
   }
-  .herobackgorund{
-    background:url(../images/kitchen/hero.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height:500px;
-    
-    border-radius: 200px 0px 67px 0px;
-    border: 1px solid var(--two);
-  }
   .kithcenhead .rightside{
-    background-color: var(--two);
-    color: white;
+    background-color: var(--servichead);
+    /* color: white; */
   }
   .kitchengallery img{
     height: 400px;
     width: 100%;
     object-fit: cover;
   }
-  .animatedtext{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+  .kithcenhead .rightside{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 110px;
   }
+  .kithcenhead h1{
+    font-size: 35px;
+  }
+ .kithcenhead p{
+  font-size: 30px;
+ }
+ .kithcenhead button{
+  background-color: var(--buttoncolor);
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+ }
+ .commonquestiondiv{
+  background-color: var(--commonquestion);
+ }
+ 
   .renovationscary{
-    background-color: var(--two);
+    background-color: var(--servicebody);
     
   }
   .section2{
     background-color: var(--two);
-    color: white;
+    /* color: white; */
   }
 
-
-
+.everydaylife{
+  background-color: var(--servicebody);
+}
+.kitchen.section1{
+  background-color: #F7F6F5;
+}
 
   /* ---------------------------------------WashRoom---------------------------------------- */
 
@@ -361,12 +408,52 @@ border-bottom: 1px solid #999; */
   }
   .filterhead{
     background-color: var(--two);
-    color: white;
+    /* color: white; */
   }
 
   .fullgallerydiv{
     background-color: var(--two);
     
+  }
+  .gallerytopslickslider{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .gallerytopslickslider .imagesbox{
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: 9999;
+display: none;
+transition: 1s;
+  }
+  .mainitemimage{
+    height: 100%;
+  }
+  .gallerytopslickslider .imagesbox .row{
+    height: 100%;
+  }
+  .gallerytopslickslider .item:hover .imagesbox{
+display: block;
+cursor: pointer;
+  }
+  .gallerytopslickslider .imagesbox .col-6{
+padding:0;
+  }
+  
+  .gallerytopslickslider .imagesbox img{
+    object-fit: cover;
+  }
+  .gallerytopslickslider .item{
+    height: 300px;
+  }
+  .gallerytopslickslider .item img{
+    height: 100%;
+  }
+  .maingalleryimagesdiv img:hover{
+    border: 1px solid black;
   }
 
 
@@ -427,7 +514,10 @@ height: 100%;
 
 /* Top small Bar  */
 
-
+.topnavbarsmall{
+  background-color: #6E786F;
+  color: white;
+}
 .topnavbarsmall .right span{
   font-size: .8rem;
 }
@@ -435,7 +525,7 @@ height: 100%;
   width:20px;
   height: 20px;
 }
-.topnavbarsmall .left img{
+.topnavbarsmall .left img,.footerrightsocial img{
   width:20px;
   height: 20px;
 }
@@ -443,6 +533,7 @@ height: 100%;
 .topnavbarsmall .left ul{
 margin-bottom: 0;
 }
+
 
 
 @media screen and (max-width:900px){
@@ -461,7 +552,7 @@ margin-bottom: 0;
 
 
 .owl-carousel.home-slider{
-  margin-top: -80px;
+  margin-top: -90px;
   z-index: -1;
 }
 
@@ -472,3 +563,84 @@ margin-bottom: 0;
 .navbar-dark .navbar-nav .active > .nav-link{
   font-weight: bold;
 }
+.mynavbarperosonal{
+  /* border-bottom: 1px solid #343A40; */
+}
+.sliderbutton{
+  border: none;
+  padding: 10px 30px;
+  background-color: white;
+}
+.sliderbutton:hover{
+  background-color: #343a40;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+/* Google Review Section  */
+
+.googlereviewsection img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.googlereviewsection .reviewbox{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+.googlereviewsection .reviewbox i{
+  color: #F7A000;
+  margin-left: 7px;
+}
+.coloredrow{
+  border-bottom:4px solid #A362C3;
+}
+.coloredrow img{
+  width: 160px;
+  height: auto;
+  border-radius: 0;
+}
+.brandssection{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 60px 40px;
+  background-color: var(--graylight);
+}
+
+
+
+
+
+
+/* Common Questions  */
+.accordion-button ,.accordion-header,.accordion-item,.accordion{
+  background-color: transparent;
+  
+}
+.accordion-button:not(.collapsed) {
+  background-color: #343A40;
+  color: white;
+}
+.accordion-button:not(.collapsed)::after {
+
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" fill="white"/></svg>');
+  color: white;
+}
+
+/* Common Question End  */
+
+
+
+
+/* login page  */
+
+.loginbackground {
+background:url(../images/gallery/gallery11.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
