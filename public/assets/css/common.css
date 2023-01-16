@@ -23,6 +23,8 @@
     --servichead:#F0F0F0;
     --servicebody:#F7F6F5;
     --commonquestion:#CEDCD5;
+    --bootstrablack:#343A40;
+    --buttonhovercolro:#ff5722;
   }
   @font-face {
   font-family: folio;
@@ -43,19 +45,157 @@ body{
     overflow-x: hidden;
 }
 
+/* -------------------------------------Navbar -------------------------------------- */
+.ftco-sectionheader{
+  border-bottom: 1px solid #343A40;
+    border-top: 1px solid #343A40;
+}
 
-/* Company logos  */
+
+.navbar-nav{
+  width: 100%;
+}
+.navmenubutton button{
+  width: 100%;
+  background-color: var(--buttoncolor);
+  border: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px 120px 15px 120px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: white;
+  border-left: 1px solid var(--bootstrablack) ;
+  
+  }
+  .navmenubutton button:hover{
+    background-color: var(--buttonhovercolro);
+  }
+ @media screen and (max-width:1300px){
+  .navmenubutton button{
+    
+    padding: 15px 80px 15px 80px;
+ 
+    }
+ }
+
+
+ @media screen and (max-width:1200px){
+  .navmenubutton button{
+    
+    padding: 15px 50px 15px 50px;
+ 
+    }
+ }
+
+ @media screen and (max-width:1150px){
+  .navmenubutton button{
+    
+    padding: 15px 30px 15px 30px;
+ 
+    }
+ }
+
+ @media screen and (max-width:1000px){
+  .navmenubutton button{
+    
+    display: none;
+ 
+    }
+ }
+
+
+
+ .navbar{
+padding-right: 0;
+ }
+
+ .navbar .container-fluid{
+ 
+  padding-right: 0;
+ }
+.navbar-nav li a{
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.navbar{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.navbar-brand{
+  width: 130px;
+  padding: 0;
+}
+.navbar-brand img{
+  width: 90px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: normal;
+}
+.navbar-dark .navbar-nav .active > .nav-link{
+  font-weight: normal;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  font-weight: normal;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.mynavbarperosonal{
+  /* border-bottom: 1px solid #343A40; */
+  /* position: absolute; */
+}
+
+ /* -------------------------------------Navbar End -------------------------------------- */
+
+
+
+
+
+ /* ------------------------------------------Slider Start -------------------------------------- */
+
+.ftco-animate{
+  margin-top: 100px;
+  z-index: 999999;
+}
+.ftco-animate button{
+  background-color: var(--buttoncolor);
+  padding: 10px 50px;
+  color: white;
+}
+.ftco-animate button:hover{
+background-color: var(--buttonhovercolro);
+}
+
+
+
+ /* ------------------------------------------Slider End -------------------------------------- */
+
+
+
+/* -----------------------------------------------Company logos -------------------------------------- */
+
+
 .logossection{
   background-color: var(--lightpink);
 }
-.logosection img{
-    filter: grayscale(100%);
-    width: 160px!important;
-    
+.logossection img{
+  margin-bottom: 15px;
 }
-.logosection img:hover{
-    filter: grayscale(0%);
-    cursor: pointer;
+ .logop{
+  font-family: 'Segoe UI'!important;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.6px;
+ padding: 0 20px 0 20px;
 }
 
 /* Index cards  */
@@ -517,6 +657,13 @@ height: 100%;
 .topnavbarsmall{
   background-color: #6E786F;
   color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.topnavbarsmall span{
+  font-family: roboto;
+    font-size: 13px;
+    color: #ffffffd1;
 }
 .topnavbarsmall .right span{
   font-size: .8rem;
@@ -524,6 +671,9 @@ height: 100%;
 .topnavbarsmall .right img{
   width:20px;
   height: 20px;
+}
+.topnavbarsmall .right ul  a i {
+  color: white!important;
 }
 .topnavbarsmall .left img,.footerrightsocial img{
   width:20px;
@@ -533,7 +683,13 @@ height: 100%;
 .topnavbarsmall .left ul{
 margin-bottom: 0;
 }
-
+.topnavbarsmall .left ul i{
+  margin-right: 4px;
+}
+.topnavbarsmall .left ul li{
+  display: flex;
+    align-items: center;
+}
 
 
 @media screen and (max-width:900px){
@@ -556,16 +712,7 @@ margin-bottom: 0;
   z-index: -1;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 500;
-}
-.navbar-dark .navbar-nav .active > .nav-link{
-  font-weight: bold;
-}
-.mynavbarperosonal{
-  /* border-bottom: 1px solid #343A40; */
-}
+
 .sliderbutton{
   border: none;
   padding: 10px 30px;
@@ -576,6 +723,8 @@ margin-bottom: 0;
   color: white;
   cursor: pointer;
 }
+
+
 
 
 
@@ -644,3 +793,24 @@ background-size: cover;
 background-repeat: no-repeat;
 }
 
+
+
+
+
+
+
+/* Mobile Responsive   */
+
+
+@media screen and (max-width:900px){
+  .ftco-sectionheader{
+    background-color: #373E3F;
+  }
+  .navbar-nav{
+    margin-top: 40px;
+  }
+  .navbar-nav li{
+    margin-bottom: 20px;
+
+  }
+}
