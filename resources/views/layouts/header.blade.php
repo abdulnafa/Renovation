@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
     <link rel="stylesheet" href="<?php echo asset('assets/css/owl.carousel.min.css')?>" type="text/css">
     <link rel="stylesheet" href="<?php echo asset('assets/css/owl.theme.default.min.css')?>" type="text/css">
@@ -32,19 +33,18 @@
 
     <!-- small navbar start  -->
 
-    <div class="container-fluid py-1 topnavbarsmall">
-        <div>
+    <div class="container-fluid  topnavbarsmall">
+       
             <div class="row">
-                <div class="col-6  d-none  d-md-flex align-items-center left">
+                <div class="col-6   d-flex align-items-center left">
                     <ul class="d-flex list-inline">
-                        <li class="mx-lg-3 mx-2"> <img src="{{asset('assets/images/index/gmail.svg')}}"
-                                class="img-fluid me-2" /><span>
+                        <li class="mx-lg-3 mx-2"> <i class="fa-regular fa-envelope"></i><span>
                                 @isset($footerdetail) @if($footerdetail->mail!=null) {{$footerdetail->mail}}
 
                                 @endif
                                 @endisset()
                             </span></li>
-                        <li> <i class="fa-solid fa-phone"></i><span>
+                        <li> <i class="bi bi-telephone"></i><span>
                                 @isset($footerdetail) @if($footerdetail->number!=null) {{$footerdetail->number}}
 
                                 @endif
@@ -52,13 +52,14 @@
                     </ul>
 
                 </div>
-                <div class="col-md-6 right  d-flex align-items-center justify-content-end">
-                    <ul class="d-flex list-inline justify-content-center  mb-0">
+                <div class="col-6 right  d-flex align-items-center justify-content-end">
+                    <ul class="d-flex list-inline justify-content-center  mb-0 ">
                         @isset($footerdetail)
                         @if($footerdetail->twitter!=null)
                         <a href="{{$footerdetail->twitter}}" target="_blank">
                             <li class="mx-2">
-                                <img src="{{asset('assets/images/index/twitter.svg')}}" class="img-fluid me-2" />
+                            <i class="fa-brands fa-twitter"></i>
+                                <!-- <img src="{{asset('assets/images/index/twitter.svg')}}" class="img-fluid me-2" /> -->
                                 <!-- <span style="color: #03A9F4;">Twitter</span> -->
                             </li>
                         </a>
@@ -69,7 +70,8 @@
                         @if($footerdetail->facebook!=null)
                         <a href="{{$footerdetail->facebook}}" target="_blank">
                             <li class="mx-2">
-                                <img src="{{asset('assets/images/index/facebook.svg')}}" class="img-fluid me-2" />
+                            <i class="fa-brands fa-facebook"></i>
+                                <!-- <img src="{{asset('assets/images/index/facebook.svg')}}" class="img-fluid me-2" /> -->
                                 <!-- <span style="color: #1877F2;">Facebook</span> -->
                             </li>
                         </a>
@@ -82,7 +84,8 @@
                         <a href="{{$footerdetail->instagram}}" target="_blank">
 
                             <li class="mx-2">
-                                <img src="{{asset('assets/images/index/instagram.svg')}}" class="img-fluid me-2" />
+                            <i class="fa-brands fa-instagram"></i>
+                                <!-- <img src="{{asset('assets/images/index/instagram.svg')}}" class="img-fluid me-2" /> -->
                                 <!-- <span style="color: #E36B82;">Instagram</span> -->
                             </li>
 
@@ -99,7 +102,8 @@
 
 
                                 <li class="mx-2">
-                                    <img src="{{asset('assets/images/index/linkedin.svg')}}" class="img-fluid me-2" />
+                                <i class="fa-brands fa-linkedin"></i>
+                                    <!-- <img src="{{asset('assets/images/index/linkedin.svg')}}" class="img-fluid me-2" /> -->
                                     <!-- <span style="color: #6563FF;">Linkedin</span> -->
                                 </li>
                                 @endif()
@@ -111,7 +115,8 @@
                                 <a href="{{$footerdetail->github}}" target="_blank">
 
                                     <li class="mx-2">
-                                        <img src="{{asset('assets/images/index/github.svg')}}" class="img-fluid me-2" />
+                                    <i class="fa-brands fa-github"></i>
+                                        <!-- <img src="{{asset('assets/images/index/github.svg')}}" class="img-fluid me-2" /> -->
                                         <!-- <span style="color: #343A40;">Github</span> -->
                                     </li>
                                     @endif()
@@ -121,7 +126,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        
     </div>
 
 
@@ -139,9 +144,11 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar sticky-top @if(Request::url() === Route('front.index') || Request::url() === Route('front.how-it-works')) mynavbarperosonal @else bg-dark  @endif()   " id="ftco-navbar">
             <div class="container-fluid">
+
+
                 <div>
                     <a class="navbar-brand" href="{{Route('front.index')}}"><img
-                            src="{{asset('assets/images/logo.png')}}" class="img-fluid" /></a>
+                            src="{{asset('assets/images/logo1.png')}}" class="img-fluid" /></a>
                 </div>
 
 
@@ -149,7 +156,9 @@
                     aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="fa fa-bars"></span> Menu
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="ftco-nav">
+
+                
+                <div class="collapse navbar-collapse " id="ftco-nav">
                     <ul class="navbar-nav">
                         <li class="nav-item mx-lg-2   {{ Route::is('front.index') ? 'active' : '' }}"><a
                                 href="{{Route('front.index')}}" class="nav-link">Home</a></li>
@@ -187,8 +196,19 @@
                             @csrf
                         </form>
                         @endif
+
+                       
+                             
+                            
+
+
                     </ul>
                 </div>
+               
+                   
+               <div class="navmenubutton">
+               <button>Get Your Estimate</button>
+               </div>
             </div>
         </nav>
         <!-- END nav -->

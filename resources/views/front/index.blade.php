@@ -8,23 +8,50 @@
 
 <!-- Logos Section  -->
 
-<div class="container-fluid py-3 logossection">
-    <div class="">
-        <div class="row">
-            <div class="logosection owl-carousel owl-theme">
-                @isset($logos)
-                @foreach($logos as $logo)
-                <div class="item">
-                    <h4 class="d-flex justify-content-center" style="height: 100px;"><img
-                            src="{{asset('storage/dashboardpics/logos/')}}/{{$logo->logoimg}}" class="img-fluid" />
-                    </h4>
-                    <!-- <h6 class="text-center">Block Renovation is here to simplify the process.</h6> -->
-                </div>
-
-                @endforeach()
-                @endisset()
-
+<div class="container-fluid py-3 logossection py-5">
+    <div class="px-5">
+        <div class="row text-center ">
+           <div class="col">
+            <div>
+                <img src="{{asset('assets/images/index/firstlogo.svg')}}" class="img-fluid"/>
             </div>
+            <p class="logop">"Block Renovation is here to simplify the process."</p>
+           </div>
+
+
+           <div class="col">
+            <div>
+                <img src="{{asset('assets/images/index/secondlogo.svg')}}" class="img-fluid"/>
+            </div>
+            <p class="logop">“This startup is on a mission to make home renovations easier"</p>
+           </div>
+
+
+
+           <div class="col">
+            <div>
+                <img src="{{asset('assets/images/index/thirdlogo.svg')}}" class="img-fluid"/>
+            </div>
+            <p class="logop">"Bathrooms have suddenly become the easiest reno to tackle"</p>
+           </div>
+
+
+
+           <div class="col">
+            <div>
+                <img src="{{asset('assets/images/index/fourthlogo.svg')}}" class="img-fluid"/>
+            </div>
+            <p class="logop">"In addition to getting a contractor, you're also getting the eye of a design professional."</p>
+           </div>
+
+
+
+           <div class="col">
+            <div>
+                <img src="{{asset('assets/images/index/fifthlogo.svg')}}" class="img-fluid"/>
+            </div>
+            <p class="logop">"Streamlining timely aspects like layout, materials selection, and building approvals"</p>
+           </div>
         </div>
     </div>
 </div>
