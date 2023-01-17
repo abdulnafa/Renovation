@@ -7,13 +7,18 @@
 <!-- Main Slider End  -->
 
 
-<div class="container-fluid">
-    <div class="container">
-        <div class="row py-3">
-            <h1 class="text-center">Renovation Gallery</h1>
+<div class="container-fluid gal-section">
+    <div class="">
+        <div class="container-fluid mt-5">
+        <div class="row p-5 mt-4">
+            <h1 class="text-center">Renovation Project Gallery</h1>
         </div>
+       
         <div>
-
+ <h3 class="mt-5">Feature Case Studies</h3>
+        <hr>
+        </div>
+        </div>
             <div class="gallerytopslickslider owl-carousel owl-theme">
                 <div class="item position-relative">
                     <div  class="mainitemimage"><img src="{{asset('assets/images/gallery/gallery1.jpg')}}" class="img-fluid" /></div>
@@ -110,8 +115,6 @@
         </div>
     </div>
 </div>
-
-
 
 @livewire('gallery-live-wire')
 @endsection

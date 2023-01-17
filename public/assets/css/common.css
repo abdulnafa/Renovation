@@ -339,6 +339,61 @@ background-color: var(--buttonhovercolro);
 
 /* --------------------------------------Gallery Start------------------------------------------------ */
 
+.gal-section h1{
+  font-size: 62px;
+  font-weight: 300;
+  font-family: 'roboto' !important;
+}
+.gal-section hr{
+ border: 0.1px solid #000 !important;
+ opacity: 70%;
+}
+.gal-section h3{
+font-family: 'optima';
+
+}
+.filter-section {
+  border:1px solid black;
+  max-width: 600px;
+  background-color: #F7F6F5;
+}
+
+.filter-section span{
+  border-bottom:1px solid black;
+  font-family: 'roboto';
+  padding: 5px 7px;
+  text-transform: capitalize;
+  font-size: 20px;
+  cursor: pointer;
+}
+.img-section{
+  margin-bottom: 2rem;
+}
+.img-section img{
+  border-radius: 6px;
+}
+.img-section .title{
+  font-size: 20px;
+  padding:10px 0px;
+  color: #000;
+  font-family: 'roboto';
+  text-transform: capitalize;
+}
+
+.list1,.list2{
+  display: none;
+  font-size: 20px;
+  padding: 40px 0px;
+}
+.filter-section :horizontal{
+ opacity: 100;
+ border: none;
+}
+
+.filter-section i{
+float: right;
+margin-right: 1rem;
+}
 .gallerymainsection{
   background-color: var(--lightwhite);
 }
@@ -539,9 +594,10 @@ border-bottom: 1px solid #999; */
   font-size: 16px;
 }
 
-#howitworksdesign h3, #howitworksbuild h3,
+#howitworksplane h3 ,#howitworksdesign h3, #howitworksbuild h3,
  #howitworksmanage h3{
   color: #49494b;
+  font-family: 'optima';
 }
 
 
@@ -794,6 +850,72 @@ padding:0;
   /*----------------------------------------------- Design ---------------------------- */
 
 
+
+.design-lab{
+  border-right: 1px solid black;
+}
+.design-lab h1{
+ font-family: 'roboto';
+ text-align: center;
+ margin-top: 0.6rem;
+ text-transform: uppercase;
+}
+
+.design-lab p{
+display: grid;
+padding: 6px 0px;
+place-items: center;
+ font-family: 'roboto';
+ text-align: left;
+letter-spacing: 0.2px;
+line-height: 18px;
+
+}
+#design-select{
+  background-color: #f4f4f4;
+  border: none;
+  outline: none;
+  max-width: 110px;
+}
+
+.tab-pane h5{
+  font-family: 'roboto';
+  font-size: 32px;
+
+}
+.tab-pane .badge{
+  background-color: #E9E6DD;
+  padding: 4px 15px;
+  font-family: 'Segoe UI';
+  color: #000;
+  font-size: 14px;
+  text-transform: capitalize;
+  border-radius: 12px;
+  font-weight: 400;
+
+}
+
+.cat-filter{
+  text-align: center;
+}
+
+
+.cat-sec:hover{
+background-color: #DCD5CE;
+}
+
+.cat-filter span{
+background: transparent;
+border: none;
+font-family: 'roboto';
+text-align: center;
+}
+
+.cat-sec{
+  border-right: 1px solid #000;
+  font-size: 24px;
+  font-family: 'roboto';
+}
 
   #nav-tabContent img{
 width: 100%;
