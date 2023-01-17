@@ -49,8 +49,8 @@
                 <ul  class="mt-5 content-head">
                     <li>
                         <div>
-                            <hr class="">
-                            <h3><span id="plus1"><i  class="fa-light fa-plus"></i></span>  Dedicated Project Planner</h3>
+                            <hr>
+                            <h3><span  id="plus1" ><i  class="fa-light fa-plus"></i></span>  Dedicated Project Planner</h3>
                             <p  class="c1">Our project planners are our resident renovation experts. From co-ops to single family
                                 houses, rip & replace renos to full gut builds, they’ve seen it all. They’ll work with
                                 you to set up your project, and teach you everything you need to know about the
@@ -164,7 +164,7 @@
                     <li>
                         <div>
                             <hr>
-                            <h3><span id="plus7"><i  class="fa-light fa-plus"></i></span> 7% Acceptance Rate</h3>
+                            <h3><span id="plus7"><i id="one" class="fa-light fa-plus"></i></span> 7% Acceptance Rate</h3>
                             <p class="c7">We’ve done the work of vetting our contractors, so you don’t have to. Each contractor in
                                 our elite network is selected from a pool of hundreds of applicants based on everything
                                 from past and ongoing projects to business structure. This small community of
@@ -252,7 +252,7 @@
     $(document).ready(()=>{
 
  $('#plus1').click(()=>{
-    $('.c1').toggle('5000')
+    $('.c1').toggle('5000');
     });
 
      $('#plus2').click(()=>{
