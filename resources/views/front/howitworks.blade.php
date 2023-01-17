@@ -43,15 +43,15 @@
         </div>
         <div class="row">
             <div class="col-md-6 d-flex align-items-center">
-                <img src="{{asset('assets/images/howitworks/plane.webp')}}" class="img-fluid" />
+                <img src="{{asset('assets/images/howitworks/Plane.webp')}}" class="img-fluid" />
             </div>
             <div class="col-md-6 ">
                 <ul  class="mt-5 content-head">
                     <li>
                         <div>
                             <hr class="">
-                            <h3><span id="plus1"><i  class="fa-light fa-plus"></i></span>  Dedicated Project Planner</h3>
-                            <p  class="c1">Our project planners are our resident renovation experts. From co-ops to single family
+                            <h3><span  class="plus first"><i  class="fa-light fa-plus"></i></span>  Dedicated Project Planner</h3>
+                            <p >Our project planners are our resident renovation experts. From co-ops to single family
                                 houses, rip & replace renos to full gut builds, they’ve seen it all. They’ll work with
                                 you to set up your project, and teach you everything you need to know about the
                                 ins-and-outs of renovating.</p>
@@ -60,8 +60,8 @@
                     <li>
                         <div>
                             <hr>
-                            <h3><span id="plus2"><i  class="fa-light fa-plus"></i> Tailored Scope of Work</h2>
-                            <p class="c2">We pride ourselves on providing homeowners with a transparent, accurate scope of work. No
+                            <h3><span   class="plus"><i  class="fa-light fa-plus"></i> Tailored Scope of Work</h2>
+                            <p>We pride ourselves on providing homeowners with a transparent, accurate scope of work. No
                                 low-balling you to get you through the door, no hidden fees. We want you to be able to
                                 plan precisely for the renovation you want.</p>
                         </div>
@@ -70,8 +70,8 @@
                     <li>
                         <div>
                             <hr class="mt-5">
-                            <h3><span id="plus3"><i  class="fa-light fa-plus"></i> Realistic Project Timeline</h2>
-                            <p class="c3">We’ll work with you to set up a project timeline that works with your schedule and
+                            <h3><span   class="plus"><i  class="fa-light fa-plus"></i> Realistic Project Timeline</h2>
+                            <p >We’ll work with you to set up a project timeline that works with your schedule and
                                 enables the contractor to execute a high-quality build. Our experience means we know
                                 exactly where to trim the fat, and exactly where to focus in order to ensure that you
                                 get the best</p>
@@ -105,8 +105,8 @@
                     <li>
                         <div>
                             <hr>
-                            <h3><span id="plus4"><i  class="fa-light fa-plus"></i></span> Flexible Design Packages</h3>
-                            <p class="c4">Everyone’s scopes and budgets are different. That’s why we have a range of design
+                            <h3><span   class="plus first"><i  class="fa-light fa-plus"></i></span> Flexible Design Packages</h3>
+                            <p>Everyone’s scopes and budgets are different. That’s why we have a range of design
                                 packages that can be adapted to your particular project. Going for a simple rip &
                                 replace? We have you covered. Want something more dramatic? We got you there too</p>
                         </div>
@@ -114,8 +114,8 @@
                     <li>
                         <div>
                             <hr>
-                            <h3><span id="plus5"><i  class="fa-light fa-plus"></i></span> Expansive Materials Library</h3>
-                            <p class="c5">Our library is curated by our team so that you can be confident in the quality of the
+                            <h3><span   class="plus"><i  class="fa-light fa-plus"></i></span> Expansive Materials Library</h3>
+                            <p>Our library is curated by our team so that you can be confident in the quality of the
                                 materials that’ll end up in your home. Plus, our designers have made sure that
                                 everything works well together, so that there’s no such thing as a wrong combination.
                                 Hundreds of materials, thousands of possibilities, one design perfect for you.</p>
@@ -125,8 +125,8 @@
                     <li>
                         <div>
                             <hr>
-                            <h3><span id="plus6"><i  class="fa-light fa-plus"></i></span> Award Winning Design Team</h3>
-                            <p class="c6">You’ll get to work with our team of trained architects and designers to articulate your
+                            <h3><span   class="plus"><i  class="fa-light fa-plus"></i></span> Award Winning Design Team</h3>
+                            <p>You’ll get to work with our team of trained architects and designers to articulate your
                                 vision and bring it to life. Our designers have built their careers crafting interior
                                 spaces, and now their expertise will be dedicated to tailoring your space to you.</p>
                         </div>
@@ -135,7 +135,7 @@
             </div>
 
             <div class="col-md-6 d-flex align-items-center">
-                <img src="{{asset('assets/images/howitworks/design.webp')}}" class="img-fluid" />
+                <img src="{{asset('assets/images/howitworks/Design.webp')}}" class="img-fluid" />
             </div>
         </div>
     </div>
@@ -157,15 +157,15 @@
         </div>
         <div class="row">
             <div class="col-md-6 d-flex align-items-center">
-                <img src="{{asset('assets/images/howitworks/build.webp')}}" class="img-fluid" />
+                <img src="{{asset('assets/images/howitworks/Build.webp')}}" class="img-fluid" />
             </div>
             <div class="col-md-6 mt-5">
                 <ul>
                     <li>
                         <div>
                             <hr>
-                            <h3><span id="plus7"><i  class="fa-light fa-plus"></i></span> 7% Acceptance Rate</h3>
-                            <p class="c7">We’ve done the work of vetting our contractors, so you don’t have to. Each contractor in
+                            <h3><span   class="plus first"><i  class="fa-light fa-plus"></i></span> 7% Acceptance Rate</h3>
+                            <p>We’ve done the work of vetting our contractors, so you don’t have to. Each contractor in
                                 our elite network is selected from a pool of hundreds of applicants based on everything
                                 from past and ongoing projects to business structure. This small community of
                                 exceptional builders is fully licensed, insured, and proven to consistently produce
@@ -175,8 +175,8 @@
                     <li>
                         <div>
                             <hr>
-                            <h3><span id="plus8"><i  class="fa-light fa-plus"></i></span> Matching Algorithm</h3>
-                            <p class="c8">Every project has its own fingerprint based on all the variables that go into it. We take
+                            <h3><span  class="plus"><i  class="fa-light fa-plus"></i></span> Matching Algorithm</h3>
+                            <p>Every project has its own fingerprint based on all the variables that go into it. We take
                                 those considerations and match you with a builder based on the unique needs and
                                 conditions of the project</p>
                         </div>
@@ -185,8 +185,8 @@
                     <li>
                         <div>
                             <hr>
-                            <h3><span id="plus9"><i  class="fa-light fa-plus"></i></span> Block Builder App</h3>
-                            <p class="c9">We’ve equipped our contractors with a set of digital tools that make it easy to track
+                            <h3><span   class="plus"><i  class="fa-light fa-plus"></i></span> Block Builder App</h3>
+                            <p>We’ve equipped our contractors with a set of digital tools that make it easy to track
                                 progress, send you updates, and manage their work flows. Our contractors are better at
                                 their jobs because we’re good at ours.</p>
                         </div>
@@ -218,91 +218,36 @@
                     <li>
                         <div>
                             <hr>
-                            <h3><span id="plus10"><i  class="fa-light fa-plus"></i></span> Project Dashboard</h3>
-                            <p class="c10">Your dashboard provides you with a single place to manage your entire project. Easily review your designs, make payments, get build updates, and more.</p>
+                            <h3><span  class="plus first"><i  class="fa-light fa-plus"></i></span> Project Dashboard</h3>
+                            <p>Your dashboard provides you with a single place to manage your entire project. Easily review your designs, make payments, get build updates, and more.</p>
                         </div>
                     </li>
                     <li>
                         <div>
                             <hr>
-                            <h3><span id="plus11"><i  class="fa-light fa-plus"></i></span> Notifications</h3>
-                            <p class="c11">Everytime a milestone is hit, you’ll be notified through your dashboard and get pictures from the renovation site so that you can track your project’s progress. You won’t miss a screw, nail, or bolt along the way..</p>
+                            <h3><span class="plus"><i  class="fa-light fa-plus"></i></span> Notifications</h3>
+                            <p>Everytime a milestone is hit, you’ll be notified through your dashboard and get pictures from the renovation site so that you can track your project’s progress. You won’t miss a screw, nail, or bolt along the way..</p>
                         </div>
                     </li>
 
                     <li>
                         <div>
                             <hr>
-                            <h3><span id="plus12"><i  class="fa-light fa-plus"></i></span> Block Support</h3>
-                            <p class="c12">If you run into any problems during your build, our team will be right there to get your project back on track. Even the best made plans can run into roadblocks, but with Block, you can rest assured that there will always be someone there to help.</p>
+                            <h3><span   class="plus"><i  class="fa-light fa-plus"></i></span> Block Support</h3>
+                            <p >If you run into any problems during your build, our team will be right there to get your project back on track. Even the best made plans can run into roadblocks, but with Block, you can rest assured that there will always be someone there to help.</p>
                         </div>
                     </li>
                 </ul>
             </div>
 
             <div class="col-md-6 d-flex align-items-center">
-                <img src="{{asset('assets/images/howitworks/manage.webp')}}" class="img-fluid" />
+                <img src="{{asset('assets/images/howitworks/Manage.webp')}}" class="img-fluid" />
             </div>
         </div>
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<script>
-    $(document).ready(()=>{
 
- $('#plus1').click(()=>{
-    $('.c1').toggle('5000')
-    });
-
-     $('#plus2').click(()=>{
-        $('.c2').toggle('5000')
-    }) ;
-    
-    $('#plus3').click(()=>{
-        $('.c3').toggle('5000')
-    });
-    
-    $('#plus4').click(()=>{
-    $('.c4').toggle('5000')
-    });
-
-     $('#plus5').click(()=>{
-        $('.c5').toggle('5000')
-    }) ;
-    
-    $('#plus6').click(()=>{
-        $('.c6').toggle('5000')
-    });
-    
-    $('#plus7').click(()=>{
-    $('.c7').toggle('5000')
-    });
-
-     $('#plus8').click(()=>{
-        $('.c8').toggle('5000')
-    }) ;
-    
-    $('#plus9').click(()=>{
-        $('.c9').toggle('5000')
-    }); 
-    
-    $('#plus10').click(()=>{
-    $('.c10').toggle('5000')
-    });
-
-     $('#plus11').click(()=>{
-        $('.c11').toggle('5000')
-    }) ;
-    
-    $('#plus12').click(()=>{
-        $('.c12').toggle('5000')
-    });
-
-
-    })
-   
-</script>
 
 
 @endsection

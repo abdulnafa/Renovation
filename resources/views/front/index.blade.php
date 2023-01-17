@@ -11,47 +11,49 @@
 <div class="container-fluid py-3 logossection py-5">
     <div class="px-5">
         <div class="row text-center ">
-           <div class="col">
-            <div>
-                <img src="{{asset('assets/images/index/firstlogo.svg')}}" class="img-fluid"/>
+            <div class="col">
+                <div>
+                    <img src="{{asset('assets/images/index/firstlogo.svg')}}" class="img-fluid" />
+                </div>
+                <p class="logop">"Block Renovation is here to simplify the process."</p>
             </div>
-            <p class="logop">"Block Renovation is here to simplify the process."</p>
-           </div>
 
 
-           <div class="col">
-            <div>
-                <img src="{{asset('assets/images/index/secondlogo.svg')}}" class="img-fluid"/>
+            <div class="col">
+                <div>
+                    <img src="{{asset('assets/images/index/secondlogo.svg')}}" class="img-fluid" />
+                </div>
+                <p class="logop">“This startup is on a mission to make home renovations easier"</p>
             </div>
-            <p class="logop">“This startup is on a mission to make home renovations easier"</p>
-           </div>
 
 
 
-           <div class="col">
-            <div>
-                <img src="{{asset('assets/images/index/thirdlogo.svg')}}" class="img-fluid"/>
+            <div class="col">
+                <div>
+                    <img src="{{asset('assets/images/index/thirdlogo.svg')}}" class="img-fluid" />
+                </div>
+                <p class="logop">"Bathrooms have suddenly become the easiest reno to tackle"</p>
             </div>
-            <p class="logop">"Bathrooms have suddenly become the easiest reno to tackle"</p>
-           </div>
 
 
 
-           <div class="col">
-            <div>
-                <img src="{{asset('assets/images/index/fourthlogo.svg')}}" class="img-fluid"/>
+            <div class="col">
+                <div>
+                    <img src="{{asset('assets/images/index/fourthlogo.svg')}}" class="img-fluid" />
+                </div>
+                <p class="logop">"In addition to getting a contractor, you're also getting the eye of a design
+                    professional."</p>
             </div>
-            <p class="logop">"In addition to getting a contractor, you're also getting the eye of a design professional."</p>
-           </div>
 
 
 
-           <div class="col">
-            <div>
-                <img src="{{asset('assets/images/index/fifthlogo.svg')}}" class="img-fluid"/>
+            <div class="col">
+                <div>
+                    <img src="{{asset('assets/images/index/fifthlogo.svg')}}" class="img-fluid" />
+                </div>
+                <p class="logop">"Streamlining timely aspects like layout, materials selection, and building approvals"
+                </p>
             </div>
-            <p class="logop">"Streamlining timely aspects like layout, materials selection, and building approvals"</p>
-           </div>
         </div>
     </div>
 </div>
@@ -61,6 +63,19 @@
 
 <div class="container-fluid indexcards py-5">
     <div class="container">
+
+        <div class="row  indexcardshead">
+            <div class="col-md-4">
+                <h1>ONE COMPLETE PLATFORM</h1>
+            </div>
+            <div class="col-md-8">
+                <p>Access Block’s tools to plan, design, and build your renovation with the industry's top designers and
+                    contractors.</p>
+                <div><a>LEARN HOW IT WORKS</a></div>
+            </div>
+        </div>
+
+
         <div class="row">
             <!-- box 1  -->
             <div class="col-md-4 mb-md-0 mb-3">
@@ -108,6 +123,17 @@
 </div>
 
 
+
+<!-- Discover a world of design  -->
+<div class="container-fluid discoverworldfulldiv">
+    <div class="row">
+        <div class="innerbox">
+            <h1>Discover a world of design</h1>
+            <button>Explor Our Collections</button>
+        </div>
+    </div>
+</div>
+
 <!-- Our Renovation  -->
 
 <div class="container-fluid py-5 indexrenovation">
@@ -117,12 +143,13 @@
         </div>
         <div class="row renovationcards">
             <div class="col-md-6 mb-md-0 mb-3">
+                <h2 class="text-center py-5">Bathrooms</h2>
                 <div class="card">
                     <img src="{{asset('assets/images/index/renovation1.webp')}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">4 WEEKS AVERAGE BUILD</h5>
                         <h1 class="card-text">Build your dream bathroom with premium fixtures and finishes..</h1>
-                        <a href="#" class="btn ">LEARN MORE</a>
+                        <a href="#" class="">LEARN MORE</a>
                     </div>
                 </div>
 
@@ -130,13 +157,14 @@
 
 
             <div class="col-md-6  mb-md-0 mb-3">
+            <h2 class="text-center py-5">Kitchens</h2>
                 <div class="card">
                     <img src="{{asset('assets/images/index/renovation2.webp')}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">6 WEEKS AVERAGE BUILD</h5>
                         <h1 class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</h1>
-                        <a href="#" class="btn">LEARN MORE</a>
+                        <a href="#" class="">LEARN MORE</a>
                     </div>
                 </div>
 
@@ -154,27 +182,28 @@
 
 
 
-<div class="container ">
-    <div class="swiper mySwiper brandssection">
-    <div class="swiper-wrapper">
-        @isset($ambester)
-        @foreach($ambester as $ambester)
-        <div class="swiper-slide">
-            <div>
-                <img src="{{asset('storage/dashboardpics/ambasders/')}}/{{$ambester->image}}" class="img-fluid" />
+    <div class="container ">
+        <div class="swiper mySwiper brandssection">
+            <div class="swiper-wrapper">
+                @isset($ambester)
+                @foreach($ambester as $ambester)
+                <div class="swiper-slide">
+                    <div>
+                        <img src="{{asset('storage/dashboardpics/ambasders/')}}/{{$ambester->image}}"
+                            class="img-fluid" />
+                    </div>
+                </div>
+                @endforeach()
+                @endisset()
+
+
+
+
+
+
             </div>
         </div>
-        @endforeach()
-@endisset()
-        
-
-
-      
-
-
     </div>
-</div>
-</div>
 </div>
 
 
@@ -200,7 +229,7 @@
 
 <div class="container-fluid py-5 px-0 overflow-hidden gallerymainsection">
 
-    <div class="row text-center">
+    <div class="row text-center gallerymainsectionhead">
         <h1>PROJECT GALLERY</h1>
         <p>Discover what homeowners were able to achieve with Block.</p>
     </div>

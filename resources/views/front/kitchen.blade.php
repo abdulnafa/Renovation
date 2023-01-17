@@ -5,12 +5,7 @@
 
 
 
-
-
-<!-- Sticky Header like for steps  -->
-
-
-
+<!-- Head  -->
 
 <div class="container-fluid px-0 kithcenhead">
     <div class="row">
@@ -27,7 +22,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> 
         <div class="col-md-6   rightside">
             <h1>Kitchen</h1>
             <p>Thoughtfully designed for lasting quality, optimize your kitchen with Block from design to build.</p>
@@ -43,6 +38,8 @@
     </div>
 </div>
 
+<!-- every day life  -->
+
 
 <div class="container-fluid py-5 everydaylife">
     <div class="container">
@@ -51,8 +48,8 @@
                 <h1>DESIGNED FOR EVERYDAY LIFE</h1>
             </div>
             <div class="col-md-8">
-                <h1><b>Thoughtfully selected for lasting quality</b>, our kitchen materials are anchored by Caesarstone
-                    countertop and cabinetry options that are both beautiful and functional.</h1>
+                <h2><b>Thoughtfully selected for lasting quality</b>, our kitchen materials are anchored by Caesarstone
+                    countertop and cabinetry options that are both beautiful and functional.</h2>
             </div>
         </div>
     </div>
@@ -84,21 +81,20 @@
 <!-- We know renovations are scary, so we've got your back: -->
 
 <div class="container-fluid renovationscary py-5">
-    <div class="container">
+    <div class="px-5">
         <div class="row text-center py-5">
             <h2>We know renovations are scary, so we've got your back:</h2>
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6">
-                <div class="card border-dark p-1 p-md-4 mb-4 mb-lg-0 bg-transparent ">
+                <div class="card  p-1 p-md-4 mb-4 mb-lg-0 bg-transparent ">
                     <div class="card-body">
                         <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
                             <img src="{{asset('assets/images/kitchen/Icon_Insurance.svg')}}" width="200px" />
                         </div>
-                        <h5 class="mb-3">Ideas and Concepts</h5>
-                        <p>Designed with the latest design trends in mind. Our product feels modern, creative, and
-                            beautiful.</p>
-                        <a href="#" class="btn btn-sm btn-dark animate-up-1">Read more</a>
+                        <h5 class="mb-3">CHANGE ORDER PROMISE</h5>
+                        <p>We plan renovations to our best ability, and do not profit from change orders.</p>
+
                     </div>
                 </div>
 
@@ -106,15 +102,14 @@
             <!-- two  -->
 
             <div class="col-lg-4 col-md-6">
-                <div class="card border-dark p-1 p-md-4 mb-4 mb-lg-0  bg-transparent">
+                <div class="card  p-1 p-md-4 mb-4 mb-lg-0  bg-transparent">
                     <div class="card-body">
                         <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
                             <img src="{{asset('assets/images/kitchen/Icon_ChangeOrder__1_.svg')}}" width="200px" />
                         </div>
-                        <h5 class="mb-3">DESIGN SATISFACTION </h5>
-                        <p>Designed with the latest design trends in mind. Our product feels modern, creative, and
-                            beautiful.</p>
-                        <a href="#" class="btn btn-sm btn-dark animate-up-1">Read more</a>
+                        <h5 class="mb-3">$1 MILLION INSURANCE COVERAGE </h5>
+                        <p>We back our construction standards with an industry leading insurance policy.</p>
+
                     </div>
                 </div>
 
@@ -123,15 +118,15 @@
             <!-- three  -->
 
             <div class="col-lg-4 col-md-6">
-                <div class="card border-dark p-1 p-md-4 mb-4 mb-lg-0  bg-transparent">
+                <div class="card  p-1 p-md-4 mb-4 mb-lg-0  bg-transparent">
                     <div class="card-body">
                         <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
                             <img src="{{asset('assets/images/kitchen/Icon_Design__1_.svg')}}" width="200px" />
                         </div>
-                        <h5 class="mb-3">Ideas and Concepts</h5>
-                        <p>Designed with the latest design trends in mind. Our product feels modern, creative, and
-                            beautiful.</p>
-                        <a href="#" class="btn btn-sm btn-dark animate-up-1">Read more</a>
+                        <h5 class="mb-3">DESIGN SATISFACTION PROMISE</h5>
+                        <p>Finding the right design is a journey. We’ll work beside you to nail something you’ll love
+                        </p>
+
                     </div>
                 </div>
 

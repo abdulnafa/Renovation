@@ -3,6 +3,71 @@
 
 $(document).ready(function(){
 
+
+  // How it Works Code 
+  $(".plus").parent("h3").next("p").hide();
+$(".plus.first").parent("h3").next("p").show();
+
+
+  $(".plus").on("click",function(){
+    $(".plus").each(function(){
+$(this).parent("h3").next("p").hide('500');
+    });
+
+$(this).parent("h3").next("p").toggle('5000');
+
+  });
+
+
+  // $('#plus1').click(()=>{
+  //   $('.c1').toggle('5000')
+  //   });
+
+  //    $('#plus2').click(()=>{
+  //       $('.c2').toggle('5000')
+  //   }) ;
+    
+  //   $('#plus3').click(()=>{
+  //       $('.c3').toggle('5000')
+  //   });
+    
+  //   $('#plus4').click(()=>{
+  //   $('.c4').toggle('5000')
+  //   });
+
+  //    $('#plus5').click(()=>{
+  //       $('.c5').toggle('5000')
+  //   }) ;
+    
+  //   $('#plus6').click(()=>{
+  //       $('.c6').toggle('5000')
+  //   });
+    
+  //   $('#plus7').click(()=>{
+  //   $('.c7').toggle('5000')
+  //   });
+
+  //    $('#plus8').click(()=>{
+  //       $('.c8').toggle('5000')
+  //   }) ;
+    
+  //   $('#plus9').click(()=>{
+  //       $('.c9').toggle('5000')
+  //   }); 
+    
+  //   $('#plus10').click(()=>{
+  //   $('.c10').toggle('5000')
+  //   });
+
+  //    $('#plus11').click(()=>{
+  //       $('.c11').toggle('5000')
+  //   }) ;
+    
+  //   $('#plus12').click(()=>{
+  //       $('.c12').toggle('5000')
+  //   });
+
+
 // Gallery owlcarousel Top 
 
 $('.gallerytopslickslider.owl-carousel').owlCarousel({
