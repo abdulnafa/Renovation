@@ -1,16 +1,225 @@
 $(document).ready(function () {
     // Gallery owlcarousel Top
 
-    $(".gallerytopslickslider.owl-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 1,
+
+
+
+
+
+  // How it Works Code 
+  $(".plus").parent("h3").next("p").hide();
+$(".plus.first").parent("h3").next("p").show();
+
+
+  $(".plus").on("click",function(){
+    $(".plus").each(function(){
+$(this).parent("h3").next("p").hide('500');
+    });
+
+$(this).parent("h3").next("p").toggle('5000');
+
+  });
+
+
+  // $('#plus1').click(()=>{
+  //   $('.c1').toggle('5000')
+  //   });
+
+  //    $('#plus2').click(()=>{
+  //       $('.c2').toggle('5000')
+  //   }) ;
+    
+  //   $('#plus3').click(()=>{
+  //       $('.c3').toggle('5000')
+  //   });
+    
+  //   $('#plus4').click(()=>{
+  //   $('.c4').toggle('5000')
+  //   });
+
+  //    $('#plus5').click(()=>{
+  //       $('.c5').toggle('5000')
+  //   }) ;
+    
+  //   $('#plus6').click(()=>{
+  //       $('.c6').toggle('5000')
+  //   });
+    
+  //   $('#plus7').click(()=>{
+  //   $('.c7').toggle('5000')
+  //   });
+
+  //    $('#plus8').click(()=>{
+  //       $('.c8').toggle('5000')
+  //   }) ;
+    
+  //   $('#plus9').click(()=>{
+  //       $('.c9').toggle('5000')
+  //   }); 
+    
+  //   $('#plus10').click(()=>{
+  //   $('.c10').toggle('5000')
+  //   });
+
+  //    $('#plus11').click(()=>{
+  //       $('.c11').toggle('5000')
+  //   }) ;
+    
+  //   $('#plus12').click(()=>{
+  //       $('.c12').toggle('5000')
+  //   });
+
+
+// Gallery owlcarousel Top 
+
+$('.gallerytopslickslider.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:false,
+  autoplay:true,
+  autoplaySpeed: 3000,
+  autoplayHoverPause:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2
+      },
+      1000:{
+          items:3
+      }
+  }
+})
+
+
+
+// kitchen head 
+
+$('.kithcenhead .owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:false,
+  dots:false,
+  autoplay:true,
+  autoplayTimeout:3000,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+  }
+})
+
+// Swiper js 
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4,
+  autoplay: 5000,
+    speed: 800,
+    autoplayDisableOnInteraction: false
+});
+
+
+// Google Review Section 
+
+$('.googlereviewsection .owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:3
+      }
+  }
+})
+
+
+
+
+ 
+	$('nav .dropdown').hover(function(){
+		var $this = $(this);
+		$this.addClass('show');
+		$this.find('> a').attr('aria-expanded', true);
+		$this.find('.dropdown-menu').addClass('show');
+	}, function(){
+		var $this = $(this);
+			$this.removeClass('show');
+			$this.find('> a').attr('aria-expanded', false);
+			$this.find('.dropdown-menu').removeClass('show');
+	});
+
+
+
+    // Owl Carousel Part 
+
+    var fullHeight = function() {
+
+		$('.js-fullheight').css('height', $(window).height());
+		$(window).resize(function(){
+			$('.js-fullheight').css('height', $(window).height());
+		});
+
+	};
+	fullHeight();
+
+  // Main Slider Code 
+
+	var carousel = function() {
+		$('.home-slider').owlCarousel({
+	    loop:true,
+	    autoplay: true,
+	    margin:0,
+	    animateOut: 'fadeOut',
+	    animateIn: 'fadeIn',
+     
+	    nav:true,
+	    dots: true,
+	    autoplayHoverPause: false,
+	    items: 1,
+	    navText : ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
+	    responsive:{
+	      0:{
+	        items:1
+	      },
+	      600:{
+	        items:1
+	      },
+	      1000:{
+	        items:1
+	      }
+	    }
+		});
+
+	};
+	carousel();
+
+
+    // Logos section 
+
+
+    $('.logosection.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        dots:false,
+        nav:false,
+        autoplay:true,
+        Number:500,
+        responsive:{
+            0:{
+                items:2
             },
             600: {
                 items: 2,

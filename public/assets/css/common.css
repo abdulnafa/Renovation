@@ -36,7 +36,7 @@
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: folio;
+    font-family: 'roboto';
 }
 p,span{
     font-family: optima;
@@ -198,9 +198,38 @@ background-color: var(--buttonhovercolro);
  padding: 0 20px 0 20px;
 }
 
-/* Index cards  */
+/* --------------------------------Index cards Start -------------------  */
+.indexcardshead h1{
+  font-family: sans-serif;
+  line-height: 1.1;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 40px;
+    padding: 0;
+}
+.indexcards .indexcardshead p{
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  line-height: 1.16;
+  letter-spacing: 0;
+  color: black;
+}
+.indexcards .indexcardshead a{
+  color: black;
+  text-decoration: underline;
+  font-size: 12px;
+}
+.indexcards .indexcardshead{
+  padding: 100px 0;
+}
 .indexcards{
     background-color: var(--graypink);
+}
+.indexcards .card-body{
+  min-height: 220px;
+  max-height: auto;
+  background-color: var(--graypink);
 }
 .indexcards p{
     color: var(--paragraph);
@@ -212,24 +241,89 @@ background-color: var(--buttonhovercolro);
 }
 
 
-/* Renovation  */
+/* --------------------------------Index cards End -------------------  */
+
+
+
+
+
+
+/* ----------------------------------discoverworldfulldiv Start ------------------------------------ */
+.discoverworldfulldiv{
+  background-image: url(../images/index/discoverworldbackground.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  position: relative;
+
+}
+.discoverworldfulldiv .innerbox{
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 30px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.discoverworldfulldiv .innerbox h1{
+  font-size: 38px;
+  margin-bottom: 25px;
+  margin-top: 0;
+  line-height: 1.16;
+  letter-spacing: 0;
+  text-align: center;
+}
+.discoverworldfulldiv .innerbox button{
+
+  min-width: 250px;
+  background-color: var(--buttoncolor);
+  padding: 10px 15px;
+  border: none;
+  text-transform: uppercase;
+ 
+}
+.discoverworldfulldiv .innerbox button:hover{
+  background-color: var(--buttonhovercolro);
+  color: white;
+}
+/* ----------------------------------discoverworldfulldiv End------------------------------------ */
+
+/* -------------------------------------------Renovation Start-------------------------------------------  */
 .indexrenovation{
   background-color: var(--graylight);
 }
+.indexrenovation .card-body{
+  background-color: var(--graydark);
+  padding: 50px 40px;
+}
+.indexrenovation .card-body h5{
+  font: 400 12px/16px Folio,Roboto,sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 .renovationcards h1{
     font-size: 24px;
-    color: var(--paragraph);
+    color: black;
+    margin-bottom: 30px;
 }
 .renovationcards .card{
     height: auto;
 }
 .renovationcards .card a{
-    background-color: var(--two);
-    color: white;
-    font-size: 12px;
+    background-color: var(--buttoncolor);
+    color: black;
+    font-size: 14px;
+    padding: 15px 45px;
+
 }
 .renovationcards .card a:hover{
-    background-color: var(--one);
+    background-color: var(--buttonhovercolro);
+    color: white;
     cursor: pointer;
 }
  /* Ambasder  */
@@ -243,7 +337,7 @@ background-color: var(--buttonhovercolro);
   background-color: white;
  }
 
-/* Gallery  */
+/* --------------------------------------Gallery Start------------------------------------------------ */
 
 .gal-section h1{
   font-size: 62px;
@@ -307,6 +401,17 @@ margin-right: 1rem;
     height: 250px;
     object-fit: cover;
 }
+.gallerymainsectionhead{
+  padding: 50px 0;
+}
+.gallerymainsectionhead h1{
+  font-family: 'roboto';
+  letter-spacing: 1px;
+}
+.gallerymainsectionhead p{
+
+  font-size: 22px;
+}
 
 #gallery1{
    
@@ -331,7 +436,7 @@ margin-right: 1rem;
 
 
   
-
+/* --------------------------------------------------Gallery Section End ------------------------------------- */
 
   /* ----------------Testimonial Section-------------------- */
 
@@ -568,9 +673,9 @@ h2{
   /* -------------------------------Kitchen Css -------------------------------------------- */
 
  .kithcenhead li::marker {
-    content: url(/heart.svg);
-    content: url(#heart);
-    content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='24' width='24'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' fill='none' stroke='gray' stroke-width='3'/></svg>");
+    content: url(../images/marker.svg);
+   
+    
     
   }
 
@@ -595,7 +700,9 @@ h2{
     font-size: 35px;
   }
  .kithcenhead p{
-  font-size: 30px;
+  font-size: 20px;
+  line-height: 28px;
+  padding-bottom: 32px;
  }
  .kithcenhead button{
   background-color: var(--buttoncolor);
@@ -603,26 +710,64 @@ h2{
   padding: 10px 0;
   text-transform: uppercase;
  }
+ .kithcenhead button:hover{
+  background-color: var(--buttonhovercolro);
+  color: white;
+ }
  .commonquestiondiv{
   background-color: var(--commonquestion);
  }
  
   .renovationscary{
-    background-color: var(--servicebody);
+    background-color: #DCD5CE;
     
   }
+  .renovationscary .icon-shape{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #E7E7E7;
+    
+  }
+  .renovationscary .card{
+    border: none;
+  }
+  .renovationscary .card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .renovationscary .card-body p{
+    text-align: center;
+  }
+  .renovationscary .card-body h5{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .renovationscary .icon-shape img{
+    width: 100%;
+  }
   .section2{
-    background-color: var(--two);
+    background-color: #F7F6F5;
     /* color: white; */
+  }
+  .section2 p{
+font-size: 22px;
   }
 
 .everydaylife{
   background-color: var(--servicebody);
 }
+.everydaylife h2{
+  font-size: 30px;
+}
 .kitchen.section1{
   background-color: #F7F6F5;
 }
-
+.kitchen.section1 p{
+  font-size: 22px;
+}
   /* ---------------------------------------WashRoom---------------------------------------- */
 
 
@@ -927,7 +1072,7 @@ margin-bottom: 0;
 .brandssection{
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 60px 40px;
-  background-color: var(--graylight);
+  background-color: #00acee54;
 }
 
 
@@ -940,13 +1085,22 @@ margin-bottom: 0;
   background-color: transparent;
   
 }
-.accordion-button:not(.collapsed) {
-  background-color: #343A40;
-  color: white;
+.accordion-button:not(.collapsed),.accordion-button,.accordion-button:focus  {
+  background-color: transparent;
+  border: none;
+  color: black;
+  border-top: 1px dashed black;
+
+}
+.accordion-button:last-child{
+  border-bottom: 1px dashed black;
+}
+.accordion-item {
+  border: none!important;
 }
 .accordion-button:not(.collapsed)::after {
 
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" fill="white"/></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" fill="black"/></svg>');
   color: white;
 }
 
@@ -955,21 +1109,28 @@ margin-bottom: 0;
 
 
 
-/* login page  */
+/*----------------------------- login page-----------------------------  */
 
 .loginbackground {
-background:url(../images/gallery/gallery11.jpg);
-background-size: cover;
-background-repeat: no-repeat;
+
+
+height: 100%;
+padding: 50px 0  50px 0;
+}
+.loginbackground .formright{
+  padding: 0 150px 0 20px; 
+}
+
+.loginbuttondiv button{
+background-color: var(--buttoncolor);
+padding: 15px 45px;
 }
 
 
 
 
 
-
-
-/* Mobile Responsive   */
+/* -------------------Mobile Responsive --------------  */
 
 
 @media screen and (max-width:900px){

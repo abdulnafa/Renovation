@@ -23,6 +23,9 @@
     <!-- Swiper css  -->
     <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
    
+
+
+    <!-- My All Css  -->
     <link rel="stylesheet" href="<?php echo asset('assets/css/common.css')?>" type="text/css">
     <!-- CSS only -->
 
@@ -160,11 +163,29 @@
                 
                 <div class="collapse navbar-collapse " id="ftco-nav">
                     <ul class="navbar-nav">
-                        <li class="nav-item mx-lg-2   {{ Route::is('front.index') ? 'active' : '' }}"><a
-                                href="{{Route('front.index')}}" class="nav-link">Home</a></li>
-                        <li class="nav-item mx-lg-2    {{ Route::is('front.how-it-works') ? 'active' : '' }}"><a
+
+                    <li
+                            class="nav-item dropdown mx-lg-2      {{ Route::is('front.kitchen') ? 'active' : '' }} {{ Route::is('front.washroom') ? 'active' : '' }}">
+                            <a href="{{Route('allservices')}}" class="nav-link dropdown-toggle" id="dropdown04"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">What We Do</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown04">
+                                <a class="dropdown-item" href="{{Route('front.kitchen')}}">Home renovations and remodeling services</a>
+                                <a class="dropdown-item" href="{{Route('front.washroom')}}">A better renovation experience</a>
+                                <a class="dropdown-item" href="{{Route('front.washroom')}}">Why you'll be happy you chose us</a>
+
+                                <a class="dropdown-item" href="{{Route('front.how-it-works')}}">How It Works</a>
+
+                            </div>
+                        </li>
+
+
+
+
+                        <!-- <li class="nav-item mx-lg-2   {{ Route::is('front.index') ? 'active' : '' }}"><a
+                                href="{{Route('front.index')}}" class="nav-link">Home</a></li> -->
+                        <!-- <li class="nav-item mx-lg-2    {{ Route::is('front.how-it-works') ? 'active' : '' }}"><a
                                 href="{{Route('front.how-it-works')}}" class="nav-link">How it
-                                Works</a></li>
+                                Works</a></li> -->
                         <li
                             class="nav-item dropdown mx-lg-2      {{ Route::is('front.kitchen') ? 'active' : '' }} {{ Route::is('front.washroom') ? 'active' : '' }}">
                             <a href="{{Route('allservices')}}" class="nav-link dropdown-toggle" id="dropdown04"

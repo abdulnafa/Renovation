@@ -127,29 +127,29 @@
         <span>© 2023 Copyright: Renovation</span>
       </div>
       <!-- Left -->
-
+ 
       <!-- Right -->
       <div class="footerrightsocial pe-5">
         @isset($footerdetail)
         @if($footerdetail->facebook!=null)
         <a href="{{$footerdetail->facebook}}" class="text-white me-4">
-        <img src="{{asset('assets/images/index/facebook.svg')}}" class="img-fluid me-2" />
+        <i class="fa-brands fa-facebook"></i>
         </a>
         @endif()
         @if($footerdetail->twitter!=null)
         <a href="{{$footerdetail->twitter}}" class="text-white me-4">
-          <img src="{{asset('assets/images/index/twitter.svg')}}" class="img-fluid me-2" />
+        <i class="fa-brands fa-twitter"></i>
         </a>
         @endif()
        
         @if($footerdetail->instagram!=null)
         <a href="{{$footerdetail->instagram}}" class="text-white me-4">
-        <img src="{{asset('assets/images/index/instagram.svg')}}" class="img-fluid me-2" />
+        <i class="fa-brands fa-instagram"></i>
         </a>
         @endif()
         @if($footerdetail->linkedin!=null)
         <a href="{{$footerdetail->linkedin}}" class="text-white me-4">
-        <img src="{{asset('assets/images/index/linkedin.svg')}}" class="img-fluid me-2" />
+        <i class="bi bi-linkedin"></i>
         </a>
         @endif()
         

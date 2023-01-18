@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon / Bullet Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="8" cy="8" r="8"></circle>
+    </defs>
+    <g id="Responsive" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-771.000000, -3370.000000)">
+            <g id="Icon-/-Selected-Copy-3" transform="translate(772.000000, 3374.000000)">
+                <g id="Color-/-Orange" fill-rule="evenodd">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <circle stroke="#000000" cx="8" cy="8" r="8.5"></circle>
+                    <g id="Color-/-Lavender" mask="url(#mask-2)" fill="#DEE1F1">
+                        <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                    </g>
+                </g>
+                <polyline id="Path-3" stroke="#000000" transform="translate(12.271626, 4.212218) rotate(-7.000000) translate(-12.271626, -4.212218) " points="3.6000409 6.96370879 7.08274813 11.4213708 20.9432114 -2.99693553"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
