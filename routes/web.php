@@ -31,6 +31,7 @@ Route::get('/services/washroom',[FrontController::class,'Washroom'])->name('fron
 Route::get('/gallery',[FrontController::class,'Gallery'])->name('front.gallery');
 Route::get('/design',[FrontController::class,'Design'])->name('front.design');
 Route::get('/allservices',[FrontController::class,'Allservices'])->name('allservices');
+Route::get('/renovation-experience', [FrontController::class, 'reno_exp']);
 
 // Dashhboard Routes start 
 Route::middleware('admin')->group(function(){
@@ -43,7 +44,7 @@ Route::post('/saveplanecard',[AdminController::class,"Saveplanecard"])->name("sa
 Route::get('/showadmingallerypage',[AdminController::class,'Showadmingallerypage'])->name('showadmingallerypage');
 Route::post('/savegalleryrecord',[AdminController::class,'Savegalleryrecord'])->name('savegalleryrecord');
 Route::get('/deletegallaryimage/{id?}',[AdminController::class,'Deletegallaryimage'])->name('deletegallaryimage');
-    Route::get('/myregister', [AdminController::class, 'myregister']);
+Route::get('/myregister', [AdminController::class, 'myregister']);
 
 
 
