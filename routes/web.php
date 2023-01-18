@@ -43,6 +43,7 @@ Route::post('/saveplanecard',[AdminController::class,"Saveplanecard"])->name("sa
 Route::get('/showadmingallerypage',[AdminController::class,'Showadmingallerypage'])->name('showadmingallerypage');
 Route::post('/savegalleryrecord',[AdminController::class,'Savegalleryrecord'])->name('savegalleryrecord');
 Route::get('/deletegallaryimage/{id?}',[AdminController::class,'Deletegallaryimage'])->name('deletegallaryimage');
+    Route::get('/myregister', [AdminController::class, 'myregister']);
 
 
 
