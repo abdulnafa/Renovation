@@ -332,5 +332,9 @@ return redirect()->back();
 
 
     }
+    public function myregister()
+    {
+        return view('front.myregister');
+    }
    
 }

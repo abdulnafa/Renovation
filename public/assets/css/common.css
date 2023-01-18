@@ -938,6 +938,151 @@ background: #eee;
 .h-custom {
 height: calc(100% - 73px);
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Experience Section */
+
+.reno-bg{
+  background-image: url('/public/assets/images/experience/bg.jpg');
+  background-position: center center;
+  background-size: cover;
+  padding: 10rem;
+  height: 400px;
+  color: #fff;
+  
+
+}
+.reno-bg .card{
+border-radius: 12px;
+background-color: #FF7C55;
+  font-family: 'roboto' !important;
+  
+}
+.reno-bg .card-title{
+  font: 10px;
+}
+.reno-bg .card .card-link{
+color: white;
+}
+.reno-bg .card .card-link a{
+color: #fff;
+text-decoration: underline;
+}
+.reno-bg .card .card-link{
+color: white;
+
+  font-family: 'roboto' !important;
+}
+.paragraph{
+  color: #f4e1e1;
+  font-size: 18px;
+  font-family: 'roboto' !important;
+ 
+}
+.timeline .row{
+  margin-top: 5rem;
+}
+
+.timeline .h4{
+ color: #FF7C55;
+}
+
+.timeline p{
+  font-size: 14px;
+  color: grey;
+  max-width: 400px;
+  font-family: 'roboto';
+}
+.section .icon{
+  margin-top: 2rem;
+}
+
+.timeline span i{
+
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 100%;
+  background-color: #3d92dd;
+  color: #fff;
+  
+}
+.timeline .content-main{
+  margin-top: 6rem !important;
+
+}
+.timeline .content-main span{
+font-family: 'roboto';
+font-size: 17px;
+text-align: right;
+
+}
+
+.consult p{
+
+  max-width: 500px;
+text-align: center;
+font-family: 'roboto';
+
+}
+
+.consult button{
+
+background-color: #FF7C55;
+color: #fff;
+padding: 10px 40px;
+border-radius: 20px;
+border: none;
+
+}
+
+
+.avatar-icon-left{
+  font-size: 60px;
+  color: gray;
+}.why-choose .head-1{
+
+  /* color: #20668f; */
+}
+.avatar-icon-right{
+  font-size: 60px;
+  color: gray;
+
+}
+.completed h2{
+  font-family: 'roboto';
+  font-weight: 400;
+}
+
+.why-choose .head-2{
+ 
+  /* color: green; */
+}
+.why-choose p{
+  font-family: 'roboto';
+text-align: center;
+}
+
+/* End Experience Section */
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 450px) {
 .h-custom {
 height: 100%;

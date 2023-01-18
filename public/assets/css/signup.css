@@ -1,0 +1,18 @@
+.sign-btn{
+    padding: 20px 40px;
+    background-color: #FF7045 !important;
+    color: white;
+    border: none;
+}
+.sign-btn:hover{
+   transition: 0.3s ease-in;
+    background-color: #FF5722 !important;
+    color: white;
+
+}
+.register label{
+    color: #636e72;
+}
+.reg-pic img{
+ 
+}

@@ -66,5 +66,9 @@ public function Washroom(){
                 
                     return view('front.remodeling');
                 }
+    public function reno_exp()
+    {
+        return view('front.renovation-experience');
+    }
 
 }
