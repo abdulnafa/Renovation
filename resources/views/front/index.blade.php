@@ -62,7 +62,7 @@
 <!-- Cards section steps  -->
 
 <div class="container-fluid indexcards py-5">
-    <div class="container">
+    <div class="px-5">
 
         <div class="row  indexcardshead">
             <div class="col-md-4">
@@ -137,7 +137,7 @@
 <!-- Our Renovation  -->
 
 <div class="container-fluid py-5 indexrenovation">
-    <div class="container">
+    <div class="px-5">
         <div class="row py-5">
             <h1 class="text-center">OUR RENOVATIONS</h1>
         </div>
@@ -175,14 +175,14 @@
 
 
 <!-- Brand Abesder  -->
-<!-- Swiper -->
+
 
 
 <div class="container-fluid brandabesder">
 
 
 
-    <div class="container ">
+    <div class="px-5 ">
         <div class="swiper mySwiper brandssection">
             <div class="swiper-wrapper">
                 @isset($ambester)
@@ -257,7 +257,7 @@
 
 
 <div class="container-fluid px-2 googlereviewsection py-5">
-    <div class="container">
+    <div class="px-5">
         <div class="row coloredrow my-5">
             <div class="col-md-9 col-12 text-sm-start text-center">
                 <h1 class="text-left">Google Recensioner</h1>

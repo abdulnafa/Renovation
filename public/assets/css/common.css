@@ -1112,12 +1112,19 @@ margin-bottom: 0;
 /*----------------------------- login page-----------------------------  */
 
 .loginbackground {
-background:url(../images/gallery/gallery11.jpg);
-background-size: cover;
-background-repeat: no-repeat;
+
+
+height: 100%;
+padding: 50px 0  50px 0;
+}
+.loginbackground .formright{
+  padding: 0 150px 0 20px; 
 }
 
-
+.loginbuttondiv button{
+background-color: var(--buttoncolor);
+padding: 15px 45px;
+}
 
 
 
