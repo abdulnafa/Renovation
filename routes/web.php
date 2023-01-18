@@ -31,6 +31,7 @@ Route::get('/services/washroom',[FrontController::class,'Washroom'])->name('fron
 Route::get('/gallery',[FrontController::class,'Gallery'])->name('front.gallery');
 Route::get('/design',[FrontController::class,'Design'])->name('front.design');
 Route::get('/allservices',[FrontController::class,'Allservices'])->name('allservices');
+Route::get('/remodeling',[FrontController::class,'Remodeling'])->name('remodeling');
 
 // Dashhboard Routes start 
 Route::middleware('admin')->group(function(){

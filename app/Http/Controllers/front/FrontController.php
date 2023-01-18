@@ -62,6 +62,9 @@ public function Washroom(){
             }
 
 
-    
+            public function Remodeling(){
+                
+                    return view('front.remodeling');
+                }
 
 }

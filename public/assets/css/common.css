@@ -1127,10 +1127,71 @@ padding: 15px 45px;
 }
 
 
+/* -----------------------------------Remodeling------------------------------------------------------ */
 
 
+.remodelingslidertop{
 
-/* -------------------Mobile Responsive --------------  */
+}
+
+.remodelingslidertop .innerbox{
+  padding: 130px 0;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.remodelingslidertop .innerbox h1{
+  font-size: 45px;
+  text-transform: uppercase;
+  color: white;
+}
+.remodelingslidertop .innerbox p{
+  font-size: 20px;
+  line-height: 1.45;
+  text-transform: uppercase;
+  font-family: 'roboto';
+  color: white;
+}
+.remodelingslidertop .innerbox button{
+  border: none;
+  background-color: var(--buttoncolor);
+  color: black;
+  padding: 10px 40px;
+  margin-top: 15px;
+}
+
+.remodelingslidertop .innerbox button:hover{
+  background: var(--buttonhovercolro);
+  color: white;
+}
+
+.remodelingbox{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border-radius: 22px;
+  
+}
+.remodelingboximage{
+  border-radius: 22px 22px 0 0;
+}
+.secondportionremodeling p{
+font-size: 20px;
+}
+
+.remodelingbox .title{
+  padding: 70px 0;
+}
+.remodelingbox h1{
+  font-size: 20px;
+  text-align: center;
+  color: white;
+
+}
+.remodelingbox .content{
+  padding:10px 0 10px 30px ;
+}
+
+
+/* ----------------------------------------------------Mobile Responsive --------------  */
 
 
 @media screen and (max-width:900px){

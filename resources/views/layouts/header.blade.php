@@ -166,10 +166,10 @@
 
                     <li
                             class="nav-item dropdown mx-lg-2      {{ Route::is('front.kitchen') ? 'active' : '' }} {{ Route::is('front.washroom') ? 'active' : '' }}">
-                            <a href="{{Route('allservices')}}" class="nav-link dropdown-toggle" id="dropdown04"
+                            <a href="{{Route('remodeling')}}" class="nav-link dropdown-toggle" id="dropdown04"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">What We Do</a>
                             <div class="dropdown-menu" aria-labelledby="dropdown04">
-                                <a class="dropdown-item" href="{{Route('front.kitchen')}}">Home renovations and remodeling services</a>
+                                <a class="dropdown-item" href="{{Route('remodeling')}}">Home renovations and remodeling services</a>
                                 <a class="dropdown-item" href="{{Route('front.washroom')}}">A better renovation experience</a>
                                 <a class="dropdown-item" href="{{Route('front.washroom')}}">Why you'll be happy you chose us</a>
 

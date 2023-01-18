@@ -1,11 +1,30 @@
 $(document).ready(function () {
+
+    // Remodeling Top Slider 
+
+    $('.remodelingslidertop .owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+
+
+
+
+
     // Gallery owlcarousel Top
-
-
-
-
-
-
   // How it Works Code 
   $(".plus").parent("h3").next("p").hide();
 $(".plus.first").parent("h3").next("p").show();
