@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>@yield('title')</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ asset('assets/css/signup.css') }}">
@@ -170,8 +170,8 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">What We Do</a>
                             <div class="dropdown-menu" aria-labelledby="dropdown04">
                                 <a class="dropdown-item" href="{{Route('remodeling')}}">Home renovations and remodeling services</a>
-                                <a class="dropdown-item" href="{{Route('front.washroom')}}">A better renovation experience</a>
-                                <a class="dropdown-item" href="{{Route('front.washroom')}}">Why you'll be happy you chose us</a>
+                                <a class="dropdown-item" href="{{Route('renovation-experience')}}">A better renovation experience</a>
+                                <a class="dropdown-item" href="{{Route('whychooseus')}}">Why you'll be happy you chose us</a>
 
                                 <a class="dropdown-item" href="{{Route('front.how-it-works')}}">How It Works</a>
 
@@ -197,9 +197,17 @@
                             </div>
                         </li>
                         <li class="nav-item mx-lg-2     {{ Route::is('front.gallery') ? 'active' : '' }}"><a
-                                href="{{Route('front.gallery')}}" class="nav-link">Gallery</a></li>
+                                href="{{Route('front.gallery')}}" class="nav-link">Projects</a></li>
                         <li class="nav-item mx-lg-2     {{ Route::is('front.design') ? 'active' : '' }}"><a
                                 href="{{Route('front.design')}}" class="nav-link">Design</a></li>
+
+
+                                <li class="nav-item mx-lg-2     {{ Route::is('people') ? 'active' : '' }}"><a
+                                href="{{Route('people')}}" class="nav-link">People</a></li>
+
+
+
+
                         @if(!Auth::check())
                         <li class="nav-item mx-lg-2     {{ Route::is('login') ? 'active' : '' }}"><a
                                 href="{{Route('login')}}" class="nav-link">Login</a></li>

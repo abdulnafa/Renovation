@@ -63,12 +63,23 @@ public function Washroom(){
 
 
             public function Remodeling(){
-                
-                    return view('front.remodeling');
+                $footerdetail=FooterDetail::first();
+                    return view('front.remodeling',compact('footerdetail'));
                 }
     public function reno_exp()
     {
-        return view('front.renovation-experience');
+        $footerdetail=FooterDetail::first();
+        return view('front.renovation-experience',compact('footerdetail'));
+    }
+    public function Whychooseus(){
+        $reviews=GoogleReview::all();
+        $footerdetail=FooterDetail::first();
+return view('front.whychooseus',compact('reviews','footerdetail'));
     }
 
+ public function People(){
+        
+        $footerdetail=FooterDetail::first();
+return view('front.people',compact('footerdetail'));
+    }
 }

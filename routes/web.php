@@ -32,7 +32,9 @@ Route::get('/gallery',[FrontController::class,'Gallery'])->name('front.gallery')
 Route::get('/design',[FrontController::class,'Design'])->name('front.design');
 Route::get('/allservices',[FrontController::class,'Allservices'])->name('allservices');
 Route::get('/remodeling',[FrontController::class,'Remodeling'])->name('remodeling');
-Route::get('/renovation-experience', [FrontController::class, 'reno_exp']);
+Route::get('/renovation-experience', [FrontController::class, 'reno_exp'])->name('renovation-experience');
+Route::get('/whychooseus', [FrontController::class, 'Whychooseus'])->name('whychooseus');
+Route::get('/people', [FrontController::class, 'People'])->name('people');
 
 // Dashhboard Routes start 
 Route::middleware('admin')->group(function(){

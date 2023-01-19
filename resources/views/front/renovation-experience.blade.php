@@ -1,6 +1,7 @@
 @extends('layouts.main')
+@section('title', 'Renovation Experience')
 @section('my-content')
-    <div class="container-fluid p-5 reno-bg" style="background-image: url({{ asset('assets/images/experience/bg.jpg') }})">
+    <div class="container-fluid p-5 reno-bg" style="background-image: url('assets/images/experience/bg.jpg');">
 
         <div class="card p-5 w-50">
             <div class="link-card">

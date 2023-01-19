@@ -1190,7 +1190,7 @@ margin-bottom: 0;
 
 
 
-/* Google Review Section  */
+/* ------------------------------------Google Review Section-------------------------------------  */
 
 .googlereviewsection img{
   width: 50px;
@@ -1336,7 +1336,160 @@ font-size: 20px;
 }
 
 
-/* ----------------------------------------------------Mobile Responsive --------------  */
+
+
+
+
+
+/* ---------------------------------------------------------Why Choose Us--------------------------------------------- */
+
+
+
+.whychooseushead{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/whychooseus/headbgimage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.whychooseushead .whychooseussection{
+  background-color: var(--buttoncolor);
+  padding: 50px 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+.whychooseushead .whychooseussection h1{
+  font-size: 30px;
+}
+
+.whychooseushead .whychooseussection p{
+  font-size: 16px;
+  font-family: 'roboto';
+}
+.whychooseus .content{
+  padding-top: 40px;
+}
+
+.whychooseus .content h1{
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight:bold;
+  color: black;
+  
+}
+.whychooseus .content p{
+  color: #333;
+  font-size: 16px;
+  line-height: 1.63;
+  font-weight: 400;
+  font-family: 'roboto';
+}
+
+.whychooseus .content a{
+  color: rgba(0,121,187,.9);
+  font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+
+}
+.talksection {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 50px 0;
+}
+.talksection h1{
+  font-size: 35px;
+  line-height: 1.29;
+  font-weight: 700;
+}
+.talksection p{
+  font-size: 22px;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.talksection button {
+ background-color: var(--buttoncolor);
+ padding: 10px 40px;
+ border-radius: 30px;
+ border: none;
+}
+.talksection button:hover{
+  background-color: var(--buttonhovercolro);
+  color: white;
+}
+
+
+
+/* --------------------------------------------People------------------------------------------------- */
+
+.peoplehead{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/people/peopleheadbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.peoplebox{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.peoplebox:hover{
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  cursor: pointer;
+}
+.peoplebox .content{
+  padding: 22px 20px;
+  height: 200px;
+  overflow-y: auto;
+}
+
+/* Scrollbar design  Start */
+.peoplebox .content::-webkit-scrollbar {
+  display: block;
+  width: 5px;
+  border-radius: 40px;
+}
+.peoplebox .content::-webkit-scrollbar-track {
+  background: transparent;
+}
+  
+.peoplebox .content::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.63);
+  border-right: none;
+  border-left: none;
+}
+
+.peoplebox .content::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 30px; 
+}
+
+.peoplebox .content::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 10px;
+}
+/* Scrollbar design End  */
+
+
+
+.peoplebox h1{
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 700!important;
+}
+
+.peoplebox p{
+  color: #333;
+  font-size: 20px;
+}
+
+.peoplebox p.linktype{
+  font-size: 14px;
+  line-height: 1.7;
+  color: #0079bb;
+  letter-spacing: 1px;
+}
+
+/* ----------------------------------------------------Mobile Responsive ------------------------  */
 
 
 @media screen and (max-width:900px){

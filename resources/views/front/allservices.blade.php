@@ -1,4 +1,6 @@
 @extends('layouts.main')
+@section('title', 'All Services')
+
 @section('my-content')
 
 

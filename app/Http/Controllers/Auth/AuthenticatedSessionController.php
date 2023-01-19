@@ -7,6 +7,7 @@ use App\Providers\RouteServiceProvider;
 use App\Http\Controllers\AdminController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\FooterDetail;
 
 class AuthenticatedSessionController extends Controller
 {
@@ -17,7 +18,8 @@ class AuthenticatedSessionController extends Controller
      */
     public function create()
     {
-        return view('auth.login');
+        $footerdetail=FooterDetail::first();
+        return view('auth.login',compact('footerdetail'));
     }
 
     /**

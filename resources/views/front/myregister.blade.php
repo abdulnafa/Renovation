@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@section('title', 'My Register')
 @section('my-content')
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 <section calss="my-1 signup" style="background-color: white">
