@@ -41,6 +41,7 @@
             <div class="row">
                 <div class="col-6   d-flex align-items-center left">
                     <ul class="d-flex list-inline">
+                        
                         <li class="mx-lg-3 mx-2"> <i class="fa-regular fa-envelope"></i><span>
                                 @isset($footerdetail) @if($footerdetail->mail!=null) {{$footerdetail->mail}}
 
@@ -208,26 +209,45 @@
 
 
 
-                        @if(!Auth::check())
-                        <li class="nav-item mx-lg-2     {{ Route::is('login') ? 'active' : '' }}"><a
-                                href="{{Route('login')}}" class="nav-link">Login</a></li>
+
+
+                       
+                         <li
+                            class="nav-item dropdown mx-lg-2      {{ Route::is('front.kitchen') ? 'active' : '' }} {{ Route::is('front.washroom') ? 'active' : '' }}">
+                            <a href="{{Route('enquiry')}}" class="nav-link dropdown-toggle" id="dropdown04"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get In Touch</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown04">
+                                <a class="dropdown-item" href="{{Route('enquiry')}}">Renovation Enquiry</a>
+                                <a class="dropdown-item" href="{{Route('renovation-experience')}}">Business Opportunities</a>
+                                <a class="dropdown-item" href="{{Route('career')}}">Career Opportunities</a>
+                                
+
+
+
+      @if(!Auth::check())
+                       <a href="{{Route('login')}}" class="dropdown-item     {{ Route::is('login') ? 'active' : '' }}">Login</a>
                         @endif()
                         @if(!Auth::check())
-                        <li class="nav-item  mx-lg-2    {{ Route::is('register') ? 'active' : '' }}"><a
-                                href="{{Route('register')}}" class="nav-link">Register</a></li>
+                       
+                            <a href="{{Route('register')}}" class="dropdown-item   {{ Route::is('register') ? 'active' : '' }}">Register</a>
                         @endif()
                         @if(Auth::check())
-                        <li class="nav-item mx-lg-2     {{ Route::is('logout') ? 'active' : '' }}"><a
-                                href="{{Route('logout')}}"
+                       <a href="{{Route('logout')}}"
                                 onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
-                                class="nav-link">Logout</a></li>
+                            class="dropdown-item  text-black  {{ Route::is('logout') ? 'active' : '' }}">Logout</a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
                         </form>
                         @endif
 
-                       
-                             
+
+
+
+
+
+
+                            </div>
+                        </li>                        
                             
 
 

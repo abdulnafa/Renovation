@@ -5,8 +5,6 @@
 
         <div class="card p-5 w-50">
             <div class="link-card">
-                <span class="card-link"><a href="">Home</a> / <a href="">What We DO</a> / The Refresh Experience
-                </span>
                 <h1 class="card-title text-white" style="font-size: 36px">
                     The Renovation Experience
                 </h1>
