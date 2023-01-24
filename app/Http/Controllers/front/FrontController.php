@@ -82,4 +82,10 @@ return view('front.whychooseus',compact('reviews','footerdetail'));
         $footerdetail=FooterDetail::first();
 return view('front.people',compact('footerdetail'));
     }
+
+    public function Businessoppertunities(){
+        
+        $footerdetail=FooterDetail::first();
+return view('front.businessoppertunities',compact('footerdetail'));
+    }
 }

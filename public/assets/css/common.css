@@ -1489,6 +1489,143 @@ font-size: 20px;
   letter-spacing: 1px;
 }
 
+
+/* --------------------------------Business Oppertunities--------------------------------- */
+
+.businessheadertop .businessleft{
+  padding: 30px 35px;
+}
+.businessheadertop .businessleft h1{
+  font-size: 22px;
+  font-weight: bold!important;
+}
+.businessheadertop .businessleft p{
+  font-size: 14px;
+  font-family: 'roboto';
+}
+.businessheadertop button{
+  background-color: var(--buttoncolor);
+  padding: 6px 15px;
+  border-radius: 8px;
+  border: none;
+
+}
+
+.businessection1right{
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.businessection1right h1{
+font-size: 30px;
+}
+
+.businessection1right p{
+  font-size: 20px;
+}
+
+
+
+.businessection1right button{
+  background-color: var(--buttoncolor);
+  padding: 6px 15px;
+  border-radius: 8px;
+  border: none;
+}
+.businessection1right button:hover{
+  background-color: var(--buttonhovercolro);
+  cursor: pointer;
+}
+.renovationexperience{
+  background-color: var(--buttoncolor);
+  padding:50px 0;
+}
+
+.renovationexperienceleft h1{
+font-size:30px;
+font-weight:bold;
+color: white;
+}
+.renovationexperienceleft p{
+  font-family: 'roboto';
+  color: white;
+}
+.renovationexperienceright i{
+font-size: 35px;
+color: white;
+font-weight: bold;
+-webkit-text-stroke: 2px;
+}
+
+
+.businessoppertunity.owl-carousel .owl-nav button.owl-next{
+  position: absolute;
+  right: -21px;
+  top: 30%;
+}
+.businessoppertunity.owl-carousel .owl-nav button.owl-next span{
+  font-size: 40px;
+}
+
+.businessoppertunity.owl-carousel .owl-nav button.owl-prev{
+  position: absolute;
+  left: -21px;
+  top: 30%;
+}
+.businessoppertunity.owl-carousel .owl-nav button.owl-prev span{
+  font-size: 40px;
+}
+.ceilingbackground{
+  background-image: url(../images/businessoppertunities/ceiling.jpg);
+  background-size: cover;
+  height: 500px;
+}
+.ceilingcolumn h1{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.ceilingcolumn p{
+  font-size: 16px;
+  line-height: 22px;
+}
+.ceilingcolumn button{
+  background-color: var(--buttoncolor);
+  padding: 6px 15px;
+  border-radius: 8px;
+  border: none;
+  width: 180px;
+
+}
+
+.questiontalk{
+  background-color: #F1F1F1;
+  padding: 20px 0;
+}
+
+.questiontalk h1{
+font-size: 27px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.questiontalk p{
+  font-family: 'roboto';
+}
+
+
+.questiontalk button{
+  background-color: var(--buttoncolor);
+  padding: 6px 15px;
+  border-radius: 8px;
+  border: none;
+}
+.questiontalk button:hover{
+  background-color: var(--buttonhovercolro);
+}
+
+
+
 /* ----------------------------------------------------Mobile Responsive ------------------------  */
 
 

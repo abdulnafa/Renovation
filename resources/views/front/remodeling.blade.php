@@ -60,7 +60,7 @@
 
 
 <!-- Remodeling Cards  -->
-<div class="container-fluid">
+<div class="container-fluid mb-5">
     <div class="row g-3">
         <div class="col-lg-3 col-md-4">
             <div class="remodelingbox">
