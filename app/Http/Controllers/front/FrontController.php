@@ -26,6 +26,9 @@ class FrontController extends Controller
        
         return view('front.index',compact('data','logos','indexcards','kitchengallery','bathroomgallery','footerdetail','reviews','ambester'));
     }
+
+
+
     public function HowItWorks(){
         $data=AdminHome::first(); 
         $footerdetail=FooterDetail::first();
@@ -88,4 +91,15 @@ return view('front.people',compact('footerdetail'));
         $footerdetail=FooterDetail::first();
 return view('front.businessoppertunities',compact('footerdetail'));
     }
+
+public function enquiry()
+{
+        return view('front.renovation-enquiry');
+}
+
+public function career()
+{
+        return view('front.career-oppurtunies');
+}
+
 }

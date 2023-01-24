@@ -36,6 +36,8 @@ Route::get('/renovation-experience', [FrontController::class, 'reno_exp'])->name
 Route::get('/whychooseus', [FrontController::class, 'Whychooseus'])->name('whychooseus');
 Route::get('/people', [FrontController::class, 'People'])->name('people');
 Route::get('/businessoppertunities', [FrontController::class, 'Businessoppertunities'])->name('businessoppertunities');
+Route::get('/enquiry', [FrontController::class, 'enquiry'])->name('enquiry');
+Route::get('/career', [FrontController::class, 'career'])->name('career');
 
 // Dashhboard Routes start 
 Route::middleware('admin')->group(function(){

@@ -963,7 +963,10 @@ height: calc(100% - 73px);
 }
 .reno-bg .card{
 border-radius: 12px;
+opacity: 95%;
+border: transparent;
 background-color: #FF7C55;
+
   font-family: 'roboto' !important;
   
 }
@@ -1623,6 +1626,45 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 .questiontalk button:hover{
   background-color: var(--buttonhovercolro);
 }
+
+
+
+
+/*                         Enquiry               */
+.enquiry-left p{
+  font-family: 'roboto';
+}
+.enquiry-left h2{
+ font-weight: 600;
+}
+.enquiry-right p{
+  font-family: 'roboto';
+  }.enquiry-right h6{
+  font-family: 'roboto';
+  margin-top: 1rem;
+  }
+.enquiry-right .info{
+color:#95a5a6;
+
+  }
+  .enquiry-right label{
+margin-top: 0.5rem;
+
+  }
+
+
+
+
+
+
+
+
+
+/*                         End Enquiry               */
+
+
+
+
 
 
 
