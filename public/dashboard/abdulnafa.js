@@ -204,4 +204,148 @@ $.ajax({
 
     });
 
+
+
+
+// -------------------------------All services ------------------------------------
+
+// first
+
+$("#serviceimageoneicon").on("click",function(){
+    
+    $("#headtopimgonefile").trigger("click");
+    });
+    $("#headtopimgonefile").change(function(){
+           
+        readURL(this);
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+        
+                reader.onload = function (e) {
+                    $('#headtoponeimageshow').attr('src', e.target.result);
+                }
+        
+                reader.readAsDataURL(input.files[0]);
+            }
+        }  
+    });
+
+
+
+    // Second
+
+$("#serviceimagetwoicon").on("click",function(){
+    
+    $("#headtopimgtwofile").trigger("click");
+    });
+    $("#headtopimgtwofile").change(function(){
+           
+        readURL(this);
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+        
+                reader.onload = function (e) {
+                    $('#headtoptwoimageshow').attr('src', e.target.result);
+                }
+        
+                reader.readAsDataURL(input.files[0]);
+            }
+        }  
+    });
+
+
+
+       // Second
+
+$("#serviceimagethreeicon").on("click",function(){
+    
+    $("#headtopimgthreefile").trigger("click");
+    });
+    $("#headtopimgthreefile").change(function(){
+           
+        readURL(this);
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+        
+                reader.onload = function (e) {
+                    $('#headtopthreeimageshow').attr('src', e.target.result);
+                }
+        
+                reader.readAsDataURL(input.files[0]);
+            }
+        }  
+    });
+
+    // ----------------------Service Cards----------------------------
+// one 
+    $("#servicecardoneimageicon").on("click",function(){
+    
+        $("#servicecardonefile").trigger("click");
+        });
+        $("#servicecardonefile").change(function(){
+               
+            readURL(this);
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+            
+                    reader.onload = function (e) {
+                        $('#servicecardoneimg').attr('src', e.target.result);
+                    }
+            
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }  
+        });
+
+
+        // two 
+    $("#servicecardtwoimageicon").on("click",function(){
+    
+        $("#servicecardtwofile").trigger("click");
+        });
+        $("#servicecardtwofile").change(function(){
+               
+            readURL(this);
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+            
+                    reader.onload = function (e) {
+                        $('#servicecardtwoimg').attr('src', e.target.result);
+                    }
+            
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }  
+        });
+
+
+
+         // Three 
+    $("#servicecardthreeimageicon").on("click",function(){
+    
+        $("#servicecardthreefile").trigger("click");
+        });
+        $("#servicecardthreefile").change(function(){
+               
+            readURL(this);
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+            
+                    reader.onload = function (e) {
+                        $('#servicecardthreeimg').attr('src', e.target.result);
+                    }
+            
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }  
+        });
+    
+
+// -------------------------------------------------------------End Of Jquery 
 });

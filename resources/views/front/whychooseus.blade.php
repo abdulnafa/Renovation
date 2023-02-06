@@ -5,11 +5,11 @@
 
 <!-- header  -->
 <div class="container-fluid whychooseushead">
-    <div class="container py-5">
+    <div class="px-md-5 py-5">
 
 
-        <div class="row">
-            <div class="col-md-6 whychooseussection">
+        <div class="row px-md-0 px-3">
+            <div class="col-lg-6 col-md-9  whychooseussection">
                 <h1>Why you'll be happy you choose us</h1>
                 <p>At Refresh Renovations we’re changing how the world renovates. We put your needs at the heart of our
                     process, then manage every step for you from “what if” to “what a result!” </p>
@@ -23,7 +23,7 @@
 
 <div class="container-fluid whychooseus section1 px-5 py-5">
     <div class="row">
-        <div class="col-md-6 left">
+        <div class="col-md-6 left d-flex justify-content-center">
             <img src="{{asset('assets/images/whychooseus/section1.jpg')}}" class="img-fluid" />
         </div>
         <div class="col-md-6 content">
@@ -53,7 +53,7 @@
             <a>Find your local Refresh Renovations Consultant</a>
         </div>
 
-        <div class="col-md-6 left">
+        <div class="col-md-6 left  d-flex justify-content-center">
             <img src="{{asset('assets/images/whychooseus/section2.jpg')}}" class="img-fluid" />
         </div>
     </div>
@@ -66,7 +66,7 @@
 
 <div class="container-fluid whychooseus section3 px-5 py-5">
     <div class="row">
-        <div class="col-md-6 left">
+        <div class="col-md-6 left  d-flex justify-content-center">
             <img src="{{asset('assets/images/whychooseus/section3.jpg')}}" class="img-fluid" />
         </div>
         <div class="col-md-6 content">
@@ -101,7 +101,7 @@
             <a>Find out more about Refresh’s Customer Portal</a>
         </div>
 
-        <div class="col-md-6 left">
+        <div class="col-md-6 left  d-flex justify-content-center">
             <img src="{{asset('assets/images/whychooseus/section4.jpg')}}" class="img-fluid" />
         </div>
     </div>
@@ -115,7 +115,7 @@
 
 <div class="container-fluid whychooseus section5 px-5 py-5">
     <div class="row">
-        <div class="col-md-6 left">
+        <div class="col-md-6 left  d-flex justify-content-center">
             <img src="{{asset('assets/images/whychooseus/section5.jpg')}}" class="img-fluid" />
         </div>
         <div class="col-md-6 content">
@@ -136,7 +136,7 @@
     <div class="px-5">
         <div class="row coloredrow my-5">
             <div class="col-md-9 col-12 text-sm-start text-center">
-                <h1 class="text-left">Google Recensioner</h1>
+                <h1 class="text-left googlereviewheading">Google Recensioner</h1>
             </div>
             <div class="col-md-3 col-12 text-sm-end text-center">
                 <img src="{{asset('assets/images/index/googlereviews.png')}}" alt="google Reviews"
@@ -149,18 +149,18 @@
         <div class="row">
 
 
-            <div class="owl-carousel owl-theme px-3">
+            <div class="owl-carousel owl-theme px-md-3">
 
                 @isset($reviews)
                 @if($reviews!=null)
                 @foreach($reviews as $reviews)
-                <div class=" item p-3">
+                <div class=" item p-md-3 p-2">
                     <div class="reviewbox">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-md-3 d-md-block d-none ">
                                 <img src="{{asset('storage/dashboardpics/reviews')}}/{{$reviews->reviewimage}}" />
                             </div>
-                            <div class="col">
+                            <div class="col-md-9">
                                 <h5>{{$reviews->name}}</h5>
                                 <h6>{{$reviews->created_at->format('d-m-Y')}}</h6>
                             </div>
@@ -195,13 +195,15 @@
     </div>
 </div>
 
+<!-- Google Reviews End  -->
+
 
 
 <!-- Talk to a renovation consultant today -->
 
 
 <div class="container-fluid talksection">
-    <div class="row">
+    <div class="row px-md-2 px-3">
         <div class="col-md-7 mx-auto">
             <h1>Talk to a renovation consultant today</h1>
             <p>If you would like to find out how Refresh Renovations can support you with a high quality, efficient home renovation, get in touch today. Your local Refresh Renovations consultant will be happy to meet with you for a free, no obligations consultation.</p>
@@ -209,4 +211,4 @@
         </div>
     </div>
 </div>
-@endsection()
+@endsection

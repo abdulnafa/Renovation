@@ -1,12 +1,13 @@
 @extends('layouts.main')
 @section('title', 'Renovation Career')
 @section('my-content')
-    <div class="container-fluid p-5 reno-bg" style="background-image: url('assets/images/experience/bg.jpg');">
-
-        <div class="card p-5 w-50">
+    <div class="container-fluid p-5 reno-bg careeropptophead" style="background-image: url('assets/images/experience/bg.jpg');">
+<div class="row">
+    <div class="col-lg-5 col-md-7 ">
+    <div class="card p-md-5 p-3">
             <div class="link-card">
              
-                <h1 class="card-title text-white" style="font-size: 36px">
+                <h1 class="card-title text-white" >
                     Career Opportunities
                 </h1>
                 <span class="paragraph">
@@ -14,11 +15,14 @@
                     build home renovations.
             </div>
         </div>
+    </div>
+</div>
+       
 
     </div>
 
     <div class="row mb-5">
-        <div class="col-5 enquiry-left ms-5 mt-5">
+        <div class="col-md-5 enquiry-left ps-md-5 px-5 mt-5">
             <p>Refresh has rapidly become the largest building company in the world that specialises in design and build
                 home renovations.
                 We would like to hear from you if you are interested in Project Managers, Administrators and Renovation
@@ -26,7 +30,7 @@
                 If you are interested in working with Refresh as a contractor, please click here to submit your application.
                 Refresh is operating in New Zealand, Australia, UK and the USA.</p>
 
-            <h2 class="heading w-75">We’re changing the way the world renovates</h2>
+            <h2 class="heading ">We’re changing the way the world renovates</h2>
 
             <p>Refresh is applying the commercial business model, scale, processes and IT systems that are commonly found in
                 the New Home and Commercial segments, to the fragmented
@@ -78,7 +82,7 @@
 
 
         </div>
-        <div class="col-6 bg bg-light ms-5 enquiry-right">
+        <div class="col-md-7 bg bg-light px-md-5 px-2 enquiry-right">
             <form action="" method="POST">
                 <div class="form-div p-5">
                     <h3>Career Enquiry</h3>
@@ -130,7 +134,7 @@
                             up to receive home improvement advice and inspirational ideas.</b> <br>
                         (Don’t worry - if you change your mind you can unsubscribe anytime)</label>
 
-                    <button class="btn btn-primary w-100 mt-3 p-2">Submit Enquiry</button>
+                    <button class="btn enquirybtn mt-3 p-2">Submit Enquiry</button>
 
                 </div>
             </form>

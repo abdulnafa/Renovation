@@ -7,7 +7,7 @@
 
 <!-- Head  -->
 
-<div class="container-fluid px-0 kithcenhead">
+<div class="container-fluid  kithcenhead">
     <div class="row">
         <div class="col-md-6 px-0">
             <div class="">
@@ -42,7 +42,7 @@
 
 
 <div class="container-fluid py-5 everydaylife">
-    <div class="container">
+    <div class="px-md-5">
         <div class="row">
             <div class="col-md-4 d-flex align-items-center">
                 <h1>DESIGNED FOR EVERYDAY LIFE</h1>
@@ -57,7 +57,7 @@
 
 
 <!-- Gallery  -->
-<div class="container-fluid px-0 kitchengallery">
+<div class="container-fluid  kitchengallery">
     <div class="row">
         <div class="col-md-6 px-0">
             <div class="gallerytop">
@@ -140,7 +140,7 @@
 <!-- section one  -->
 
 <div class="container-fluid py-5 kitchen section1">
-    <div class="container">
+    <div class="px-md-5">
         <div class="row">
             <div class="col-md-6">
                 <img src="{{asset('assets/images/kitchen/section1.jpg')}}" class="img-fluid" />
@@ -158,7 +158,7 @@
 <!-- section two  -->
 
 <div class="container-fluid py-5 section2">
-    <div class="container">
+    <div class="px-md-5">
         <div class="row">
 
             <div class="col-md-6 pt-3 ps-3">
@@ -179,7 +179,7 @@
 <!-- Common Questions  -->
 
 <div class="container-fluid py-5 commonquestiondiv">
-    <div class="container">
+    <div class="px-md-5">
         <div class="row">
             <div class="col-md-6">
 

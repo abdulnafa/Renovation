@@ -1,4 +1,61 @@
+
 $(document).ready(function () {
+
+
+ 
+
+
+    $(document).scroll(function() {  // OR  $(window).scroll(function() {
+        Footerbottom();
+    });
+
+    // Sticky bottom 
+
+   
+    function Footerbottom() {
+        
+        if (
+            document.body.scrollTop > 250 ||
+            document.documentElement.scrollTop > 250
+        ) {
+            $(".footerstickybottom").addClass("d-block");
+        } else {
+            $(".footerstickybottom").removeClass(
+                "d-block"
+            );
+        }
+    }
+
+    // Renovation Experience steps 
+ 
+    $(".timeline .icon").on("click",function(){
+        $(this).parent().next(".col").find('.content').toggle();
+        // alert($(this).parent().next(".col-8").find('.content').html());
+    });
+
+
+
+
+    // Index Page Brands 
+
+    $('.brandssection .owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+
     // Business Opertunies 
 
     $('.businessoppertunity.owl-carousel').owlCarousel({
@@ -69,6 +126,7 @@ $('.gallerytopslickslider.owl-carousel').owlCarousel({
   margin:10,
   nav:false,
   autoplay:true,
+  dots:false,
   autoplaySpeed: 3000,
   autoplayHoverPause:true,
   responsive:{
@@ -424,32 +482,11 @@ $('.googlereviewsection .owl-carousel').owlCarousel({
         ],
     });
 
-    //       if(window.location.href==window.location.protocol+'//'+window.location.host+'/how-it-works'){
-
-    //  window.onscroll = function() {myFunction()};
-
-    //  // Get the header
-    //  var header1 = document.querySelector(".howitworksnavbar");
-
-    //  // Get the offset position of the navbar
-    //  var sticky1 = header.offsetTop;
-
-    //  function myFunction() {
-    //    if (window.pageYOffset > sticky1) {
-    //      header1.classList.add("howitworkssticky");
-    //    } else {
-    //      header1.classList.remove("howitworkssticky");
-    //    }
-    //  }
-
-    //       }
-    //       else{
-
-    // window scroll navbar color change
-
-    window.onscroll = function () {
-        Navtop();
-    };
+  
+$(document).scroll(function(){
+Navtop();
+});
+   
     function Navtop() {
         if (
             document.body.scrollTop > 250 ||
@@ -463,7 +500,7 @@ $('.googlereviewsection .owl-carousel').owlCarousel({
         }
     }
 
-    // }
+    
 });
 
 $('#room').click(()=>{

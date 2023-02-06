@@ -2,8 +2,9 @@
 @section('title', 'Renovation Enquiry')
 @section('my-content')
     <div class="container-fluid p-5 reno-bg" style="background-image: url('assets/images/experience/bg.jpg');">
-
-        <div class="card p-5 w-50">
+<div class="row">
+<div class="col-lg-5 col-md-7 ">
+<div class="card p-md-5 p-4">
             <div class="link-card">
                 <h1 class="card-title text-white" style="font-size: 36px">
                     Contact Us
@@ -14,11 +15,16 @@
             </div>
         </div>
 
+</div>
+
+</div>
+       
+
     </div>
 
     <div class="row mb-5">
-        <div class="col-5 enquiry-left ms-5 mt-5">
-            <h2 class="heading w-75">Get in touch if you are thinking about renovating</h2>
+        <div class="col-md-5 enquiry-left px-5 mt-5">
+            <h2 class="heading ">Get in touch if you are thinking about renovating</h2>
             <p>Get in touch to arrange a consultation with a consultant in your area. <br> Refresh consultants can guide you
                 through any local regulations your <br> project may require and will be your one point of contact throughout
                 the <br> renovation.</p>
@@ -39,9 +45,9 @@
 
 
         </div>
-        <div class="col-6 bg bg-light ms-5 enquiry-right">
+        <div class="col-md-7 bg bg-light px-md-5 enquiry-right">
             <form action="" method="POST">
-                <div class="form-div p-5">
+                <div class="form-div p-md-5 px-3">
                     <h3>Get In Touch</h3>
                     <p>Get in touch if you are interested in a quote or consultation</p>
 
@@ -66,7 +72,7 @@
                     <label for=""><input type="checkbox" name="policy" id="" checked> &nbsp; <b> Sign me up to receive home improvement advice and inspirational ideas.</b>  <br>
 (Don’t worry - if you change your mind you can unsubscribe anytime)</label>
 
-<button class="btn btn-primary w-100 mt-3 p-2">Send Message</button>
+<button class="btn enquirybtn mt-3 p-2">Send Message</button>
 
                 </div>
             </form>

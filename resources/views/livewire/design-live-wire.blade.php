@@ -1,10 +1,10 @@
 <div>
     <div class="container-fluid ">
         <div class="row border border-dark">
-            <div class="col-6 p-lg-4 design-lab">
+            <div class="col-md-6 p-lg-4 design-lab">
                 <h1>DESIGN LIBRARY</h1>
             </div>
-            <div class="col-6  p-lg-4 design-lab">
+            <div class="col-md-6  p-lg-4 design-lab">
                 <p>Jump start your design process by choosing an expert-curated Look that <br>
                     resonates with you. You’ll then work with your dedicated Project Planner and <br>
                     Designer to arrive at your “just right” design.</p>
@@ -37,24 +37,24 @@
                 </nav>
             </div>
         </div>
-        <div class="row mt-4 w-75 ">
-            <div class="col-2">
-                <select name="style" class="form-select" id="design-select" style="width='10px'!important;" >
+        <div class="row mt-4  ">
+            <div class="col-lg-4 col-md-4 col-4">
+                <select name="style" class="form-control" id=""  >
                     <option value="" selected>Style</option>
                     <option value="">Classic</option>
                     <option value="">Trabsitional</option>
                     <option value="">Contemporary</option>
                 </select></div>
-            <div class="col-2">
-                 <select name="color" class="form-select" id="design-select">
+            <div class="col-lg-4 col-md-4 col-4">
+                 <select name="color" class="form-control" >
                     <option value="" selected>Color</option>
                     <option value="">Classic</option>
                     <option value="">Trabsitional</option>
                     <option value="">Contemporary</option>
                 </select>
             </div>
-            <div class="col-2">
-                 <select name="lifestyle" class="form-select" id="design-select">
+            <div class="col-lg-4 col-md-4 col-4">
+                 <select name="lifestyle" class="form-control">
                     <option value="" selected>Lifestyle</option>
                     <option value="">Classic</option>
                     <option value="">Trabsitional</option>

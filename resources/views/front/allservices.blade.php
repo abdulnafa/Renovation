@@ -9,7 +9,7 @@
 <!-- Other Section  -->
 
 <div class="container-fluid py-5">
-    <div class="container">
+    <div class="px-md-5">
         <div class="row allserviceshead">
             <h1>All Services</h1>
         </div>

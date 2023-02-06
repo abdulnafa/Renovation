@@ -8,21 +8,41 @@ class GalleryLiveWire extends Component
 {
   
 public $alldata;
-public $mydata;
+public $kitchen;
+public $bathroom;
 
-    public function ChangeGallery($val){
-        
-        $this->alldata=Gallery::where('service','=',$val)->get();
-        return $this->alldata;
-        
-        
+    public function designSelect(){
+        $this->alldata='';
+        if(!empty($this->kitchen)){
+            $this->alldata=Gallery::where("service","=",$this->kitchen)->get();
+         
+        }
+
+        if(!empty($this->bathroom)){
+            $this->alldata=Gallery::where("service","=",$this->bathroom)->get();
+           
+        }
+        if(!empty($this->kitchen) && !empty($this->bathroom)){
+ $this->alldata=Gallery::all();
+
+        }
+
+        if(empty($this->kitchen) && empty($this->bathroom)){
+            $this->alldata=Gallery::all();
+           
+                   }
+      
+ 
     
+    }
+    public function mount(){
+        $this->alldata=Gallery::all();
     }
 
     public function render()
     {
         
-        $this->alldata=Gallery::all();
+        // $this->alldata=Gallery::all();
         return view('livewire.gallery-live-wire');
     }
 }

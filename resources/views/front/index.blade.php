@@ -76,12 +76,14 @@
         </div>
 
 
+
+
         <div class="row">
             <!-- box 1  -->
             <div class="col-md-4 mb-md-0 mb-3">
                 <div class="card" style="width: 100%;">
-                    <img src="{{asset('storage/dashboardpics/cards/')}}/@if($indexcards!=null){{$indexcards->cardoneimg}}@endif()"
-                        style="object-fit:cover" class="card-img-top" alt="...">
+                    <img src="{{asset('assets/images/design/twelve.jpg')}}" style="object-fit:cover"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">@if($indexcards!=null){{$indexcards->cardonetitle}}@endif()</h5>
                         <p class="card-text">@if($indexcards!=null){{$indexcards->cardonecontent}}@endif()</p>
@@ -94,8 +96,8 @@
             <!-- box 2  -->
             <div class="col-md-4 mb-md-0 mb-3">
                 <div class="card" style="width: 100%;">
-                    <img src="{{asset('storage/dashboardpics/cards/')}}/@if($indexcards!=null){{$indexcards->cardtwoimg}}@endif()"
-                        style="object-fit:cover" class="card-img-top" alt="...">
+                    <img src="{{asset('assets/images/design/eight.jpg')}}" style="object-fit:cover" class="card-img-top"
+                        alt="...">
                     <div class="card-body">
                         <h5 class="card-title">@if($indexcards!=null){{$indexcards->cardtwotitle}}@endif()</h5>
                         <p class="card-text">@if($indexcards!=null){{$indexcards->cardtwocontent}}@endif()</p>
@@ -109,8 +111,8 @@
 
             <div class="col-md-4 mb-md-0 mb-3">
                 <div class="card" style="width: 100%;">
-                    <img src="{{asset('storage/dashboardpics/cards/')}}/@if($indexcards!=null){{$indexcards->cardthreeimg}}@endif()"
-                        style="object-fit:cover" class="card-img-top" alt="...">
+                    <img src="{{asset('assets/images/design/fourteen.jpg')}}" style="object-fit:cover"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">@if($indexcards!=null){{$indexcards->cardthreetitle}}@endif()</h5>
                         <p class="card-text">@if($indexcards!=null){{$indexcards->cardthreecontent}}@endif()</p>
@@ -137,7 +139,7 @@
 <!-- Our Renovation  -->
 
 <div class="container-fluid py-5 indexrenovation">
-    <div class="px-5">
+    <div class="px-md-5 px-2">
         <div class="row py-5">
             <h1 class="text-center">OUR RENOVATIONS</h1>
         </div>
@@ -157,7 +159,7 @@
 
 
             <div class="col-md-6  mb-md-0 mb-3">
-            <h2 class="text-center py-5">Kitchens</h2>
+                <h2 class="text-center py-5">Kitchens</h2>
                 <div class="card">
                     <img src="{{asset('assets/images/index/renovation2.webp')}}" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -182,12 +184,12 @@
 
 
 
-    <div class="px-5 ">
-        <div class="swiper mySwiper brandssection">
-            <div class="swiper-wrapper">
+    <div class="px-md-5 px-2 ">
+        <div class=" brandssection">
+            <div class="owl-carousel owl-theme">
                 @isset($ambester)
                 @foreach($ambester as $ambester)
-                <div class="swiper-slide">
+                <div class="item">
                     <div>
                         <img src="{{asset('storage/dashboardpics/ambasders/')}}/{{$ambester->image}}"
                             class="img-fluid" />
@@ -260,7 +262,7 @@
     <div class="px-5">
         <div class="row coloredrow my-5">
             <div class="col-md-9 col-12 text-sm-start text-center">
-                <h1 class="text-left">Google Recensioner</h1>
+                <h1 class="text-left googlereviewheading">Google Recensioner</h1>
             </div>
             <div class="col-md-3 col-12 text-sm-end text-center">
                 <img src="{{asset('assets/images/index/googlereviews.png')}}" alt="google Reviews"
@@ -273,18 +275,18 @@
         <div class="row">
 
 
-            <div class="owl-carousel owl-theme px-3">
+            <div class="owl-carousel owl-theme px-md-3">
 
                 @isset($reviews)
                 @if($reviews!=null)
                 @foreach($reviews as $reviews)
-                <div class=" item p-3">
+                <div class=" item p-md-3 p-2">
                     <div class="reviewbox">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-md-3 d-md-block d-none ">
                                 <img src="{{asset('storage/dashboardpics/reviews')}}/{{$reviews->reviewimage}}" />
                             </div>
-                            <div class="col">
+                            <div class="col-md-9">
                                 <h5>{{$reviews->name}}</h5>
                                 <h6>{{$reviews->created_at->format('d-m-Y')}}</h6>
                             </div>
@@ -318,7 +320,6 @@
         </div>
     </div>
 </div>
-
 
 <!-- Google Reviews End  -->
 

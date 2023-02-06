@@ -2,7 +2,7 @@
 @section('title', 'Remodeling')
 @section('my-content')
 
-<!-- slider head  -->
+<!-- slider head  --> 
 
 <div class="container-fluid remodelingslidertop px-0">
     <div class="owl-carousel owl-theme">
@@ -44,7 +44,7 @@
 <!-- Second Portion  -->
 
 
-<div class="container-fluid secondportionremodeling py-5">
+<div class="container-fluid secondportionremodeling py-md-5 pb-2">
     <div class="row text-center">
         <div class="col-md-7 mx-auto">
             <h1>Your Home Renovation Experts</h1>

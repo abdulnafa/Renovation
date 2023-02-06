@@ -7,6 +7,8 @@ use App\Http\Controllers\front\FrontController;
 use App\Http\Controllers\GoogleReviewController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\GoogleLoginController;
+use App\Http\Controllers\EmailController;
 use App\Models\Ambasder;
 use Illuminate\Support\Facades\Route;
 
@@ -30,7 +32,7 @@ Route::get('/services/kitchen',[FrontController::class,'Kitchen'])->name('front.
 Route::get('/services/washroom',[FrontController::class,'Washroom'])->name('front.washroom');
 Route::get('/gallery',[FrontController::class,'Gallery'])->name('front.gallery');
 Route::get('/design',[FrontController::class,'Design'])->name('front.design');
-Route::get('/allservices',[FrontController::class,'Allservices'])->name('allservices');
+// Route::get('/allservices',[FrontController::class,'Allservices'])->name('allservices');
 Route::get('/remodeling',[FrontController::class,'Remodeling'])->name('remodeling');
 Route::get('/renovation-experience', [FrontController::class, 'reno_exp'])->name('renovation-experience');
 Route::get('/whychooseus', [FrontController::class, 'Whychooseus'])->name('whychooseus');
@@ -38,6 +40,9 @@ Route::get('/people', [FrontController::class, 'People'])->name('people');
 Route::get('/businessoppertunities', [FrontController::class, 'Businessoppertunities'])->name('businessoppertunities');
 Route::get('/enquiry', [FrontController::class, 'enquiry'])->name('enquiry');
 Route::get('/career', [FrontController::class, 'career'])->name('career');
+Route::get('/commercialrenovation', [FrontController::class, 'Commercialrenovation'])->name('commercialrenovation');
+Route::get('/aboutus',[FrontController::class,'Aboutus'])->name('aboutus');
+Route::get('/openservice/{name?}',[FrontController::class,'Openservice'])->name('openservice');
 
 // Dashhboard Routes start 
 Route::middleware('admin')->group(function(){
@@ -51,8 +56,13 @@ Route::get('/showadmingallerypage',[AdminController::class,'Showadmingallerypage
 Route::post('/savegalleryrecord',[AdminController::class,'Savegalleryrecord'])->name('savegalleryrecord');
 Route::get('/deletegallaryimage/{id?}',[AdminController::class,'Deletegallaryimage'])->name('deletegallaryimage');
 Route::get('/myregister', [AdminController::class, 'myregister']);
+Route::get('/allservices/{name?}', [AdminController::class, 'Allservices'])->name('allservices');
+Route::post('/addallservices', [AdminController::class, 'Addallservices'])->name('addallservices');
+Route::post('/addquestion', [AdminController::class, 'Addquestion'])->name('addquestion');
+Route::get('/deletefaq/{id?}/{name}', [AdminController::class, 'Deletefaq'])->name('deletefaq');
 
 
+// -----------Dashboard Routes End ----------
 
 // Design Routes 
 Route::resource('designs',DesignController::class);
@@ -78,7 +88,13 @@ Route::post('footerdetail',[AdminController::class,'Footerdetail'])->name('foote
 });
 
 
+/* Google Social Login */
+Route::get('/login/google', [GoogleLoginController::class,'redirect'])->name('login.google-redirect');
+Route::get('/login/google/callback', [GoogleLoginController::class,'callback'])->name('login.google-callback');
 
+// Email 
+
+Route::get('/send-email', [EmailController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return redirect()->route('admindashboard');

@@ -6,9 +6,12 @@ use App\Models\Admin;
 use App\Models\CompanyLogo;
 use Illuminate\Http\Request;
 use App\Models\AdminHome;
+use App\Models\Allservices;
+use App\Models\Faq;
 use App\Models\FooterDetail;
 use App\Models\Gallery;
 use App\Models\HomePlaneCard;
+use App\Models\Service;
 
 class AdminController extends Controller
 {
@@ -336,5 +339,216 @@ return redirect()->back();
     {
         return view('front.myregister');
     }
+
+
+    public function Allservices($name){
+        $servicesname=Service::all();
+        $allservicesdata=Allservices::where("service","=",$name)->get();
+        $faq=Faq::all();
+        
+       
+return view('admindashboard.allservices',compact('servicesname','name','allservicesdata','faq'));
+    }
+
+
+
+    public function Addallservices(Request $request){
+
+
+       
+
+if(Allservices::where('service','=',$request->service)->first()){
+    $data=Allservices::where('service','=',$request->service)->first();
+        if($request->hasFile('headtopimgonefile')){
+            $folderimagepath=storage_path('app/public/dashboardpics/Allservices/').Allservices::where('service','=',$request->service)->first()->headtopimgonefile;
+            @unlink($folderimagepath);
+            $imagepath=time().$request->file('headtopimgonefile')->getClientOriginalName();
+            $request->file('headtopimgonefile')->storeAs('public/dashboardpics/Allservices',$imagepath);
+            $data->headtopimgonefile=$imagepath;
+        
+        }
+        if($request->hasFile('headtopimgtwofile')){
+            $folderimagepath=storage_path('app/public/dashboardpics/Allservices/').Allservices::where('service','=',$request->service)->first()->headtopimgtwofile;
+            @unlink($folderimagepath);
+            $imagepath=time().$request->file('headtopimgtwofile')->getClientOriginalName();
+            $request->file('headtopimgtwofile')->storeAs('public/dashboardpics/Allservices',$imagepath);
+            $data->headtopimgtwofile=$imagepath;
+        
+        }
+
+
+
+
+        if($request->hasFile('headtopimgthreefile')){
+            $folderimagepath=storage_path('app/public/dashboardpics/Allservices/').Allservices::where('service','=',$request->service)->first()->headtopimgthreefile;
+            @unlink($folderimagepath);
+            $imagepath=time().$request->file('headtopimgthreefile')->getClientOriginalName();
+            $request->file('headtopimgthreefile')->storeAs('public/dashboardpics/Allservices',$imagepath);
+            $data->headtopimgthreefile=$imagepath;
+        
+        }
+
+
+        if($request->hasFile('servicecardonefile')){
+            $folderimagepath=storage_path('app/public/dashboardpics/Allservices/').Allservices::where('service','=',$request->service)->first()->servicecardonefile;
+            @unlink($folderimagepath);
+            $imagepath=time().$request->file('servicecardonefile')->getClientOriginalName();
+            $request->file('servicecardonefile')->storeAs('public/dashboardpics/Allservices',$imagepath);
+            $data->servicecardonefile=$imagepath;
+        
+        }
+
+
+        if($request->hasFile('servicecardtwofile')){
+            $folderimagepath=storage_path('app/public/dashboardpics/Allservices/').Allservices::where('service','=',$request->service)->first()->servicecardtwofile;
+            @unlink($folderimagepath);
+            $imagepath=time().$request->file('servicecardtwofile')->getClientOriginalName();
+            $request->file('servicecardtwofile')->storeAs('public/dashboardpics/Allservices',$imagepath);
+            $data->servicecardtwofile=$imagepath;
+        
+        }
+
+
+
+        if($request->hasFile('servicecardthreefile')){
+            $folderimagepath=storage_path('app/public/dashboardpics/Allservices/').Allservices::where('service','=',$request->service)->first()->servicecardthreefile;
+            @unlink($folderimagepath);
+            $imagepath=time().$request->file('servicecardthreefile')->getClientOriginalName();
+            $request->file('servicecardthreefile')->storeAs('public/dashboardpics/Allservices',$imagepath);
+            $data->servicecardthreefile=$imagepath;
+        
+        }
+
+        $data->service=$request->service;
+        $data->headtoptitle=$request->headtoptitle;
+        $data->headtopparagraph=$request->headtopparagraph;
+        $data->headtoplist1=$request->headtoplist1;
+        $data->headtoplist2=$request->headtoplist2;
+        $data->headtoplist3=$request->headtoplist3;
+        $data->servicecardonetitle=$request->servicecardonetitle;
+        $data->servicecardonecontent=$request->servicecardonecontent;
+        $data->servicecardtwotitle=$request->servicecardtwotitle;
+        $data->servicecardtwocontent=$request->servicecardtwocontent;
+        $data->servicecardthreetitle=$request->servicecardthreetitle;
+        $data->servicecardthreecontent=$request->servicecardthreecontent;
+
+        $data->save();
+
+        return redirect("/services");
+
+
+
+
+
+    }else{
+        $data=new Allservices();
+        if($request->hasFile('headtopimgonefile')){
+        $imagepath=time().$request->file('headtopimgonefile')->getClientOriginalName();
+        $request->file('headtopimgonefile')->storeAs('public/dashboardpics/Allservices',$imagepath);
+        $data->headtopimgonefile=$imagepath;
+        }
+
+        if($request->hasFile('headtopimgtwofile')){
+           
+            $imagepath=time().$request->file('headtopimgtwofile')->getClientOriginalName();
+            $request->file('headtopimgtwofile')->storeAs('public/dashboardpics/Allservices',$imagepath);
+            $data->headtopimgtwofile=$imagepath;
+        
+        }
+
+
+
+
+        if($request->hasFile('headtopimgthreefile')){
+            
+            $imagepath=time().$request->file('headtopimgthreefile')->getClientOriginalName();
+            $request->file('headtopimgthreefile')->storeAs('public/dashboardpics/Allservices',$imagepath);
+            $data->headtopimgthreefile=$imagepath;
+        
+        }
+
+
+        if($request->hasFile('servicecardonefile')){
+           
+            $imagepath=time().$request->file('servicecardonefile')->getClientOriginalName();
+            $request->file('servicecardonefile')->storeAs('public/dashboardpics/Allservices',$imagepath);
+            $data->servicecardonefile=$imagepath;
+        
+        }
+
+
+        if($request->hasFile('servicecardtwofile')){
+           
+            $imagepath=time().$request->file('servicecardtwofile')->getClientOriginalName();
+            $request->file('servicecardtwofile')->storeAs('public/dashboardpics/Allservices',$imagepath);
+            $data->servicecardtwofile=$imagepath;
+        
+        }
+
+
+
+        if($request->hasFile('servicecardthreefile')){
+           
+            $imagepath=time().$request->file('servicecardthreefile')->getClientOriginalName();
+            $request->file('servicecardthreefile')->storeAs('public/dashboardpics/Allservices',$imagepath);
+            $data->servicecardthreefile=$imagepath;
+        
+        }
+
+        $data->service=$request->service;
+        $data->headtoptitle=$request->headtoptitle;
+        $data->headtopparagraph=$request->headtopparagraph;
+        $data->headtoplist1=$request->headtoplist1;
+        $data->headtoplist2=$request->headtoplist2;
+        $data->headtoplist3=$request->headtoplist3;
+        $data->servicecardonetitle=$request->servicecardonetitle;
+        $data->servicecardonecontent=$request->servicecardonecontent;
+        $data->servicecardtwotitle=$request->servicecardtwotitle;
+        $data->servicecardtwocontent=$request->servicecardtwocontent;
+        $data->servicecardthreetitle=$request->servicecardthreetitle;
+        $data->servicecardthreecontent=$request->servicecardthreecontent;
+
+        $data->save();
+
+        return redirect("/services");
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+       
+    }
+
+
+    public function Addquestion(Request $request){
+$data=new Faq();
+$data->question=$request->question;
+$data->answer=$request->answer;
+$data->service=$request->service;
+$data->save();
+return redirect()->route('allservices',$request->service);
+    }
+public function Deletefaq($id,$name){
+    Faq::where('id','=',$id)->delete();
+    return redirect()->route('allservices',$name);
+}
+
+
+
+
+
    
 }

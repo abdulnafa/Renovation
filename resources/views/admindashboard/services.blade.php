@@ -28,6 +28,7 @@
                 <tr> 
                     <td>{{$data->id}}</td>
                     <td>{{$data->name}}</td>
+                    <td><a class="btn btn-success" href="{{Route('allservices',$data->name)}}">Add Data</a></td>
                     <td><a href="{{Route('services.edit',$data->id)}}" class="btn btn-success">Edit</a></td>
                     <td><a href="{{Route('services.destroy',$data->id)}}" class="btn btn-danger">Delete</a></td>
                    

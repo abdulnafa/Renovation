@@ -9,7 +9,7 @@
     <div class="slider-item js-fullheight"
         style="background-image:url('../../../storage/dashboardpics/slider/@if($data!=null){{$data->slider1}} @endif()'); background-size:cover">
         <div class="overlay"></div>
-        <div class="container">
+        <div class="px-md-5">
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
                 <div class="col-md-12 ftco-animate">
                     <div class="text w-100 text-center">
@@ -24,7 +24,7 @@
     <div class="slider-item js-fullheight"
         style="background-image:url('../../../storage/dashboardpics/slider/@if($data!=null){{$data->slider2}} @endif()'); background-size:cover">
         <div class="overlay"></div>
-        <div class="container">
+        <div class="px-md-5">
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
                 <div class="col-md-12 ftco-animate">
                     <div class="text w-100 text-center">
@@ -39,7 +39,7 @@
     <div class="slider-item js-fullheight"
         style="background-image:url('../../../storage/dashboardpics/slider/@if($data!=null){{$data->slider3}} @endif()'); background-size:cover">
         <div class="overlay"></div>
-        <div class="container">
+        <div class="px-md-5">
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
                 <div class="col-md-12 ftco-animate">
                     <div class="text w-100 text-center">
@@ -80,7 +80,7 @@
 
 
 <div class="container-fluid py-5">
-    <div class="container">
+    <div class="px-md-5">
         <div class="row">
             <div class="col-md-4 d-flex align-items-center">
                 <h1>DESIGNED FOR EVERYDAY LIFE</h1>
@@ -119,7 +119,7 @@
 <!-- We know renovations are scary, so we've got your back: -->
 
 <div class="container-fluid renovationscary py-5">
-    <div class="container">
+    <div class="px-md-5">
         <div class="row text-center py-5 text-white">
             <h2>We know renovations are scary, so we've got your back:</h2>
         </div>
@@ -180,7 +180,7 @@
 <!-- section one  -->
 
 <div class="container-fluid py-5 section1">
-    <div class="container">
+    <div class="px-md-5">
         <div class="row">
             <div class="col-md-6">
                 <img src="{{asset('assets/images/washroom/section1.jpg')}}" class="img-fluid" />
@@ -198,7 +198,7 @@
 <!-- section two  -->
 
 <div class="container-fluid py-5 section2">
-    <div class="container">
+    <div class="px-md-5">
         <div class="row">
 
             <div class="col-md-6 pt-3 ps-3">
@@ -219,7 +219,7 @@
 <!-- Common Questions  -->
 
 <div class="container-fluid py-5">
-    <div class="container">
+    <div class="px-md-5">
         <div class="row">
             <div class="col-md-6">
 

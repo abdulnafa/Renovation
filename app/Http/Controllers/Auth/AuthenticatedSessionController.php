@@ -8,6 +8,8 @@ use App\Http\Controllers\AdminController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\FooterDetail;
+use Mail;
+use App\Mail\SendMail;
 
 class AuthenticatedSessionController extends Controller
 {
@@ -18,7 +20,7 @@ class AuthenticatedSessionController extends Controller
      */
     public function create()
     {
-        $footerdetail=FooterDetail::first();
+        // $footerdetail=FooterDetail::first();
         return view('auth.login',compact('footerdetail'));
     }
 
@@ -31,14 +33,26 @@ class AuthenticatedSessionController extends Controller
     public function store(LoginRequest $request)
     {
         $request->authenticate();
-       
+      
 
         $request->session()->regenerate();
       
         if(Auth::user()->roll_as=="admin"){
             return redirect('/admin');
+            // $testMailData = [
+            //     'title' => 'Test Email From Renovation.com',
+            //     'body' => 'Thanks for Reaching to our  website'
+            // ];
+    
+            // Mail::to($request->email)->send(new SendMail($testMailData));
         }else{
             return redirect('/');
+            // $testMailData = [
+            //     'title' => 'Test Email From Renovation.com',
+            //     'body' => 'Thanks for Reaching to our  website'
+            // ];
+    
+            // Mail::to($request->email)->send(new SendMail($testMailData));
         }
 
         // return redirect()->intended(RouteServiceProvider::HOME);

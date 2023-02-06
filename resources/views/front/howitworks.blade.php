@@ -9,7 +9,7 @@
 
 
 <nav class="navbar navbar-expand-lg py-3 howitworksnavbar">
-    <div class="container">
+    <div class="px-md-5 mx-auto">
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav mx-auto howitworksstickynavbar">
                 <li class="nav-item active mx-5 border border-dark">
@@ -34,7 +34,7 @@
 <!-- Plane  -->
 
 <div class="container-fluid steplistinggroup py-5 howitworksstep1" id="howitworksplane">
-    <div class="container my-5">
+    <div class="px-md-5 my-5">
         <div class="row" id="plan-heading">
             <div class="col-lg-5 col-md-8 mx-auto text-center py-1">
                 <h2 >1. PLAN WITH PRECISION</h2>
@@ -43,7 +43,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 d-flex align-items-center">
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
                 <img src="{{asset('assets/images/howitworks/Plane.webp')}}" class="img-fluid" />
             </div>
             <div class="col-md-6 ">
@@ -91,7 +91,7 @@
 <!-- Design  -->
 
 <div class="container-fluid steplistinggroup py-5 howitworksstep2" id="howitworksdesign">
-    <div class="container my-5">
+    <div class="px-md-5 my-5">
         <div class="row">
             <div class="col-lg-7 col-md-9 mx-auto text-center py-5">
                 <h2>2. DESIGN WITH CONFIDENCE</h2>
@@ -135,7 +135,7 @@
                 </ul>
             </div>
 
-            <div class="col-md-6 d-flex align-items-center">
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
                 <img src="{{asset('assets/images/howitworks/Design.webp')}}" class="img-fluid" />
             </div>
         </div>
@@ -148,7 +148,7 @@
 <!-- Build  -->
 
 <div class="container-fluid steplistinggroup py-5 howitworksstep1" id="howitworksbuild">
-    <div class="container my-5">
+    <div class="px-md-5 my-5">
         <div class="row">
             <div class="col-lg-5 col-md-8 mx-auto text-center py-5">
                 <h2>3. BUILD WITH THE BEST</h2>
@@ -157,7 +157,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 d-flex align-items-center">
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
                 <img src="{{asset('assets/images/howitworks/Build.webp')}}" class="img-fluid" />
             </div>
             <div class="col-md-6 mt-5">
@@ -205,7 +205,7 @@
 <!-- Manage  -->
 
 <div class="container-fluid steplistinggroup py-5 howitworksstep2" id="howitworksmanage">
-    <div class="container my-5">
+    <div class="px-md-5 my-5">
         <div class="row">
             <div class="col-lg-7 col-md-9 mx-auto text-center py-5">
                 <h2>4. MANAGE WITH EASE</h2>
@@ -241,7 +241,7 @@
                 </ul>
             </div>
 
-            <div class="col-md-6 d-flex align-items-center">
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
                 <img src="{{asset('assets/images/howitworks/Manage.webp')}}" class="img-fluid" />
             </div>
         </div>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 :root {
     --one: #EDE8E2;
@@ -34,15 +35,28 @@
   font-family: optima;
   src: url(assets/css/optima/OPTIMA.ttf);
 }
-
+@font-face {
+  font-family: muli;
+  src: url(assets/css/muli/Muli.ttf);
+}
 h1,h2,h3,h4,h5,h6{
     font-family: 'roboto';
 }
 p,span{
-    font-family: optima;
+    /* font-family: optima; */
+    font-family: 'muli', sans-serif;
 }
+
+
 body{
     overflow-x: hidden;
+    max-width:2300px;
+    width: 100%;
+    margin:0 auto;
+    font-size: calc(16px+1vw);
+}
+img{
+  object-fit: cover;
 }
 
 /* -------------------------------------Navbar -------------------------------------- */
@@ -188,7 +202,6 @@ background-color: var(--buttonhovercolro);
   margin-bottom: 15px;
 }
  .logop{
-  font-family: 'Segoe UI'!important;
   font-size: 13px;
   font-weight: 300;
   font-style: normal;
@@ -200,7 +213,7 @@ background-color: var(--buttonhovercolro);
 
 /* --------------------------------Index cards Start -------------------  */
 .indexcardshead h1{
-  font-family: sans-serif;
+  
   line-height: 1.1;
     margin-bottom: 0;
     margin-top: 0;
@@ -342,14 +355,14 @@ background-color: var(--buttonhovercolro);
 .gal-section h1{
   font-size: 62px;
   font-weight: 300;
-  font-family: 'roboto' !important;
+  
 }
 .gal-section hr{
  border: 0.1px solid #000 !important;
  opacity: 70%;
 }
 .gal-section h3{
-font-family: 'optima';
+
 
 }
 .filter-section {
@@ -360,7 +373,7 @@ font-family: 'optima';
 
 .filter-section span{
   border-bottom:1px solid black;
-  font-family: 'roboto';
+ 
   padding: 5px 7px;
   text-transform: capitalize;
   font-size: 20px;
@@ -376,7 +389,7 @@ font-family: 'optima';
   font-size: 20px;
   padding:10px 0px;
   color: #000;
-  font-family: 'roboto';
+  
   text-transform: capitalize;
 }
 
@@ -405,7 +418,7 @@ margin-right: 1rem;
   padding: 50px 0;
 }
 .gallerymainsectionhead h1{
-  font-family: 'roboto';
+ 
   letter-spacing: 1px;
 }
 .gallerymainsectionhead p{
@@ -578,7 +591,7 @@ border-bottom: 1px solid #999; */
 }
 
 #howitworksplane h2 ,#howitworksdesign h2, #howitworksbuild h2 ,#howitworksmanage h2{
-  font-family:'roboto' !important;
+
   font-size: 36px;
   font-weight: 400;
 }
@@ -589,7 +602,7 @@ border-bottom: 1px solid #999; */
 }
 
 #plan-heading p ,#howitworksdesign p, #howitworksbuild p,#howitworksmanage  p{
-  font-family: roboto;
+ 
   color:#49494B;
   font-size: 16px;
 }
@@ -597,7 +610,7 @@ border-bottom: 1px solid #999; */
 #howitworksplane h3 ,#howitworksdesign h3, #howitworksbuild h3,
  #howitworksmanage h3{
   color: #49494b;
-  font-family: 'optima';
+
 }
 
 
@@ -624,7 +637,7 @@ border-bottom: 1px solid #999; */
     top: 0;
     width: 100%;
     z-index:99999;
-    font-family: 'Segoe UI';
+   
   }
 
     .steplistinggroup ul {
@@ -635,12 +648,12 @@ border-bottom: 1px solid #999; */
 
 
 h2{
-  font-size: 24px;
+  font-size: 2em;
   color: #49494b;
 }
 
     .c1,.c2,.c3{
-      font-family:'Segoe UI';
+      
       font-size: 16px;
       color:#49494b;
 
@@ -672,11 +685,15 @@ h2{
 
   /* -------------------------------Kitchen Css -------------------------------------------- */
 
+.kithcenhead .owl-item{
+  height: 500px;
+}
+.kithcenhead .owl-item img{
+  height: 100%;
+}
+
  .kithcenhead li::marker {
     content: url(../images/marker.svg);
-   
-    
-    
   }
 
   .kithcenhead li{
@@ -768,8 +785,23 @@ font-size: 22px;
 .kitchen.section1 p{
   font-size: 22px;
 }
-  /* ---------------------------------------WashRoom---------------------------------------- */
+.everydaylife h1{
+  font-size: 2em;
+}
 
+.everydaylife h2{
+  font-size: 1.3em;
+}
+
+  /* ---------------------------------------WashRoom---------------------------------------- */
+  .kithcenheadleft{
+    height: 500px;
+  }
+  .kithcenheadleft video{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
 
   .washroomhead  .herobackgorund{
     background:url(../images/washroom/washroomheader.jpg);
@@ -855,7 +887,7 @@ padding:0;
   border-right: 1px solid black;
 }
 .design-lab h1{
- font-family: 'roboto';
+
  text-align: center;
  margin-top: 0.6rem;
  text-transform: uppercase;
@@ -865,7 +897,7 @@ padding:0;
 display: grid;
 padding: 6px 0px;
 place-items: center;
- font-family: 'roboto';
+
  text-align: left;
 letter-spacing: 0.2px;
 line-height: 18px;
@@ -879,14 +911,14 @@ line-height: 18px;
 }
 
 .tab-pane h5{
-  font-family: 'roboto';
+
   font-size: 32px;
 
 }
 .tab-pane .badge{
   background-color: #E9E6DD;
   padding: 4px 15px;
-  font-family: 'Segoe UI';
+
   color: #000;
   font-size: 14px;
   text-transform: capitalize;
@@ -907,14 +939,14 @@ background-color: #DCD5CE;
 .cat-filter span{
 background: transparent;
 border: none;
-font-family: 'roboto';
+
 text-align: center;
 }
 
 .cat-sec{
   border-right: 1px solid #000;
   font-size: 24px;
-  font-family: 'roboto';
+
 }
 
   #nav-tabContent img{
@@ -967,7 +999,7 @@ opacity: 95%;
 border: transparent;
 background-color: #FF7C55;
 
-  font-family: 'roboto' !important;
+  
   
 }
 .reno-bg .card-title{
@@ -983,14 +1015,9 @@ text-decoration: underline;
 .reno-bg .card .card-link{
 color: white;
 
-  font-family: 'roboto' !important;
+  
 }
-.paragraph{
-  color: #f4e1e1;
-  font-size: 18px;
-  font-family: 'roboto' !important;
- 
-}
+
 .timeline .row{
   margin-top: 5rem;
 }
@@ -1003,13 +1030,13 @@ color: white;
   font-size: 14px;
   color: grey;
   max-width: 400px;
-  font-family: 'roboto';
+
 }
 .section .icon{
   margin-top: 2rem;
 }
 
-.timeline span i{
+.timeline span.icon{
 
   width: 20px;
   height: 20px;
@@ -1017,14 +1044,24 @@ color: white;
   border-radius: 100%;
   background-color: #3d92dd;
   color: #fff;
+  cursor: pointer;
+  display: flex;
+    justify-content: center;
+    align-items: center;
   
+}
+.timeline .content{
+  display: none;
+}
+.timeline .content.active{
+  display: block;
 }
 .timeline .content-main{
   margin-top: 6rem !important;
 
 }
 .timeline .content-main span{
-font-family: 'roboto';
+
 font-size: 17px;
 text-align: right;
 
@@ -1034,7 +1071,7 @@ text-align: right;
 
   max-width: 500px;
 text-align: center;
-font-family: 'roboto';
+
 
 }
 
@@ -1062,7 +1099,7 @@ border: none;
 
 }
 .completed h2{
-  font-family: 'roboto';
+  
   font-weight: 400;
 }
 
@@ -1071,7 +1108,7 @@ border: none;
   /* color: green; */
 }
 .why-choose p{
-  font-family: 'roboto';
+
 text-align: center;
 }
 
@@ -1111,7 +1148,7 @@ height: 100%;
   cursor: pointer;
 }
 .allserviceshead h1{
-  font-family: sans-serif;
+  
 }
 
 
@@ -1124,7 +1161,7 @@ height: 100%;
   padding-bottom: 3px;
 }
 .topnavbarsmall span{
-  font-family: roboto;
+ 
     font-size: 13px;
     color: #ffffffd1;
 }
@@ -1195,15 +1232,63 @@ margin-bottom: 0;
 
 /* ------------------------------------Google Review Section-------------------------------------  */
 
-.googlereviewsection img{
-  width: 50px;
-  height: 50px;
+
+.googlereviewsection .reviewbox img{
+  width: 50px!important;
+  height: 50px!important;
   border-radius: 50%;
 }
+
 .googlereviewsection .reviewbox{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 15px;
   padding: 10px 20px;
+  min-height:320px ;
+  max-height:400px;
+  overflow-y: auto;
+}
+
+/* Scrollbar design  Start */
+.googlereviewsection .reviewbox::-webkit-scrollbar {
+  display: block;
+  width: 5px;
+  border-radius: 40px;
+}
+.googlereviewsection .reviewbox::-webkit-scrollbar-track {
+  background: transparent;
+}
+  
+.googlereviewsection .reviewbox::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.63);
+  border-right: none;
+  border-left: none;
+}
+
+.googlereviewsection .reviewbox::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 30px; 
+}
+
+.googlereviewsection .reviewbox::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 10px;
+}
+/* Scrollbar design End  */
+
+
+
+
+
+
+
+.googlereviewsection .reviewbox p{
+  font-size: 1em;
+}
+.googlereviewsection .reviewbox h5{
+  font-size: 1.6em;
+}
+.googlereviewsection .reviewbox h6{
+  font-size: 1.1em;
 }
 .googlereviewsection .reviewbox i{
   color: #F7A000;
@@ -1220,12 +1305,8 @@ margin-bottom: 0;
 .brandssection{
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 60px 40px;
-  background-color: #00acee54;
+  background-color: #F5EFEA;
 }
-
-
-
-
 
 
 /* Common Questions  */
@@ -1255,9 +1336,7 @@ margin-bottom: 0;
 /* Common Question End  */
 
 
-
-
-/*----------------------------- login page-----------------------------  */
+/*---------------------------------------------- login page-----------------------------  */
 
 .loginbackground {
 
@@ -1281,30 +1360,33 @@ padding: 15px 45px;
 .remodelingslidertop{
 
 }
+.remodelingslidertop .owl-stage-outer{
+  height: 450px;
+}
 
 .remodelingslidertop .innerbox{
-  padding: 130px 0;
+  padding: 120px 0;
   width: 50%;
   margin: auto;
   text-align: center;
 }
 .remodelingslidertop .innerbox h1{
-  font-size: 45px;
+  font-size: 35px;
   text-transform: uppercase;
   color: white;
 }
 .remodelingslidertop .innerbox p{
-  font-size: 20px;
+  font-size: 17px;
   line-height: 1.45;
-  text-transform: uppercase;
-  font-family: 'roboto';
+  text-transform: capitalize;
+
   color: white;
 }
 .remodelingslidertop .innerbox button{
   border: none;
   background-color: var(--buttoncolor);
   color: black;
-  padding: 10px 40px;
+  padding: 10px 30px;
   margin-top: 15px;
 }
 
@@ -1315,11 +1397,11 @@ padding: 15px 45px;
 
 .remodelingbox{
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-  border-radius: 22px;
+  
   
 }
 .remodelingboximage{
-  border-radius: 22px 22px 0 0;
+  /* border-radius: 22px 22px 0 0; */
 }
 .secondportionremodeling p{
 font-size: 20px;
@@ -1344,7 +1426,7 @@ font-size: 20px;
 
 
 
-/* ---------------------------------------------------------Why Choose Us--------------------------------------------- */
+/* ---------------------------------------------Why Choose Us--------------------------------------------- */
 
 
 
@@ -1363,12 +1445,12 @@ font-size: 20px;
 }
 
 .whychooseushead .whychooseussection h1{
-  font-size: 30px;
+  font-size: 2em;
 }
 
 .whychooseushead .whychooseussection p{
-  font-size: 16px;
-  font-family: 'roboto';
+  font-size: 1.6em;
+  
 }
 .whychooseus .content{
   padding-top: 40px;
@@ -1383,10 +1465,10 @@ font-size: 20px;
 }
 .whychooseus .content p{
   color: #333;
-  font-size: 16px;
+  font-size: 1.3em;
   line-height: 1.63;
   font-weight: 400;
-  font-family: 'roboto';
+  
 }
 
 .whychooseus .content a{
@@ -1399,7 +1481,8 @@ font-size: 20px;
 .talksection {
   background-color: #F1F1F1;
   text-align: center;
-  padding: 50px 0;
+  padding-top:50px;
+  padding-bottom:50px;
 }
 .talksection h1{
   font-size: 35px;
@@ -1493,18 +1576,18 @@ font-size: 20px;
 }
 
 
-/* --------------------------------Business Oppertunities--------------------------------- */
+/* -----------------------------------Business Oppertunities--------------------------------- */
 
 .businessheadertop .businessleft{
   padding: 30px 35px;
 }
 .businessheadertop .businessleft h1{
-  font-size: 22px;
+  font-size: 2em;
   font-weight: bold!important;
 }
 .businessheadertop .businessleft p{
-  font-size: 14px;
-  font-family: 'roboto';
+  font-size: 1em;
+  
 }
 .businessheadertop button{
   background-color: var(--buttoncolor);
@@ -1544,12 +1627,12 @@ font-size: 30px;
 }
 
 .renovationexperienceleft h1{
-font-size:30px;
+font-size:2em;
 font-weight:bold;
 color: white;
 }
 .renovationexperienceleft p{
-  font-family: 'roboto';
+
   color: white;
 }
 .renovationexperienceright i{
@@ -1609,11 +1692,11 @@ font-weight: bold;
 
 .questiontalk h1{
 font-size: 27px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
 }
 
 .questiontalk p{
-  font-family: 'roboto';
+ 
 }
 
 
@@ -1630,17 +1713,24 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
 
 
-/*                         Enquiry               */
+/*  -----------------------------------Enquiry -------------------------------------------- */
+.enquirybtn{
+  background-color: var(--buttoncolor);
+  color: white;
+}
+.enquirybtn:hover{
+  background-color: var(--buttonhovercolro);
+}
 .enquiry-left p{
-  font-family: 'roboto';
+  font-size: 1em;
 }
 .enquiry-left h2{
  font-weight: 600;
 }
 .enquiry-right p{
-  font-family: 'roboto';
+
   }.enquiry-right h6{
-  font-family: 'roboto';
+  
   margin-top: 1rem;
   }
 .enquiry-right .info{
@@ -1652,6 +1742,9 @@ margin-top: 0.5rem;
 
   }
 
+.businessoppertunitesheading h1{
+  font-size: 2em;
+}
 
 
 
@@ -1659,16 +1752,77 @@ margin-top: 0.5rem;
 
 
 
-
-/*                         End Enquiry               */
-
+/*-----------------------------  End Enquiry-------------------------------------  */
 
 
+/* ----------------------------------Renovation Experience--------------------------------------- */
+
+.renovationexperiencetophead h1{
+  font-size: 36px;
+}
+
+
+/* --------------------------------- Careeer --------------------------------------- */
+.careeropptophead h1{
+  font-size: 36px;
+}
+.careeropptophead p.paragraph{
+  color: #f4e1e1;
+  font-size: 18px;
+}
+
+
+/* ------------------------------------------------ About Us-------------------------------------------- */
+
+
+.aboutserviceshead h1{
+text-decoration: overline;
+}
+
+.aboutushead{
+  
+ font-size: 40px;
+}
+
+
+
+/* ----------------------------------------Footer bootom sticky---------------------------- */
+
+.footerstickybottom{
+  display: none;
+  background-color: var(--buttoncolor);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right:0;
+  z-index: 99999;
+  color: white;
+  padding: 7px 20px;
+  font-size: 17px;
+  max-width: 2300px;
+  width: 100%;
+  
+}
+.footerstickybottom i{
+  color: white;
+}
+
+footer{
+  padding-bottom: 50px;
+}
+
+
+
+/* -----------------------------------------Open Single Services ---------------------------------------- */
+
+.opensingletopitem{
+  height:100%;
+}
 
 
 
 
-/* ----------------------------------------------------Mobile Responsive ------------------------  */
+/* ----------------------------------------------------900 Mobile Responsive -----------------------------------  */
 
 
 @media screen and (max-width:900px){
@@ -1682,4 +1836,127 @@ margin-top: 0.5rem;
     margin-bottom: 20px;
 
   }
+
+  .remodelingslidertop .innerbox{
+    padding: 50px 20px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .renovationexperiencetophead h1{
+    font-size: 30px;
+  }
+  
+}
+
+/* ---------------------------Responsive for Mobile --------------------------------------------------  */
+
+@media screen and (max-width:600px){
+  .remodelingslidertop .innerbox{
+    padding: 30px 20px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .remodelingslidertop .innerbox h1 {
+    font-size: 25px;
+    
+}
+.remodelingslidertop .innerbox p {
+  font-size: 14px;
+ 
+}
+
+.renovationexperiencetophead h1{
+  font-size: 22px;
+}
+.renovationexperiencetophead span.paragraph{
+  font-size: 16px;
+}
+
+.timeline .sections{
+
+padding-left: 20px;
+  
+}
+.timeline .content-main{
+  margin-top: 1rem !important;
+
+}
+
+
+  .col-lg-4 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
+  .card-body {
+    
+    padding: .25rem;
+}
+
+.gal-section h1 {
+  font-size: 35px;
+
+}
+.cat-filter span{
+  font-size: 16px;
+}
+.careeropptophead h1{
+  font-size: 22px;
+}
+.renoarttitle{
+  font-size: 22px;
+}
+.footerstickybottom span,.footerstickybottom i{
+    font-size:13px;
+}
+
+.copyrightfooter span{
+  font-size: 12px;
+}
+.copyrightfooter i{
+  font-size: 12px;
+}
+
+
+.steplistinggroup ul {
+ padding-left: 0;
+}
+.dropdown-menu{
+  width: 100%;
+}
+
+.navbar-nav .dropdown-menu {
+
+  max-width: 347px;
+  overflow-x: hidden;
+
+}
+.navbar .container-fluid {
+
+  padding: 15px 0;
+}
+#ftco-navbar a[href="github.com"]{
+  display: none;
+}
+.googlereviewheading{
+  font-size: 27px;
+}
+.whychooseushead .whychooseussection h1 {
+  font-size: 1.7em;
+}
+.whychooseushead .whychooseussection p {
+  font-size: 1.2em;
+}
+
+.everydaylife h1,.kitchen.section1 h1,.section2 h1{
+  font-size: 1.6em;
+}
+
+.everydaylife h2,.kitchen.section1 p,.section2 p{
+  font-size: 1.1em;
+}
 }

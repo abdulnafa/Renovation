@@ -95,7 +95,7 @@
 <!-- Finally, a renovation experience that puts the customer at the center. -->
 
 <div class="container-fluid renovationexperience">
-    <div class="container">
+    <div class="px-md-5 px-3">
         <div class="row">
             <div class="col-md-5 renovationexperienceleft">
                 <h1>Finally, a renovation experience that puts the customer at the center.</h1>
@@ -125,7 +125,7 @@
 
 
 <div class="container-fluid px-5 py-5">
-    <div class="row">
+    <div class="row businessoppertunitesheading">
         <h1>Renovation results you’ll be proud to deliver.</h1>
         <p>Every renovation your team completes – big or small – is an advertisement for your business. And with ads
             like these, you won’t lack leads!</p>
@@ -156,7 +156,7 @@
 <div class="container-fluid">
     <div class="row ceilingbackground">
 
-        <div class="col-md-6 ms-auto d-flex flex-column justify-content-center ceilingcolumn">
+        <div class="col-md-6 ms-auto d-md-flex d-none flex-column justify-content-center ceilingcolumn">
             <h1>"There's no ceiling on my earnings. I can build as big a business as I want."</h1>
             <p>Kevin R (ex oil industry), Houston, TX</p>
             <button>Get In Touch</button>
@@ -190,7 +190,7 @@
 
 <!-- Map Section  -->
 
-<div class="container-fluid px-5 py-5">
+<div class="container-fluid px-5 py-5 businessoppertunitesheading">
     <div class="row">
         <div class="col-md-6">
             <h1>4 States and counting:
@@ -216,13 +216,13 @@
 
 <!-- Take your first step today. -->
 
-<div class="container-fluid px-5 py-5">
+<div class="container-fluid px-5 py-5 ">
     <div class="row">
     <div class="col-md-6">
             <img src="{{asset('assets/images/businessoppertunities/girlphone.jpg')}}" class="img-fluid" />
         </div>
 
-        <div class="col-md-6 pt-5">
+        <div class="col-md-6 pt-5 businessoppertunitesheading">
             <h1>Take your first step today.</h1>
             <p>We’re in growth mode and looking for strong franchise partners. From making that first call to being open for business could take you as little as three months. </p>
             <p>We’re changing the way the world renovates. We’d love you to join us.</p>

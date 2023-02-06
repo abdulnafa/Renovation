@@ -14,15 +14,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
     <link rel="stylesheet" href="<?php echo asset('assets/css/owl.carousel.min.css')?>" type="text/css">
     <link rel="stylesheet" href="<?php echo asset('assets/css/owl.theme.default.min.css')?>" type="text/css">
     <link rel="stylesheet" href="<?php echo asset('assets/css/slidercss.css')?>" type="text/css">
     <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" /> -->
     <!-- Swiper css  -->
-    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
 
 
     <!-- My All Css  -->
@@ -37,100 +37,100 @@
     <!-- small navbar start  -->
 
     <div class="container-fluid  topnavbarsmall">
-       
-            <div class="row">
-                <div class="col-6   d-flex align-items-center left">
-                    <ul class="d-flex list-inline">
-                        
-                        <li class="mx-lg-3 mx-2"> <i class="fa-regular fa-envelope"></i><span>
-                                @isset($footerdetail) @if($footerdetail->mail!=null) {{$footerdetail->mail}}
 
-                                @endif
-                                @endisset()
-                            </span></li>
-                        <li> <i class="bi bi-telephone"></i><span>
-                                @isset($footerdetail) @if($footerdetail->number!=null) {{$footerdetail->number}}
+        <div class="row">
+            <div class="col-md-6   d-flex align-items-center justify-content-md-start justify-content-center left">
+                <ul class="d-flex list-inline">
 
-                                @endif
-                                @endisset()</span></li>
-                    </ul>
+                    <li class="mx-lg-3 mx-2"> <i class="fa-regular fa-envelope"></i><span>
+                            @isset($footerdetail[0]) @if($footerdetail[0]->mail!=null) {{$footerdetail[0]->mail}}
 
-                </div>
-                <div class="col-6 right  d-flex align-items-center justify-content-end">
-                    <ul class="d-flex list-inline justify-content-center  mb-0 ">
-                        @isset($footerdetail)
-                        @if($footerdetail->twitter!=null)
-                        <a href="{{$footerdetail->twitter}}" target="_blank">
-                            <li class="mx-2">
+                            @endif
+                            @endisset()
+                        </span></li>
+                    <li> <i class="bi bi-telephone"></i><span>
+                            @isset($footerdetail[0]) @if($footerdetail[0]->number!=null) {{$footerdetail[0]->number}}
+
+                            @endif
+                            @endisset()</span></li>
+                </ul>
+
+            </div>
+            <div class="col-md-6 right  d-md-flex d-none align-items-center justify-content-md-end justify-content-center">
+                <ul class="d-flex list-inline justify-content-center  mb-0 ">
+                    @isset($footerdetail[0])
+                    @if($footerdetail[0]->twitter!=null)
+                    <a href="{{$footerdetail[0]->twitter}}" target="_blank">
+                        <li class="mx-2">
                             <i class="fa-brands fa-twitter"></i>
-                                <!-- <img src="{{asset('assets/images/index/twitter.svg')}}" class="img-fluid me-2" /> -->
-                                <!-- <span style="color: #03A9F4;">Twitter</span> -->
-                            </li>
-                        </a>
-                        @endif()
-                        @endisset()
+                            <!-- <img src="{{asset('assets/images/index/twitter.svg')}}" class="img-fluid me-2" /> -->
+                            <!-- <span style="color: #03A9F4;">Twitter</span> -->
+                        </li>
+                    </a>
+                    @endif()
+                    @endisset()
 
-                        @isset($footerdetail)
-                        @if($footerdetail->facebook!=null)
-                        <a href="{{$footerdetail->facebook}}" target="_blank">
-                            <li class="mx-2">
+                    @isset($footerdetail[0])
+                    @if($footerdetail[0]->facebook!=null)
+                    <a href="{{$footerdetail[0]->facebook}}" target="_blank">
+                        <li class="mx-2">
                             <i class="fa-brands fa-facebook"></i>
-                                <!-- <img src="{{asset('assets/images/index/facebook.svg')}}" class="img-fluid me-2" /> -->
-                                <!-- <span style="color: #1877F2;">Facebook</span> -->
-                            </li>
-                        </a>
+                            <!-- <img src="{{asset('assets/images/index/facebook.svg')}}" class="img-fluid me-2" /> -->
+                            <!-- <span style="color: #1877F2;">Facebook</span> -->
+                        </li>
+                    </a>
+
+                    @endif()
+                    @endisset()
+
+                    @isset($footerdetail[0])
+                    @if($footerdetail[0]->instagram!=null)
+                    <a href="{{$footerdetail[0]->instagram}}" target="_blank">
+
+                        <li class="mx-2">
+                            <i class="fa-brands fa-instagram"></i>
+                            <!-- <img src="{{asset('assets/images/index/instagram.svg')}}" class="img-fluid me-2" /> -->
+                            <!-- <span style="color: #E36B82;">Instagram</span> -->
+                        </li>
 
                         @endif()
                         @endisset()
 
-                        @isset($footerdetail)
-                        @if($footerdetail->instagram!=null)
-                        <a href="{{$footerdetail->instagram}}" target="_blank">
+
+
+                        @isset($footerdetail[0])
+                        @if($footerdetail[0]->linedin!=null)
+                        <a href="{{$footerdetail[0]->linkedin}}" target="_blank">
+
+
+
 
                             <li class="mx-2">
-                            <i class="fa-brands fa-instagram"></i>
-                                <!-- <img src="{{asset('assets/images/index/instagram.svg')}}" class="img-fluid me-2" /> -->
-                                <!-- <span style="color: #E36B82;">Instagram</span> -->
+                                <i class="fa-brands fa-linkedin"></i>
+                                <!-- <img src="{{asset('assets/images/index/linkedin.svg')}}" class="img-fluid me-2" /> -->
+                                <!-- <span style="color: #6563FF;">Linkedin</span> -->
                             </li>
-
                             @endif()
                             @endisset()
 
+                            @isset($footerdetail[0])
+                            @if($footerdetail[0]->github!=null)
 
-
-                            @isset($footerdetail)
-                            @if($footerdetail->linedin!=null)
-                            <a href="{{$footerdetail->linkedin}}" target="_blank">
-
-
-
+                            <a href="{{$footerdetail[0]->github}}" target="_blank">
 
                                 <li class="mx-2">
-                                <i class="fa-brands fa-linkedin"></i>
-                                    <!-- <img src="{{asset('assets/images/index/linkedin.svg')}}" class="img-fluid me-2" /> -->
-                                    <!-- <span style="color: #6563FF;">Linkedin</span> -->
+                                    <i class="fa-brands fa-github"></i>
+                                    <!-- <img src="{{asset('assets/images/index/github.svg')}}" class="img-fluid me-2" /> -->
+                                    <!-- <span style="color: #343A40;">Github</span> -->
                                 </li>
                                 @endif()
                                 @endisset()
 
-                                @isset($footerdetail)
-                                @if($footerdetail->github!=null)
 
-                                <a href="{{$footerdetail->github}}" target="_blank">
-
-                                    <li class="mx-2">
-                                    <i class="fa-brands fa-github"></i>
-                                        <!-- <img src="{{asset('assets/images/index/github.svg')}}" class="img-fluid me-2" /> -->
-                                        <!-- <span style="color: #343A40;">Github</span> -->
-                                    </li>
-                                    @endif()
-                                    @endisset()
-
-
-                    </ul>
-                </div>
+                </ul>
             </div>
-        
+        </div>
+
     </div>
 
 
@@ -146,7 +146,8 @@
     <section class="ftco-sectionheader fixed-top sticky-top">
 
 
-        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar sticky-top @if(Request::url() === Route('front.index') || Request::url() === Route('front.how-it-works')) mynavbarperosonal @else bg-dark  @endif()   " id="ftco-navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar sticky-top @if(Request::url() === Route('front.index') || Request::url() === Route('front.how-it-works')) mynavbarperosonal @else bg-dark  @endif()   "
+            id="ftco-navbar">
             <div class="container-fluid">
 
 
@@ -161,18 +162,24 @@
                     <span class="fa fa-bars"></span> Menu
                 </button>
 
-                
+
                 <div class="collapse navbar-collapse " id="ftco-nav">
                     <ul class="navbar-nav">
 
-                    <li
+                        <li
                             class="nav-item dropdown mx-lg-2      {{ Route::is('front.kitchen') ? 'active' : '' }} {{ Route::is('front.washroom') ? 'active' : '' }}">
-                            <a href="{{Route('remodeling')}}" class="nav-link dropdown-toggle" id="dropdown04"
+                            <a  class="nav-link dropdown-toggle" id="dropdown04"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">What We Do</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown04">
-                                <a class="dropdown-item" href="{{Route('remodeling')}}">Home renovations and remodeling services</a>
-                                <a class="dropdown-item" href="{{Route('renovation-experience')}}">A better renovation experience</a>
-                                <a class="dropdown-item" href="{{Route('whychooseus')}}">Why you'll be happy you chose us</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="{{Route('remodeling')}}">Home renovations and remodeling
+                                    services</a>
+                                <a class="dropdown-item" href="{{Route('renovation-experience')}}">A better renovation
+                                    experience</a>
+                                <a class="dropdown-item" href="{{Route('whychooseus')}}">Why you'll be happy you chose
+                                    us</a>
+
+                                <a class="dropdown-item" href="{{Route('commercialrenovation')}}">Commercial
+                                    Renovation</a>
 
                                 <a class="dropdown-item" href="{{Route('front.how-it-works')}}">How It Works</a>
 
@@ -189,11 +196,15 @@
                                 Works</a></li> -->
                         <li
                             class="nav-item dropdown mx-lg-2      {{ Route::is('front.kitchen') ? 'active' : '' }} {{ Route::is('front.washroom') ? 'active' : '' }}">
-                            <a href="{{Route('allservices')}}" class="nav-link dropdown-toggle" id="dropdown04"
+                            <a class="nav-link dropdown-toggle" id="dropdown04"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                             <div class="dropdown-menu" aria-labelledby="dropdown04">
-                                <a class="dropdown-item" href="{{Route('front.kitchen')}}">Kitchen</a>
-                                <a class="dropdown-item" href="{{Route('front.washroom')}}">Bathroom</a>
+                                @isset($allservicesmainhome)
+                                @foreach($allservicesmainhome as $allservicesmainhome)
+                                <a class="dropdown-item" href="{{Route('openservice',['name'=>$allservicesmainhome->name])}}">{{$allservicesmainhome->name}}</a>
+                                @endforeach
+                                @endisset
+                                <!-- <a class="dropdown-item" href="{{Route('front.washroom')}}">Bathroom</a> -->
 
                             </div>
                         </li>
@@ -203,7 +214,7 @@
                                 href="{{Route('front.design')}}" class="nav-link">Design</a></li>
 
 
-                                <li class="nav-item mx-lg-2     {{ Route::is('people') ? 'active' : '' }}"><a
+                        <li class="nav-item mx-lg-2     {{ Route::is('people') ? 'active' : '' }}"><a
                                 href="{{Route('people')}}" class="nav-link">People</a></li>
 
 
@@ -211,34 +222,40 @@
 
 
 
-                       
-                         <li
+
+
+
+                        <li
                             class="nav-item dropdown mx-lg-2      {{ Route::is('front.kitchen') ? 'active' : '' }} {{ Route::is('front.washroom') ? 'active' : '' }}">
-                            <a href="{{Route('enquiry')}}" class="nav-link dropdown-toggle" id="dropdown04"
+                            <a class="nav-link dropdown-toggle" id="dropdown04"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get In Touch</a>
                             <div class="dropdown-menu" aria-labelledby="dropdown04">
                                 <a class="dropdown-item" href="{{Route('enquiry')}}">Renovation Enquiry</a>
-                                <a class="dropdown-item" href="{{Route('renovation-experience')}}">Business Opportunities</a>
+                                <a class="dropdown-item" href="{{Route('businessoppertunities')}}">Business
+                                    Opportunities</a>
                                 <a class="dropdown-item" href="{{Route('career')}}">Career Opportunities</a>
-                                
+                                <a class="dropdown-item" href="{{Route('aboutus')}}">About Us</a>
 
 
 
-      @if(!Auth::check())
-                       <a href="{{Route('login')}}" class="dropdown-item     {{ Route::is('login') ? 'active' : '' }}">Login</a>
-                        @endif()
-                        @if(!Auth::check())
-                       
-                            <a href="{{Route('register')}}" class="dropdown-item   {{ Route::is('register') ? 'active' : '' }}">Register</a>
-                        @endif()
-                        @if(Auth::check())
-                       <a href="{{Route('logout')}}"
-                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
-                            class="dropdown-item  text-black  {{ Route::is('logout') ? 'active' : '' }}">Logout</a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-                        @endif
+                                @if(!Auth::check())
+                                <a href="{{Route('login')}}"
+                                    class="dropdown-item     {{ Route::is('login') ? 'active' : '' }}">Login</a>
+                                @endif()
+                                @if(!Auth::check())
+
+                                <a href="{{Route('register')}}"
+                                    class="dropdown-item   {{ Route::is('register') ? 'active' : '' }}">Register</a>
+                                @endif()
+                                @if(Auth::check())
+                                <a href="{{Route('logout')}}"
+                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                                    class="dropdown-item  text-black  {{ Route::is('logout') ? 'active' : '' }}">Logout</a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                    style="display: none;">
+                                    @csrf
+                                </form>
+                                @endif
 
 
 
@@ -247,17 +264,17 @@
 
 
                             </div>
-                        </li>                        
-                            
+                        </li>
+
 
 
                     </ul>
                 </div>
-               
-                   
-               <div class="navmenubutton">
-               <button>Get Your Estimate</button>
-               </div>
+
+
+                <div class="navmenubutton">
+                    <button>Get Your Estimate</button>
+                </div>
             </div>
         </nav>
         <!-- END nav -->
@@ -266,58 +283,72 @@
 
 
 
-   @if(Request::url() === Route('front.index') ||  Request::url() === Route('front.how-it-works') )
+    @if(Request::url() === Route('front.index') || Request::url() === Route('front.how-it-works') )
 
     <!-- Main Slider  -->
 
-<div class="home-slider owl-carousel js-fullheight mainslider">
-    <div class="slider-item js-fullheight"
-        style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider1}}@endif()'); background-size:cover">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                <div class="col-md-12 ftco-animate">
-                    <div class="text w-100 text-center">
-                        <h2>@if($data!=null){{$data->slider1title1}} @endif()</h2>
-                        <h1 class="mb-3"> @if($data!=null){{$data->slider1title2}} @endif()</h1>
-                        <button class="sliderbutton">Contact Us</button>
+    <div class="home-slider owl-carousel js-fullheight mainslider">
+        <div class="slider-item js-fullheight"
+            style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider1}}@endif()'); background-size:cover">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+                    <div class="col-md-12 ftco-animate">
+                        <div class="text w-100 text-center">
+                            <h2>@if($data!=null){{$data->slider1title1}} @endif()</h2>
+                            <h1 class="mb-3"> @if($data!=null){{$data->slider1title2}} @endif()</h1>
+                            <button class="sliderbutton">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-item js-fullheight"
+            style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider2}} @endif()'); background-size:cover">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+                    <div class="col-md-12 ftco-animate">
+                        <div class="text w-100 text-center">
+                            <h2> @if($data!=null){{$data->slider2title1}} @endif() </h2>
+                            <h1 class="mb-3"> @if($data!=null){{$data->slider2title2}} @endif()</h1>
+                            <button class="sliderbutton">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-item js-fullheight"
+            style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider3}}@endif()')">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+                    <div class="col-md-12 ftco-animate">
+                        <div class="text w-100 text-center">
+                            <h2> @if($data!=null) {{$data->slider3title1}} @endif()</h2>
+                            <h1 class="mb-3">@if($data!=null) {{$data->slider3title2}} @endif()</h1>
+                            <button class="sliderbutton">Contact Us</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="slider-item js-fullheight"
-        style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider2}} @endif()'); background-size:cover">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                <div class="col-md-12 ftco-animate">
-                    <div class="text w-100 text-center">
-                        <h2> @if($data!=null){{$data->slider2title1}} @endif() </h2>
-                        <h1 class="mb-3"> @if($data!=null){{$data->slider2title2}} @endif()</h1>
-                        <button class="sliderbutton">Contact Us</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="slider-item js-fullheight"
-        style="background-image:url('storage/dashboardpics/slider/@if($data!=null){{$data->slider3}}@endif()')">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                <div class="col-md-12 ftco-animate">
-                    <div class="text w-100 text-center">
-                        <h2> @if($data!=null) {{$data->slider3title1}} @endif()</h2>
-                        <h1 class="mb-3">@if($data!=null) {{$data->slider3title2}} @endif()</h1>
-                        <button class="sliderbutton">Contact Us</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-@endif()
+
+
+
+
+
+
+    @endif()
+
+
+
+    
+
+

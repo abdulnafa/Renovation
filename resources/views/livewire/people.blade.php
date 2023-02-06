@@ -7,7 +7,7 @@
 
 
         <div class="row mt-5">
-            <div class="col-md-3">
+            <div class="col-md-3 pb-md-0 pb-5">
                 <div class="card filter-section">
                     <span>filter People</span>
 
